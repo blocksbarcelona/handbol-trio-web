@@ -6,21 +6,21 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   es: {
-    title: "Competiciones",
+    title: "Partidos",
     subtitle: "Sigue nuestros equipos en todas las categorías",
     cadete: "Cadete Femenino - Primera Catalana",
     infantil: "Infantil - Segona Catalana",
     viewResults: "Ver Resultados y Clasificación"
   },
   ca: {
-    title: "Competicions",
+    title: "Partits",
     subtitle: "Segueix els nostres equips en totes les categories",
     cadete: "Cadet Femení - Primera Catalana",
     infantil: "Infantil - Segona Catalana",
     viewResults: "Veure Resultats i Classificació"
   },
   en: {
-    title: "Competitions",
+    title: "Matches",
     subtitle: "Follow our teams in all categories",
     cadete: "Cadet Female - Primera Catalana",
     infantil: "Youth - Segona Catalana",
