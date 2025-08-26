@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { LanguageSelector } from "@/components/LanguageSelector";
 import { Menu, X } from "lucide-react";
-import montbuiLogo from "@/assets/montbui-logo.png";
 
 const translations = {
   es: {
@@ -47,12 +46,8 @@ export const Header = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <div className="flex-shrink-0">
-            <img 
-              src={montbuiLogo} 
-              alt="Club Handbol Montbui" 
-              className="h-10 w-10 object-contain rounded-full bg-white/10 p-1"
-            />
+          <div className="h-10 w-10 hero-gradient rounded-full flex items-center justify-center">
+            <span className="text-white font-bold text-sm">CHM</span>
           </div>
           <span className="font-bold text-lg md:text-xl text-gradient">Club Handbol Montbuí</span>
         </div>
