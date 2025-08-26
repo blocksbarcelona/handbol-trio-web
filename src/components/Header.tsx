@@ -9,21 +9,18 @@ const translations = {
     home: "Inicio",
     team: "Equipo",
     matches: "Partidos",
-    gallery: "Galería",
     contact: "Contacto"
   },
   ca: {
     home: "Inici",
     team: "Equip",
     matches: "Partits",
-    gallery: "Galeria",
     contact: "Contacte"
   },
   en: {
     home: "Home",
     team: "Team",
     matches: "Matches",
-    gallery: "Gallery",
     contact: "Contact"
   }
 };
@@ -38,7 +35,6 @@ export const Header = () => {
     { key: 'home', href: '#home' },
     { key: 'team', href: '#team' },
     { key: 'matches', href: '#matches' },
-    { key: 'gallery', href: '#gallery' },
     { key: 'contact', href: '#contact' },
   ];
 

@@ -6,28 +6,25 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   es: {
-    title: "Próximos Partidos",
-    subtitle: "No te pierdas nuestros encuentros",
-    viewAll: "Ver Todos los Partidos",
-    home: "Local",
-    away: "Visitante",
-    vs: "vs"
+    title: "Competiciones",
+    subtitle: "Sigue nuestros equipos en todas las categorías",
+    cadete: "Cadete Femenino - Primera Catalana",
+    infantil: "Infantil - Segona Catalana",
+    viewResults: "Ver Resultados y Clasificación"
   },
   ca: {
-    title: "Propers Partits",
-    subtitle: "No et perdis els nostres encontres",
-    viewAll: "Veure Tots els Partits",
-    home: "Local",
-    away: "Visitant",
-    vs: "vs"
+    title: "Competicions",
+    subtitle: "Segueix els nostres equips en totes les categories",
+    cadete: "Cadet Femení - Primera Catalana",
+    infantil: "Infantil - Segona Catalana",
+    viewResults: "Veure Resultats i Classificació"
   },
   en: {
-    title: "Upcoming Matches",
-    subtitle: "Don't miss our games",
-    viewAll: "View All Matches",
-    home: "Home",
-    away: "Away",
-    vs: "vs"
+    title: "Competitions",
+    subtitle: "Follow our teams in all categories",
+    cadete: "Cadet Female - Primera Catalana",
+    infantil: "Youth - Segona Catalana",
+    viewResults: "View Results and Rankings"
   }
 };
 
@@ -35,33 +32,18 @@ export const MatchesSection = () => {
   const { currentLang } = useLanguage();
   const t = translations[currentLang];
 
-  const matches = [
+  const competitions = [
     {
       id: 1,
-      opponent: "Valencia Handball",
-      date: "2024-03-15",
-      time: "18:00",
-      venue: "Pabellón Municipal",
-      isHome: true,
-      competition: "Liga Nacional"
+      name: t.cadete,
+      link: "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=2549&id_competicion=209482&id_temp=2526&id_ambito=0&id_territorial=17",
+      category: "Cadete Femenino"
     },
     {
       id: 2,
-      opponent: "Barcelona Team",
-      date: "2024-03-22",
-      time: "20:30",
-      venue: "Palau Blaugrana",
-      isHome: false,
-      competition: "Copa del Rey"
-    },
-    {
-      id: 3,
-      opponent: "Madrid Handball",
-      date: "2024-03-29",
-      time: "19:15",
-      venue: "Pabellón Municipal",
-      isHome: true,
-      competition: "Liga Nacional"
+      name: t.infantil,
+      link: "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=2549&id_competicion=209386&id_temp=2526&id_ambito=0&id_territorial=17",
+      category: "Infantil"
     }
   ];
 
@@ -77,57 +59,28 @@ export const MatchesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {matches.map((match) => (
-            <Card key={match.id} className="card-gradient border-0 shadow-elegant transition-smooth hover:scale-105">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge 
-                    variant={match.isHome ? "default" : "secondary"}
-                    className={match.isHome ? "bg-primary" : "bg-secondary"}
-                  >
-                    {match.isHome ? t.home : t.away}
-                  </Badge>
-                  <Badge variant="outline" className="text-xs">
-                    {match.competition}
-                  </Badge>
-                </div>
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {competitions.map((competition) => (
+            <Card key={competition.id} className="card-gradient border-0 shadow-elegant transition-smooth hover:scale-105">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-xl font-bold text-center">
+                  {competition.name}
+                </CardTitle>
               </CardHeader>
               
-              <CardContent className="space-y-4">
-                {/* Match */}
-                <div className="text-center">
-                  <div className="text-lg font-semibold mb-2">
-                    Club Handbol Montbuí {t.vs} {match.opponent}
-                  </div>
-                </div>
-
-                {/* Date & Time */}
-                <div className="flex items-center space-x-2 text-muted-foreground">
-                  <Calendar className="h-4 w-4" />
-                  <span className="text-sm">{match.date}</span>
-                </div>
-
-                <div className="flex items-center space-x-2 text-muted-foreground">
-                  <Clock className="h-4 w-4" />
-                  <span className="text-sm">{match.time}</span>
-                </div>
-
-                {/* Venue */}
-                <div className="flex items-center space-x-2 text-muted-foreground">
-                  <MapPin className="h-4 w-4" />
-                  <span className="text-sm">{match.venue}</span>
-                </div>
+              <CardContent className="text-center">
+                <Button 
+                  variant="hero" 
+                  size="lg" 
+                  className="w-full"
+                  onClick={() => window.open(competition.link, '_blank')}
+                >
+                  <Calendar className="mr-2 h-5 w-5" />
+                  {t.viewResults}
+                </Button>
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        <div className="text-center">
-          <Button variant="hero" size="lg">
-            <Calendar className="mr-2 h-5 w-5" />
-            {t.viewAll}
-          </Button>
         </div>
       </div>
     </section>
