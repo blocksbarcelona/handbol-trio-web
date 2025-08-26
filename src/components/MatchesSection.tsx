@@ -22,8 +22,8 @@ const translations = {
   en: {
     title: "Matches",
     subtitle: "Follow our teams in all categories",
-    cadete: "Cadet Female - Primera Catalana",
-    infantil: "Youth - Segona Catalana",
+    cadete: "Cadete Femenino - Primera Catalana",
+    infantil: "Infantil - Segona Catalana",
     viewResults: "View Results and Rankings"
   }
 };
