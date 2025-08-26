@@ -47,12 +47,14 @@ export const Header = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <img 
-            src={montbuiLogo} 
-            alt="Club Handbol Montbui" 
-            className="h-12 w-12 object-contain"
-          />
-          <span className="font-bold text-xl text-gradient">Club Handbol Montbuí</span>
+          <div className="flex-shrink-0">
+            <img 
+              src={montbuiLogo} 
+              alt="Club Handbol Montbui" 
+              className="h-10 w-10 object-contain rounded-full bg-white/10 p-1"
+            />
+          </div>
+          <span className="font-bold text-lg md:text-xl text-gradient">Club Handbol Montbuí</span>
         </div>
 
         {/* Desktop Navigation */}
