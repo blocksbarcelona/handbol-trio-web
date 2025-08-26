@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
@@ -9,7 +9,6 @@ const translations = {
     rights: "Todos los derechos reservados.",
     addressText: "Av. de l'Esport\n08710 Sant Maure, Barcelona",
     contactPerson: "Contacto: Laia Moyes Caceres",
-    joinNewsletter: "Únete a nuestro newsletter para recibir las últimas noticias y actualizaciones del equipo.",
     privacy: "Política de Privacidad",
     terms: "Términos de Uso"
   },
@@ -20,7 +19,6 @@ const translations = {
     rights: "Tots els drets reservats.",
     addressText: "Av. de l'Esport\n08710 Sant Maure, Barcelona",
     contactPerson: "Contacte: Laia Moyes Caceres",
-    joinNewsletter: "Uneix-te al nostre newsletter per rebre les últimes notícies i actualitzacions de l'equip.",
     privacy: "Política de Privacitat",
     terms: "Termes d'Ús"
   },
@@ -31,7 +29,6 @@ const translations = {
     rights: "All rights reserved.",
     addressText: "Av. de l'Esport\n08710 Sant Maure, Barcelona",
     contactPerson: "Contact: Laia Moyes Caceres",
-    joinNewsletter: "Join our newsletter to receive the latest team news and updates.",
     privacy: "Privacy Policy",
     terms: "Terms of Use"
   }
@@ -42,9 +39,7 @@ export const Footer = () => {
   const t = translations[currentLang];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Instagram, href: "https://www.instagram.com/chmontbui/", label: "Instagram" },
   ];
 
   return (
@@ -61,9 +56,6 @@ export const Footer = () => {
               />
               <span className="font-bold text-2xl">Club Handbol Montbuí</span>
             </div>
-            <p className="text-background/80 mb-6 max-w-md">
-              {t.joinNewsletter}
-            </p>
           </div>
 
           {/* Contact Info */}
