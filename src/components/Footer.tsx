@@ -7,7 +7,8 @@ const translations = {
     followUs: "Síguenos",
     address: "Dirección",
     rights: "Todos los derechos reservados.",
-    addressText: "Av. del Deporte, 123\n08600 Berga, España",
+    addressText: "Av. de l'Esport\n08710 Sant Maure, Barcelona",
+    contactPerson: "Contacto: Laia Moyes Caceres",
     joinNewsletter: "Únete a nuestro newsletter para recibir las últimas noticias y actualizaciones del equipo.",
     privacy: "Política de Privacidad",
     terms: "Términos de Uso"
@@ -17,7 +18,8 @@ const translations = {
     followUs: "Segueix-nos",
     address: "Adreça",
     rights: "Tots els drets reservats.",
-    addressText: "Av. de l'Esport, 123\n08600 Berga, Espanya",
+    addressText: "Av. de l'Esport\n08710 Sant Maure, Barcelona",
+    contactPerson: "Contacte: Laia Moyes Caceres",
     joinNewsletter: "Uneix-te al nostre newsletter per rebre les últimes notícies i actualitzacions de l'equip.",
     privacy: "Política de Privacitat",
     terms: "Termes d'Ús"
@@ -27,7 +29,8 @@ const translations = {
     followUs: "Follow Us",
     address: "Address",
     rights: "All rights reserved.",
-    addressText: "123 Sports Avenue\n08600 Berga, Spain",
+    addressText: "Av. de l'Esport\n08710 Sant Maure, Barcelona",
+    contactPerson: "Contact: Laia Moyes Caceres",
     joinNewsletter: "Join our newsletter to receive the latest team news and updates.",
     privacy: "Privacy Policy",
     terms: "Terms of Use"
@@ -77,14 +80,18 @@ export const Footer = () => {
                 </div>
               </div>
               
+              <div className="text-background/80 text-sm mb-2">
+                {t.contactPerson}
+              </div>
+              
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-secondary" />
-                <span className="text-background/80">+34 123 456 789</span>
+                <span className="text-background/80">633 556 228</span>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-secondary" />
-                <span className="text-background/80">info@chm-montbui.com</span>
+                <span className="text-background/80">chmontbui06@gmail.com</span>
               </div>
             </div>
           </div>
