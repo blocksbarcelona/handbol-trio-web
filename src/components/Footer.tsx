@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   es: {
@@ -6,29 +7,36 @@ const translations = {
     followUs: "Síguenos",
     address: "Dirección",
     rights: "Todos los derechos reservados.",
-    addressText: "Av. del Deporte, 123\n12345 Ciudad, España",
-    joinNewsletter: "Únete a nuestro newsletter para recibir las últimas noticias y actualizaciones del equipo."
+    addressText: "Av. del Deporte, 123\n08600 Berga, España",
+    joinNewsletter: "Únete a nuestro newsletter para recibir las últimas noticias y actualizaciones del equipo.",
+    privacy: "Política de Privacidad",
+    terms: "Términos de Uso"
   },
   ca: {
     contact: "Contacte",
     followUs: "Segueix-nos",
     address: "Adreça",
     rights: "Tots els drets reservats.",
-    addressText: "Av. de l'Esport, 123\n12345 Ciutat, Espanya",
-    joinNewsletter: "Uneix-te al nostre newsletter per rebre les últimes notícies i actualitzacions de l'equip."
+    addressText: "Av. de l'Esport, 123\n08600 Berga, Espanya",
+    joinNewsletter: "Uneix-te al nostre newsletter per rebre les últimes notícies i actualitzacions de l'equip.",
+    privacy: "Política de Privacitat",
+    terms: "Termes d'Ús"
   },
   en: {
     contact: "Contact",
     followUs: "Follow Us",
     address: "Address",
     rights: "All rights reserved.",
-    addressText: "123 Sports Avenue\n12345 City, Spain",
-    joinNewsletter: "Join our newsletter to receive the latest team news and updates."
+    addressText: "123 Sports Avenue\n08600 Berga, Spain",
+    joinNewsletter: "Join our newsletter to receive the latest team news and updates.",
+    privacy: "Privacy Policy",
+    terms: "Terms of Use"
   }
 };
 
 export const Footer = () => {
-  const t = translations.es; // Default to Spanish
+  const { currentLang } = useLanguage();
+  const t = translations[currentLang];
 
   const socialLinks = [
     { icon: Facebook, href: "#", label: "Facebook" },
@@ -43,10 +51,12 @@ export const Footer = () => {
           {/* Logo & Description */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="h-12 w-12 hero-gradient rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">HT</span>
-              </div>
-              <span className="font-bold text-2xl">HandTeam</span>
+              <img 
+                src="/lovable-uploads/53f49c1d-ccd0-4c7e-8190-8e749d720f4f.png" 
+                alt="Club Handbol Montbuí" 
+                className="h-12 w-12 object-contain"
+              />
+              <span className="font-bold text-2xl">Club Handbol Montbuí</span>
             </div>
             <p className="text-background/80 mb-6 max-w-md">
               {t.joinNewsletter}
@@ -74,7 +84,7 @@ export const Footer = () => {
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-secondary" />
-                <span className="text-background/80">info@handteam.com</span>
+                <span className="text-background/80">info@chm-montbui.com</span>
               </div>
             </div>
           </div>
@@ -101,14 +111,14 @@ export const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-background/60 text-sm">
-              © {new Date().getFullYear()} HandTeam. {t.rights}
+              © {new Date().getFullYear()} Club Handbol Montbuí. {t.rights}
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-background/60 hover:text-background transition-smooth">
-                Política de Privacidad
+                {t.privacy}
               </a>
               <a href="#" className="text-background/60 hover:text-background transition-smooth">
-                Términos de Uso
+                {t.terms}
               </a>
             </div>
           </div>

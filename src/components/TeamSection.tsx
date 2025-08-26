@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Target, Heart } from "lucide-react";
 import teamImage from "@/assets/team-celebration.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   es: {
@@ -63,7 +64,8 @@ const translations = {
 };
 
 export const TeamSection = () => {
-  const t = translations.es; // Default to Spanish
+  const { currentLang } = useLanguage();
+  const t = translations[currentLang];
 
   const values = [
     {

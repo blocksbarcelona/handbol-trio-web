@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Users, Trophy } from "lucide-react";
 import heroImage from "@/assets/handball-hero.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   es: {
-    title: "Club Handbol Montbui",
+    title: "Club Handbol Montbuí",
     subtitle: "Pasión • Equipo • Victoria",
     description: "Únete a nuestro equipo de handbol y vive la emoción del deporte en equipo. Entrenamientos profesionales, competiciones de alto nivel y una gran familia deportiva te esperan.",
     joinTeam: "Únete al Equipo",
@@ -42,7 +43,8 @@ const translations = {
 };
 
 export const HeroSection = () => {
-  const t = translations.es; // Default to Spanish
+  const { currentLang } = useLanguage();
+  const t = translations[currentLang];
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">

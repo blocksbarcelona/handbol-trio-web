@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, Clock } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   es: {
@@ -31,7 +32,8 @@ const translations = {
 };
 
 export const MatchesSection = () => {
-  const t = translations.es; // Default to Spanish
+  const { currentLang } = useLanguage();
+  const t = translations[currentLang];
 
   const matches = [
     {
@@ -96,7 +98,7 @@ export const MatchesSection = () => {
                 {/* Match */}
                 <div className="text-center">
                   <div className="text-lg font-semibold mb-2">
-                    HandTeam {t.vs} {match.opponent}
+                    Club Handbol Montbuí {t.vs} {match.opponent}
                   </div>
                 </div>
 

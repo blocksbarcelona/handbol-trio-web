@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { LanguageSelector } from "@/components/LanguageSelector";
 import { Menu, X } from "lucide-react";
-
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   es: {
@@ -30,7 +30,7 @@ const translations = {
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [currentLang] = useState<keyof typeof translations>('es');
+  const { currentLang } = useLanguage();
   
   const t = translations[currentLang];
 
