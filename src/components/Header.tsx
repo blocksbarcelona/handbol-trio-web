@@ -48,9 +48,9 @@ export const Header = () => {
         {/* Logo */}
         <div className="flex items-center space-x-3">
           <img 
-            src="/lovable-uploads/d981898c-0ee5-4741-9169-2ae206d95b64.png" 
+            src="/lovable-uploads/53f49c1d-ccd0-4c7e-8190-8e749d720f4f.png" 
             alt="Club Handbol Montbuí" 
-            className="h-10 w-auto object-contain bg-white rounded-md p-1"
+            className="h-12 w-12 object-contain"
           />
           <span className="font-bold text-xl text-gradient">Club Handbol Montbuí</span>
         </div>
