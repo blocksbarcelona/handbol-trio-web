@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { LanguageSelector } from "@/components/LanguageSelector";
 import { Menu, X } from "lucide-react";
-import montbuiLogo from "@/assets/montbui-logo.png";
+
 
 const translations = {
   es: {
@@ -48,9 +48,9 @@ export const Header = () => {
         {/* Logo */}
         <div className="flex items-center space-x-3">
           <img 
-            src={montbuiLogo} 
-            alt="Club Handbol Montbui" 
-            className="h-12 w-12 object-contain"
+            src="/lovable-uploads/d981898c-0ee5-4741-9169-2ae206d95b64.png" 
+            alt="Club Handbol Montbuí" 
+            className="h-10 w-auto object-contain bg-white rounded-md p-1"
           />
           <span className="font-bold text-xl text-gradient">Club Handbol Montbuí</span>
         </div>
