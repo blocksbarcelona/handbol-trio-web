@@ -15,21 +15,21 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 14% 15%;
 
-    /* Athletic Blue - Primary team color */
-    --primary: 220 85% 35%;
+    /* Montbui Blue - Primary team color */
+    --primary: 210 100% 50%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 220 85% 45%;
+    --primary-glow: 210 100% 60%;
 
-    /* Energetic Orange - Secondary team color */
-    --secondary: 25 95% 55%;
+    /* Montbui Pink - Secondary team color */
+    --secondary: 330 100% 60%;
     --secondary-foreground: 0 0% 98%;
-    --secondary-glow: 25 95% 65%;
+    --secondary-glow: 330 100% 70%;
 
     --muted: 210 20% 96%;
     --muted-foreground: 210 14% 45%;
 
-    --accent: 220 85% 35%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 55 100% 60%;
+    --accent-foreground: 0 0% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
@@ -39,13 +39,13 @@
     --ring: 220 85% 35%;
 
     /* Custom design tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(220 85% 35%), hsl(25 95% 55%));
+    --hero-gradient: linear-gradient(135deg, hsl(210 100% 50%), hsl(330 100% 60%));
     --card-gradient: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
-    --accent-gradient: linear-gradient(135deg, hsl(25 95% 55%), hsl(25 95% 65%));
+    --accent-gradient: linear-gradient(135deg, hsl(330 100% 60%), hsl(55 100% 60%));
     
     /* Shadows with team colors */
-    --shadow-primary: 0 10px 30px -10px hsl(220 85% 35% / 0.3);
-    --shadow-secondary: 0 10px 30px -10px hsl(25 95% 55% / 0.3);
+    --shadow-primary: 0 10px 30px -10px hsl(210 100% 50% / 0.3);
+    --shadow-secondary: 0 10px 30px -10px hsl(330 100% 60% / 0.3);
     --shadow-elegant: 0 4px 20px -2px hsl(210 14% 15% / 0.1);
     
     /* Animation variables */
@@ -81,18 +81,18 @@
     --popover: 210 14% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 220 85% 55%;
+    --primary: 210 100% 60%;
     --primary-foreground: 210 14% 8%;
-    --primary-glow: 220 85% 65%;
+    --primary-glow: 210 100% 70%;
 
-    --secondary: 25 95% 65%;
+    --secondary: 330 100% 70%;
     --secondary-foreground: 210 14% 8%;
-    --secondary-glow: 25 95% 75%;
+    --secondary-glow: 330 100% 80%;
 
     --muted: 210 14% 15%;
     --muted-foreground: 210 14% 65%;
 
-    --accent: 220 85% 55%;
+    --accent: 55 100% 70%;
     --accent-foreground: 210 14% 8%;
 
     --destructive: 0 84% 70%;
@@ -103,9 +103,9 @@
     --ring: 220 85% 55%;
 
     /* Dark mode gradients */
-    --hero-gradient: linear-gradient(135deg, hsl(220 85% 25%), hsl(25 95% 45%));
+    --hero-gradient: linear-gradient(135deg, hsl(210 100% 40%), hsl(330 100% 50%));
     --card-gradient: linear-gradient(145deg, hsl(210 14% 10%), hsl(210 14% 12%));
-    --accent-gradient: linear-gradient(135deg, hsl(25 95% 45%), hsl(25 95% 55%));
+    --accent-gradient: linear-gradient(135deg, hsl(330 100% 50%), hsl(55 100% 50%));
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

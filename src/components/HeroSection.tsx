@@ -4,11 +4,11 @@ import heroImage from "@/assets/handball-hero.jpg";
 
 const translations = {
   es: {
-    title: "Club de Balonmano",
+    title: "Club Handbol Montbui",
     subtitle: "Pasión • Equipo • Victoria",
-    description: "Únete a nuestro equipo de balonmano y vive la emoción del deporte en equipo. Entrenamientos profesionales, competiciones de alto nivel y una gran familia deportiva te esperan.",
+    description: "Únete a nuestro equipo de handbol y vive la emoción del deporte en equipo. Entrenamientos profesionales, competiciones de alto nivel y una gran familia deportiva te esperan.",
     joinTeam: "Únete al Equipo",
-    nextMatch: "Próximo Partido",
+    nextMatch: "Calendario",
     stats: {
       players: "Jugadores",
       years: "Años de Historia",
@@ -16,11 +16,11 @@ const translations = {
     }
   },
   ca: {
-    title: "Club d'Handbol",
+    title: "Club Handbol Montbuí",
     subtitle: "Passió • Equip • Victòria",
     description: "Uneix-te al nostre equip d'handbol i viu l'emoció de l'esport en equip. Entrenaments professionals, competicions d'alt nivell i una gran família esportiva t'esperen.",
     joinTeam: "Uneix-te a l'Equip",
-    nextMatch: "Proper Partit",
+    nextMatch: "Calendari",
     stats: {
       players: "Jugadors",
       years: "Anys d'Història",
@@ -28,11 +28,11 @@ const translations = {
     }
   },
   en: {
-    title: "Handball Club",
+    title: "Montbuí Handball Club",
     subtitle: "Passion • Team • Victory",
     description: "Join our handball team and experience the thrill of team sports. Professional training, high-level competitions, and a great sports family await you.",
     joinTeam: "Join the Team",
-    nextMatch: "Next Match",
+    nextMatch: "Calendar",
     stats: {
       players: "Players",
       years: "Years of History",
