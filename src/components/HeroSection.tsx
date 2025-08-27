@@ -73,7 +73,12 @@ export const HeroSection = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button variant="hero" size="xl" className="animate-scale-in">
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="animate-scale-in"
+              onClick={() => document.getElementById('nueva-temporada')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Users className="mr-2 h-5 w-5" />
               {t.joinTeam}
             </Button>
