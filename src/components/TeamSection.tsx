@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Target, Heart } from "lucide-react";
-import teamImage from "@/assets/team-celebration.jpg";
+import teamImage from "@/assets/team-montbui-jerseys.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
@@ -103,7 +103,7 @@ export const TeamSection = () => {
             <div className="rounded-2xl overflow-hidden shadow-elegant">
               <img
                 src={teamImage}
-                alt="Team celebration"
+                alt="Equipo C.H. Montbui con camisetas oficiales"
                 className="w-full h-auto object-cover"
               />
             </div>
