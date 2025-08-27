@@ -13,7 +13,7 @@ const translations = {
     stats: {
       players: "Jugadores",
       years: "Años de Historia",
-      trophies: "Trofeos"
+      victories: "Victorias"
     }
   },
   ca: {
@@ -25,7 +25,7 @@ const translations = {
     stats: {
       players: "Jugadors",
       years: "Anys d'Història",
-      trophies: "Trofeus"
+      victories: "Victòries"
     }
   },
   en: {
@@ -37,7 +37,7 @@ const translations = {
     stats: {
       players: "Players",
       years: "Years of History",
-      trophies: "Trophies"
+      victories: "Victories"
     }
   }
 };
@@ -101,9 +101,9 @@ export const HeroSection = () => {
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold mb-2 flex items-center justify-center">
                 <Trophy className="mr-2 h-6 w-6 md:h-8 md:w-8" />
-                12
+                100+
               </div>
-              <div className="text-sm md:text-base opacity-80">{t.stats.trophies}</div>
+              <div className="text-sm md:text-base opacity-80">{t.stats.victories}</div>
             </div>
           </div>
         </div>
