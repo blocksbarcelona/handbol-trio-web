@@ -187,27 +187,6 @@ export const NewSeasonSection = () => {
               </CardContent>
             </Card>
 
-            {/* Team Needs You Card */}
-            <Card className="card-gradient border-0 shadow-elegant bg-gradient-to-br from-primary/5 to-secondary/10">
-              <CardContent className="pt-6">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-4 text-gradient">
-                    {t.teamNeeds}
-                  </h3>
-                  <p className="text-muted-foreground mb-6">
-                    {t.teamDescription}
-                  </p>
-                  <Button 
-                    variant="hero" 
-                    size="lg"
-                    onClick={handleWhatsApp}
-                    className="w-full"
-                  >
-                    {t.joinNow}
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
