@@ -77,7 +77,12 @@ export const HeroSection = () => {
               <Users className="mr-2 h-5 w-5" />
               {t.joinTeam}
             </Button>
-            <Button variant="sport" size="xl" className="animate-scale-in">
+            <Button 
+              variant="sport" 
+              size="xl" 
+              className="animate-scale-in"
+              onClick={() => document.getElementById('calendario')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Calendar className="mr-2 h-5 w-5" />
               {t.nextMatch}
             </Button>

@@ -8,19 +8,19 @@ const translations = {
   es: {
     home: "Inicio",
     team: "Equipo",
-    matches: "Partidos",
+    matches: "Calendario",
     contact: "Contacto"
   },
   ca: {
     home: "Inici",
     team: "Equip",
-    matches: "Partits",
+    matches: "Calendari",
     contact: "Contacte"
   },
   en: {
     home: "Home",
     team: "Team",
-    matches: "Matches",
+    matches: "Calendar",
     contact: "Contact"
   }
 };
@@ -34,7 +34,7 @@ export const Header = () => {
   const navItems = [
     { key: 'home', href: '#home' },
     { key: 'team', href: '#team' },
-    { key: 'matches', href: '#matches' },
+    { key: 'matches', href: '#calendario' },
     { key: 'contact', href: '#contact' },
   ];
 

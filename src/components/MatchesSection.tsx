@@ -6,21 +6,21 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   es: {
-    title: "Partidos",
+    title: "Calendario",
     subtitle: "Sigue nuestros equipos en todas las categorías",
     cadete: "Cadete Femenino - Primera Catalana",
     infantil: "Infantil - Segona Catalana",
     viewResults: "Ver Resultados y Clasificación"
   },
   ca: {
-    title: "Partits",
+    title: "Calendari",
     subtitle: "Segueix els nostres equips en totes les categories",
     cadete: "Cadet Femení - Primera Catalana",
     infantil: "Infantil - Segona Catalana",
     viewResults: "Veure Resultats i Classificació"
   },
   en: {
-    title: "Matches",
+    title: "Calendar",
     subtitle: "Follow our teams in all categories",
     cadete: "Cadete Femenino - Primera Catalana",
     infantil: "Infantil - Segona Catalana",
@@ -48,7 +48,7 @@ export const MatchesSection = () => {
   ];
 
   return (
-    <section id="matches" className="py-20">
+    <section id="calendario" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
