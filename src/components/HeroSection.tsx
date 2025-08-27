@@ -11,7 +11,7 @@ const translations = {
     joinTeam: "Únete al Equipo",
     nextMatch: "Calendario",
     stats: {
-      players: "Jugadores",
+      players: "Jugadoras",
       years: "Años de Historia",
       victories: "Victorias"
     }
@@ -23,7 +23,7 @@ const translations = {
     joinTeam: "Uneix-te a l'Equip",
     nextMatch: "Calendari",
     stats: {
-      players: "Jugadors",
+      players: "Jugadores",
       years: "Anys d'Història",
       victories: "Victòries"
     }
@@ -91,11 +91,11 @@ export const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto animate-slide-up">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold mb-2">25</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">50+</div>
               <div className="text-sm md:text-base opacity-80">{t.stats.players}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold mb-2">15</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">19</div>
               <div className="text-sm md:text-base opacity-80">{t.stats.years}</div>
             </div>
             <div className="text-center">
