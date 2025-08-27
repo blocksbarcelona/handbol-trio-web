@@ -72,7 +72,7 @@ export const NewSeasonSection = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/633556228', '_blank');
+    window.open('https://wa.me/34633556228?text=Hola! Me interesa información sobre la nueva temporada de handbol', '_blank');
   };
 
   return (
