@@ -52,7 +52,7 @@ export const Footer = () => {
               <img 
                 src="/lovable-uploads/53f49c1d-ccd0-4c7e-8190-8e749d720f4f.png" 
                 alt="Club Handbol Montbuí" 
-                className="h-12 w-12 object-contain"
+                className="h-12 w-12 object-contain bg-white rounded-lg p-1"
               />
               <span className="font-bold text-2xl">Club Handbol Montbuí</span>
             </div>
