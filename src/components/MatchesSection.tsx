@@ -36,7 +36,7 @@ export const MatchesSection = () => {
     {
       id: 1,
       name: t.cadete,
-      link: "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=2549&id_competicion=209482&id_temp=2526&id_ambito=0&id_territorial=17",
+      link: "https://resultadosbalonmano.isquad.es/competicion.php?seleccion=0&id_superficie=1&id=1031785&jornada=2&id_ambito=0",
       category: "Cadete Femenino"
     },
     {
