@@ -10,7 +10,7 @@ import { useLanguage, Language } from "@/contexts/LanguageContext";
 
 const languages = [
   { code: 'es' as Language, name: 'Español', flag: '🇪🇸' },
-  { code: 'ca' as Language, name: 'Català', flag: '🏴󠁥󠁳󠁣󠁴󠁿' },
+  { code: 'ca' as Language, name: 'Català', flag: '🟨🔴' },
   { code: 'en' as Language, name: 'English', flag: '🇬🇧' },
 ];
 
