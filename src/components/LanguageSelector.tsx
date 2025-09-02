@@ -9,9 +9,9 @@ import { Globe } from "lucide-react";
 import { useLanguage, Language } from "@/contexts/LanguageContext";
 
 const languages = [
-  { code: 'es' as Language, name: 'Español', flag: '🇪🇸' },
-  { code: 'ca' as Language, name: 'Català', flag: '🟨🔴' },
-  { code: 'en' as Language, name: 'English', flag: '🇬🇧' },
+  { code: 'es' as Language, name: 'Español' },
+  { code: 'ca' as Language, name: 'Català' },
+  { code: 'en' as Language, name: 'English' },
 ];
 
 export const LanguageSelector = () => {
@@ -23,8 +23,7 @@ export const LanguageSelector = () => {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm" className="gap-2">
           <Globe className="h-4 w-4" />
-          <span className="hidden sm:inline">{currentLanguage.flag} {currentLanguage.name}</span>
-          <span className="sm:hidden">{currentLanguage.flag}</span>
+          <span>{currentLanguage.name}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="bg-card border shadow-elegant">
@@ -34,7 +33,6 @@ export const LanguageSelector = () => {
             onClick={() => setCurrentLang(lang.code)}
             className="cursor-pointer hover:bg-accent/50 transition-smooth"
           >
-            <span className="mr-2">{lang.flag}</span>
             {lang.name}
           </DropdownMenuItem>
         ))}
