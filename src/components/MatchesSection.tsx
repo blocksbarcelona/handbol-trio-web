@@ -8,17 +8,17 @@ const translations = {
   es: {
     title: "Calendario",
     subtitle: "Sigue nuestros equipos en todas las categorías",
-    followUs: "Síguenos"
+    followUs: "Calendario y Partidos"
   },
   ca: {
     title: "Calendari",
     subtitle: "Segueix els nostres equips en totes les categories",
-    followUs: "Segueix-nos"
+    followUs: "Calendari i Partits"
   },
   en: {
     title: "Calendar",
     subtitle: "Follow our teams in all categories",
-    followUs: "Follow Us"
+    followUs: "Calendar and Matches"
   }
 };
 
