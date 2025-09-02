@@ -8,44 +8,23 @@ const translations = {
   es: {
     title: "Calendario",
     subtitle: "Sigue nuestros equipos en todas las categorías",
-    cadete: "Cadete Femenino - Primera Catalana",
-    infantil: "Infantil - Segona Catalana",
-    viewResults: "Ver Resultados y Clasificación"
+    followUs: "Síguenos"
   },
   ca: {
     title: "Calendari",
     subtitle: "Segueix els nostres equips en totes les categories",
-    cadete: "Cadet Femení - Primera Catalana",
-    infantil: "Infantil - Segona Catalana",
-    viewResults: "Veure Resultats i Classificació"
+    followUs: "Segueix-nos"
   },
   en: {
     title: "Calendar",
     subtitle: "Follow our teams in all categories",
-    cadete: "Cadete Femenino - Primera Catalana",
-    infantil: "Infantil - Segona Catalana",
-    viewResults: "View Results and Rankings"
+    followUs: "Follow Us"
   }
 };
 
 export const MatchesSection = () => {
   const { currentLang } = useLanguage();
   const t = translations[currentLang];
-
-  const competitions = [
-    {
-      id: 1,
-      name: t.cadete,
-      link: "https://resultadosbalonmano.isquad.es/competicion.php?seleccion=0&id_superficie=1&id=1031785&jornada=2&id_ambito=0",
-      category: "Cadete Femenino"
-    },
-    {
-      id: 2,
-      name: t.infantil,
-      link: "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=2549&id_competicion=209386&id_temp=2526&id_ambito=0&id_territorial=17",
-      category: "Infantil"
-    }
-  ];
 
   return (
     <section id="calendario" className="py-20">
@@ -59,28 +38,20 @@ export const MatchesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {competitions.map((competition) => (
-            <Card key={competition.id} className="card-gradient border-0 shadow-elegant transition-smooth hover:scale-105">
-              <CardHeader className="pb-4">
-                <CardTitle className="text-xl font-bold text-center">
-                  {competition.name}
-                </CardTitle>
-              </CardHeader>
-              
-              <CardContent className="text-center">
-                <Button 
-                  variant="hero" 
-                  size="lg" 
-                  className="w-full"
-                  onClick={() => window.open(competition.link, '_blank')}
-                >
-                  <Calendar className="mr-2 h-5 w-5" />
-                  {t.viewResults}
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="flex justify-center max-w-md mx-auto">
+          <Card className="card-gradient border-0 shadow-elegant transition-smooth hover:scale-105 w-full">
+            <CardContent className="text-center p-8">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="w-full"
+                onClick={() => window.open("https://resultadosbalonmano.isquad.es/competicion.php", '_blank')}
+              >
+                <Calendar className="mr-2 h-5 w-5" />
+                {t.followUs}
+              </Button>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
