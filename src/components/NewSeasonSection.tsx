@@ -6,14 +6,14 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const translations = {
   es: {
     title: "Nueva Temporada 2025-2026",
-    subtitle: "¡Únete a nuestra familia del handbol!",
-    description: "Estamos buscando nuevas jugadoras para formar parte de nuestro equipo. No importa tu nivel de experiencia, ¡el handbol te está esperando!",
+    subtitle: "¡Únete a nuestra familia del balonmano!",
+    description: "Estamos buscando nuevas jugadoras para formar parte de nuestro equipo. No importa tu nivel de experiencia, ¡el balonmano te está esperando!",
     tryFree: "Ven a probar sin compromiso",
     tryDescription: "Puedes venir a entrenar con nosotras sin ningún compromiso. Conoce el deporte, el equipo y decide si quieres formar parte de esta gran familia.",
     contact: "Contacta con el equipo",
     contactDescription: "Para más información y para organizar tu primera sesión de entrenamiento:",
     teamNeeds: "¡El equipo te necesita!",
-    teamDescription: "Cada nueva jugadora aporta energía, talento y pasión al equipo. Ven y descubre todo lo que el handbol puede ofrecerte.",
+    teamDescription: "Cada nueva jugadora aporta energía, talento y pasión al equipo. Ven y descubre todo lo que el balonmano puede ofrecerte.",
     joinNow: "Contactar Ahora",
     benefits: {
       title: "¿Qué te ofrecemos?",
