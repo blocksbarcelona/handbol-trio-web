@@ -51,10 +51,10 @@ export const Footer = () => {
             <div className="flex items-center space-x-2 mb-6">
               <img 
                 src="/lovable-uploads/53f49c1d-ccd0-4c7e-8190-8e749d720f4f.png" 
-                alt="Club Handbol Montbuí" 
+                alt="Club Handbol Montbui" 
                 className="h-12 w-12 object-contain bg-white rounded-lg p-1"
               />
-              <span className="font-bold text-2xl">Club Handbol Montbuí</span>
+              <span className="font-bold text-2xl">Club Handbol Montbui</span>
             </div>
           </div>
 
@@ -110,7 +110,7 @@ export const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-background/60 text-sm">
-              © {new Date().getFullYear()} Club Handbol Montbuí. {t.rights}
+              © {new Date().getFullYear()} Club Handbol Montbui. {t.rights}
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-background/60 hover:text-background transition-smooth">

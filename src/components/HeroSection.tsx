@@ -5,7 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const translations = {
   es: {
-    title: "Club Handbol Montbuí",
+    title: "Club Handbol Montbui",
     subtitle: "Pasión • Equipo • Victoria",
     description: "Únete a nuestro equipo de handbol y vive la emoción del deporte en equipo. Entrenamientos profesionales, competiciones de alto nivel y una gran familia deportiva te esperan.",
     joinTeam: "Únete al Equipo",
@@ -17,7 +17,7 @@ const translations = {
     }
   },
   ca: {
-    title: "Club Handbol Montbuí",
+    title: "Club Handbol Montbui",
     subtitle: "Passió • Equip • Victòria",
     description: "Uneix-te al nostre equip d'handbol i viu l'emoció de l'esport en equip. Entrenaments professionals, competicions d'alt nivell i una gran família esportiva t'esperen.",
     joinTeam: "Uneix-te a l'Equip",
@@ -29,7 +29,7 @@ const translations = {
     }
   },
   en: {
-    title: "Montbuí Handball Club",
+    title: "Montbui Handball Club",
     subtitle: "Passion • Team • Victory",
     description: "Join our handball team and experience the thrill of team sports. Professional training, high-level competitions, and a great sports family await you.",
     joinTeam: "Join the Team",

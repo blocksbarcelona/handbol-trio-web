@@ -45,10 +45,10 @@ export const Header = () => {
         <div className="flex items-center space-x-3">
           <img 
             src="/lovable-uploads/53f49c1d-ccd0-4c7e-8190-8e749d720f4f.png" 
-            alt="Club Handbol Montbuí" 
+            alt="Club Handbol Montbui" 
             className="h-12 w-12 object-contain"
           />
-          <span className="font-bold text-xl text-gradient">Club Handbol Montbuí</span>
+          <span className="font-bold text-xl text-gradient">Club Handbol Montbui</span>
         </div>
 
         {/* Desktop Navigation */}
