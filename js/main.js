@@ -104,4 +104,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         seasonYearsSpan.textContent = `${startYear}-${endYear}`;
     }
+
+    // Dynamic History Years Logic
+    const historyYearsSpan = document.getElementById('history-years');
+    if (historyYearsSpan) {
+        const currentYear = new Date().getFullYear();
+        const historyYears = currentYear - 2006;
+        historyYearsSpan.textContent = historyYears;
+    }
 });
