@@ -11,6 +11,22 @@ Web oficial del Club Handbol Montbui, desarrollada con HTML5, CSS3 y JavaScript 
 - `js/`: Lógica de la web (menú móvil, feed social)
 - `assets/`: Imágenes y recursos estáticos
 
-## Desarrollo
+## Últimas Actualizaciones (v1.1 - Noviembre 2025)
 
-Para visualizar la web localmente, simplemente abre el archivo `index.html` en tu navegador o utiliza un servidor local como Live Server.
+- **Optimización SEO**: Implementación completa de meta etiquetas, canonicals, hreflang y Open Graph.
+- **Datos Estructurados**: Añadido esquema JSON-LD para mejorar la indexación en Google.
+- **Sitemap y Robots**: Creación de `sitemap.xml` y `robots.txt` para guiar a los buscadores.
+- **GitHub Pages**: Configuración de dominio personalizado (`CNAME`) y página de error `404.html`.
+- **Analítica**: Integración de Google Analytics (GA4).
+
+## Licencia y Derechos de Uso
+
+**© 2025 Club Handbol Montbui. Todos los derechos reservados.**
+
+Este sitio web, incluyendo su diseño, código fuente, textos, imágenes y logotipos, es propiedad exclusiva del **Club Handbol Montbui**.
+
+Queda estrictamente prohibida la copia, reproducción, distribución, comunicación pública o transformación total o parcial de este proyecto sin la autorización previa y por escrito del titular de los derechos.
+
+---
+
+Web realizada por [uberleap.com](https://uberleap.com) - 2025
