@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentYearSpan) {
         currentYearSpan.textContent = new Date().getFullYear();
     }
-    // Dynamic Season Logic
+    // Dynamic Season Logic – rolls over on May 1st for recruitment
     const seasonYearsSpan = document.getElementById('season-years');
     if (seasonYearsSpan) {
         const now = new Date();
@@ -91,15 +91,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let startYear, endYear;
 
-        // If month is Jan(0) to July(6) -> < 7 (August is 7)
-        if (currentMonth < 7) {
-            // Jan - July: Season is (Current Year - 1) - Current Year
-            startYear = currentYear - 1;
-            endYear = currentYear;
-        } else {
-            // Aug - Dec: Season is Current Year - (Current Year + 1)
+        // From May (4) onwards → show NEXT season (recruitment period)
+        // Jan-Apr → show current season
+        if (currentMonth >= 4) {
+            // May - Dec: Next season
             startYear = currentYear;
             endYear = currentYear + 1;
+        } else {
+            // Jan - Apr: Current season
+            startYear = currentYear - 1;
+            endYear = currentYear;
         }
 
         seasonYearsSpan.textContent = `${startYear}-${endYear}`;
