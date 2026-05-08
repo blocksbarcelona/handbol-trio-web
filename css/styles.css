@@ -307,7 +307,7 @@ header {
 
 /* Sections */
 section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
 .section-title {
@@ -880,6 +880,49 @@ footer {
 .recruit-card--mirrored .recruit-card__season {
   right: auto;
   left: 1.25rem;
+}
+
+/* Features banner below cards */
+.recruit-features {
+  max-width: 1066px;
+  margin: 3rem auto 0;
+  background: #0d1b3e;
+  border-radius: 1.25rem;
+  padding: 2rem 2.5rem;
+  text-align: center;
+}
+
+.recruit-features__title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.25rem;
+}
+
+.recruit-features__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 2.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recruit-features__list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.recruit-features__list li::before {
+  content: '❤';
+  color: var(--secondary);
+  font-size: 0.85rem;
 }
 
 .recruitment-cta-strip {
