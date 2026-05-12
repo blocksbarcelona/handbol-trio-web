@@ -5,7 +5,7 @@ Web oficial del Club Handbol Montbui, desarrollada con HTML5, CSS3 y JavaScript 
 ## Estructura del Proyecto
 
 - `index.html`: Página principal (Español)
-- `ca.html`: Versión en Catalán
+- `index.html`: Versión en Catalán
 - `en.html`: Versión en Inglés
 - `css/styles.css`: Estilos principales y sistema de diseño
 - `js/`: Lógica de la web (menú móvil, feed social)

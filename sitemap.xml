@@ -9,18 +9,18 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://chmontbui.es/index.html"/>
-        <xhtml:link rel="alternate" hreflang="ca" href="https://chmontbui.es/ca.html"/>
+        <xhtml:link rel="alternate" hreflang="ca" href="https://chmontbui.es/index.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en.html"/>
     </url>
 
     <!-- Català -->
     <url>
-        <loc>https://chmontbui.es/ca.html</loc>
+        <loc>https://chmontbui.es/index.html</loc>
         <lastmod>2025-11-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://chmontbui.es/index.html"/>
-        <xhtml:link rel="alternate" hreflang="ca" href="https://chmontbui.es/ca.html"/>
+        <xhtml:link rel="alternate" hreflang="ca" href="https://chmontbui.es/index.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en.html"/>
     </url>
 
@@ -31,7 +31,7 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="es" href="https://chmontbui.es/index.html"/>
-        <xhtml:link rel="alternate" hreflang="ca" href="https://chmontbui.es/ca.html"/>
+        <xhtml:link rel="alternate" hreflang="ca" href="https://chmontbui.es/index.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en.html"/>
     </url>
 
