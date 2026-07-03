@@ -946,3 +946,259 @@ footer {
   font-size: 1.1rem;
   color: var(--foreground);
 }
+
+/* ─── Sponsorship Page Specific Styles ─────────── */
+.sponsor-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: var(--header-height);
+  background-color: #0d1b3e; /* Dark elegant background */
+  overflow: hidden;
+}
+
+.sponsor-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255, 51, 153, 0.15) 0%, transparent 60%);
+  z-index: 1;
+}
+
+.sponsor-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+.sponsor-hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  background: linear-gradient(to right, #ffffff, #f8f9fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sponsor-hero-title .highlight {
+  color: var(--secondary);
+  -webkit-text-fill-color: var(--secondary);
+}
+
+.sponsor-hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  color: #e2e8f0;
+}
+
+/* Stats Section */
+.stat-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-elegant);
+  border-bottom: 4px solid var(--primary);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card.stat-pink {
+  border-bottom-color: var(--secondary);
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-number.pink-text {
+  color: var(--secondary);
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: var(--muted-foreground);
+  font-weight: 500;
+}
+
+/* Budget Table/Cards */
+.budget-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .budget-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.budget-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: var(--muted);
+  border-radius: 0.75rem;
+  font-weight: 500;
+}
+
+.budget-amount {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+
+/* Sponsor Tiers */
+.tier-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-elegant);
+  position: relative;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tier-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.tier-card.featured {
+  background: #0d1b3e;
+  color: white;
+  border: none;
+  transform: scale(1.02);
+}
+
+.tier-card.featured:hover {
+  transform: scale(1.02) translateY(-8px);
+  box-shadow: 0 15px 40px rgba(13, 27, 62, 0.4);
+}
+
+.tier-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.tier-card.featured .tier-title {
+  color: #ffffff;
+}
+
+.tier-amount {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.tier-card.featured .tier-amount {
+  color: var(--secondary);
+}
+
+.tier-desc {
+  font-size: 1rem;
+  color: var(--muted-foreground);
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.tier-card.featured .tier-desc {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Return Benefits */
+.benefit-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.benefit-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--hero-gradient);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.benefit-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-desc {
+  color: var(--muted-foreground);
+}
+
+/* Progress Bar */
+.fund-progress-bg {
+  width: 100%;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.fund-progress-fill {
+  height: 100%;
+  background: var(--hero-gradient);
+  border-radius: 1rem;
+  transition: width 1s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional animated shine effect on progress bar */
+.fund-progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255, 0) 0%,
+    rgba(255,255,255, 0.3) 50%,
+    rgba(255,255,255, 0) 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
