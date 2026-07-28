@@ -1,0 +1,4391 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-07-28T15:55:27.095Z",
+  "timezone": "Europe/Madrid",
+  "clubName": "Club Handbol Montbui",
+  "status": "pending_confirmation",
+  "summary": {
+    "teams": 4,
+    "matches": 82,
+    "publishable": 0,
+    "pendingConfirmation": 82
+  },
+  "sourceStatus": [
+    {
+      "teamId": "senior-masculi-tercera-b",
+      "competitionTitle": "TERCERA CATALANA SÈNIOR MASCULINA - TERCERA CATALANA SÈNIOR MASCULINA - PRIMERA FASE - Grup B",
+      "fetchedAt": "2026-07-28T15:55:26.707Z",
+      "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+      "matchesFound": 18
+    },
+    {
+      "teamId": "senior-femeni-primera-a",
+      "competitionTitle": "PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA FASE - Grup A",
+      "fetchedAt": "2026-07-28T15:55:26.693Z",
+      "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+      "matchesFound": 30
+    },
+    {
+      "teamId": "juvenil-femeni-segona-unic",
+      "competitionTitle": "SEGONA CATALANA JUVENIL FEMENINA - SEGONA CATALANA JUVENIL FEMENINA - FASE UNICA - Grup Únic",
+      "fetchedAt": "2026-07-28T15:55:26.701Z",
+      "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+      "matchesFound": 18
+    },
+    {
+      "teamId": "cadet-femeni-segona-a",
+      "competitionTitle": "SEGONA CATALANA CADET FEMENINA - SEGONA CATALANA CADET FEMENINA - PRIMERA FASE - Grup A",
+      "fetchedAt": "2026-07-28T15:55:26.705Z",
+      "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+      "matchesFound": 16
+    }
+  ],
+  "matches": [
+    {
+      "key": "1-225827-225951",
+      "home": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "225951",
+        "name": "TARRAGONA HC"
+      },
+      "round": {
+        "number": 1,
+        "date": "2026-09-27",
+        "label": "JORNADA 1 (27-09-2026)"
+      },
+      "date": "2026-09-27",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "225951",
+        "name": "TARRAGONA HC"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "1-225826-202754",
+      "home": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "202754",
+        "name": "CEACA TÀRREGA"
+      },
+      "round": {
+        "number": 1,
+        "date": "2026-09-27",
+        "label": "JORNADA 1 (27-09-2026)"
+      },
+      "date": "2026-09-27",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "202754",
+        "name": "CEACA TÀRREGA"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "1-225825-204225",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "204225",
+        "name": "CHE-SANTS B"
+      },
+      "round": {
+        "number": 1,
+        "date": "2026-09-27",
+        "label": "JORNADA 1 (27-09-2026)"
+      },
+      "date": "2026-09-27",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "204225",
+        "name": "CHE-SANTS B"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "1-225824-219076",
+      "home": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "219076",
+        "name": "CH SALOU SENIOR MAS"
+      },
+      "round": {
+        "number": 1,
+        "date": "2026-09-27",
+        "label": "JORNADA 1 (27-09-2026)"
+      },
+      "date": "2026-09-27",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "219076",
+        "name": "CH SALOU SENIOR MAS"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "2-201988-225827",
+      "home": {
+        "id": "201988",
+        "name": "CEACA TARREGA"
+      },
+      "away": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 2,
+        "date": "2026-10-04",
+        "label": "JORNADA 2 (04-10-2026)"
+      },
+      "date": "2026-10-04",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "POLIESPORTIU MUNICIPAL DE TÀRREGA",
+        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=POLIESPORTIU%20MUNICIPAL%20DE%20T%C3%83%E2%82%ACRREGA,Carrer%20de%20Joan%20Brossa,%20s/n,%2025300%20T%C3%83%C2%A0rrega,%20Lleida,%20Espanya,%2025300"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "201988",
+        "name": "CEACA TARREGA"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "2-225977-225826",
+      "home": {
+        "id": "225977",
+        "name": "MOLINS de Q-HANDBOL MOLINS"
+      },
+      "away": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 2,
+        "date": "2026-10-04",
+        "label": "JORNADA 2 (04-10-2026)"
+      },
+      "date": "2026-10-04",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "POLIESPORTIU MUNICIPAL",
+        "mapsUrl": "https://www.google.com/maps/?q=41.4098218,2.021595100000013"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "225977",
+        "name": "MOLINS de Q-HANDBOL MOLINS"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "2-215382-225825",
+      "home": {
+        "id": "215382",
+        "name": "TARRAGONA HC"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 2,
+        "date": "2026-10-04",
+        "label": "JORNADA 2 (04-10-2026)"
+      },
+      "date": "2026-10-04",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "Pavelló Municipal de Sant Salvador Tarragona",
+        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=Pavell%C3%83%C2%B3%20Municipal%20de%20Sant%20Salvador%20Tarragona,Carrer%20Stadium,%2012,%2043130%20Tarragona,%20Espanya,%2043130"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "215382",
+        "name": "TARRAGONA HC"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "2-211125-225824",
+      "home": {
+        "id": "211125",
+        "name": "HANDBOL COOPERATIVA SANT BOI C"
+      },
+      "away": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 2,
+        "date": "2026-10-04",
+        "label": "JORNADA 2 (04-10-2026)"
+      },
+      "date": "2026-10-04",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "CEM PAU GASOL",
+        "mapsUrl": "https://www.google.com/maps/?q=41.3574715,2.02860110000006"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "211125",
+        "name": "HANDBOL COOPERATIVA SANT BOI C"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "3-225825-207140",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "207140",
+        "name": "CLUB HANDBOL VILANOVA I LA GELTRU"
+      },
+      "round": {
+        "number": 3,
+        "date": "2026-10-11",
+        "label": "JORNADA 3 (11-10-2026)"
+      },
+      "date": "2026-10-11",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "207140",
+        "name": "CLUB HANDBOL VILANOVA I LA GELTRU"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "3-225824-201833",
+      "home": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "201833",
+        "name": "B. M. PAU CASALS SABADELL"
+      },
+      "round": {
+        "number": 3,
+        "date": "2026-10-11",
+        "label": "JORNADA 3 (11-10-2026)"
+      },
+      "date": "2026-10-11",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "201833",
+        "name": "B. M. PAU CASALS SABADELL"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "3-225826-201616",
+      "home": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "201616",
+        "name": "C.H. RAPID CORNELLA"
+      },
+      "round": {
+        "number": 3,
+        "date": "2026-10-18",
+        "label": "JORNADA 3 (18-10-2026)"
+      },
+      "date": "2026-10-18",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "201616",
+        "name": "C.H. RAPID CORNELLA"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "4-222242-225825",
+      "home": {
+        "id": "222242",
+        "name": "AMICS H.C."
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 4,
+        "date": "2026-10-18",
+        "label": "JORNADA 4 (18-10-2026)"
+      },
+      "date": "2026-10-18",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "POLIESPORTIU JOSEP CANADELL I VECIANA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.1228321,1.1816045"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "222242",
+        "name": "AMICS H.C."
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "4-209512-225824",
+      "home": {
+        "id": "209512",
+        "name": "CLUB HANDBOL RIPOLLET"
+      },
+      "away": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 4,
+        "date": "2026-10-18",
+        "label": "JORNADA 4 (18-10-2026)"
+      },
+      "date": "2026-10-18",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PABELLON JOAN CREUS O ANEXA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5016431,2.1579815000000053"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "209512",
+        "name": "CLUB HANDBOL RIPOLLET"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "4-225827-202396",
+      "home": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "202396",
+        "name": "CLUB HANDBOL VILANOVA I LA GELTRU"
+      },
+      "round": {
+        "number": 4,
+        "date": "2026-10-25",
+        "label": "JORNADA 4 (25-10-2026)"
+      },
+      "date": "2026-10-25",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "202396",
+        "name": "CLUB HANDBOL VILANOVA I LA GELTRU"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "4-201938-225826",
+      "home": {
+        "id": "201938",
+        "name": "HANDBOL BERGA"
+      },
+      "away": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 4,
+        "date": "2026-10-25",
+        "label": "JORNADA 4 (25-10-2026)"
+      },
+      "date": "2026-10-25",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLÓ MUNICIPAL ZONA ESPORTIVA ANTONI SABATA",
+        "mapsUrl": "https://www.google.com/maps/?q=42.0978439,1.8482801000000109"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "201938",
+        "name": "HANDBOL BERGA"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "5-225825-215600",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "215600",
+        "name": "CEH VENDRELL-EVOLUTION TIME"
+      },
+      "round": {
+        "number": 5,
+        "date": "2026-10-25",
+        "label": "JORNADA 5 (25-10-2026)"
+      },
+      "date": "2026-10-25",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "215600",
+        "name": "CEH VENDRELL-EVOLUTION TIME"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "5-225824-209618",
+      "home": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "209618",
+        "name": "NUROIL CERDANYOLA JUNIOR"
+      },
+      "round": {
+        "number": 5,
+        "date": "2026-10-25",
+        "label": "JORNADA 5 (25-10-2026)"
+      },
+      "date": "2026-10-25",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "209618",
+        "name": "NUROIL CERDANYOLA JUNIOR"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "6-225867-225825",
+      "home": {
+        "id": "225867",
+        "name": "CH LA SALLE MONTCADA B"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 6,
+        "date": "2026-11-01",
+        "label": "JORNADA 6 (01-11-2026)"
+      },
+      "date": "2026-11-01",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "P. MUNICIPAL MIQUEL POBLET",
+        "mapsUrl": "https://www.google.com/maps/?q=41.49045226409987,2.1876520946899447"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "225867",
+        "name": "CH LA SALLE MONTCADA B"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "6-225711-225824",
+      "home": {
+        "id": "225711",
+        "name": "CEH VENDRELL-JUNIOR"
+      },
+      "away": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 6,
+        "date": "2026-11-01",
+        "label": "JORNADA 6 (01-11-2026)"
+      },
+      "date": "2026-11-01",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLO MUNICIPAL DEL VENDRELL",
+        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=PAVELLO%20MUNICIPAL%20DEL%20VENDRELL,Av.%20Camp%20d%27Esports,%2036-38,%2043700%20El%20Vendrell,%20Tarragona,%20Espanya,%2043700"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "225711",
+        "name": "CEH VENDRELL-JUNIOR"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "5-201460-225827",
+      "home": {
+        "id": "201460",
+        "name": "CH ASCO"
+      },
+      "away": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 5,
+        "date": "2026-11-08",
+        "label": "JORNADA 5 (08-11-2026)"
+      },
+      "date": "2026-11-08",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLO MUNICIPAL",
+        "mapsUrl": "https://www.google.com/maps/?q=41.1854382,0.568237100000033"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "201460",
+        "name": "CH ASCO"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "5-225826-215734",
+      "home": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "215734",
+        "name": "CH MONTORNES"
+      },
+      "round": {
+        "number": 5,
+        "date": "2026-11-08",
+        "label": "JORNADA 5 (08-11-2026)"
+      },
+      "date": "2026-11-08",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "215734",
+        "name": "CH MONTORNES"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "7-225825-222407",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "222407",
+        "name": "HANDBOL CLARET - GRACIA"
+      },
+      "round": {
+        "number": 7,
+        "date": "2026-11-08",
+        "label": "JORNADA 7 (08-11-2026)"
+      },
+      "date": "2026-11-08",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "222407",
+        "name": "HANDBOL CLARET - GRACIA"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "7-225824-201878",
+      "home": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "201878",
+        "name": "CH SANT ANDREU DE LA BARCA B"
+      },
+      "round": {
+        "number": 7,
+        "date": "2026-11-08",
+        "label": "JORNADA 7 (08-11-2026)"
+      },
+      "date": "2026-11-08",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "201878",
+        "name": "CH SANT ANDREU DE LA BARCA B"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "6-225827-225720",
+      "home": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "225720",
+        "name": "HANDBOL AGRAMUNT"
+      },
+      "round": {
+        "number": 6,
+        "date": "2026-11-15",
+        "label": "JORNADA 6 (15-11-2026)"
+      },
+      "date": "2026-11-15",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "225720",
+        "name": "HANDBOL AGRAMUNT"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "6-225273-225826",
+      "home": {
+        "id": "225273",
+        "name": "CH PARETS"
+      },
+      "away": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 6,
+        "date": "2026-11-15",
+        "label": "JORNADA 6 (15-11-2026)"
+      },
+      "date": "2026-11-15",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PABELLON JOAQUIM RODRIGUEZ",
+        "mapsUrl": "https://www.google.com/maps/?q=41.570539598500396,2.2355685370483336"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "225273",
+        "name": "CH PARETS"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "8-208298-225825",
+      "home": {
+        "id": "208298",
+        "name": "CLUB HANDBOL SANT LLORENÇ"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 8,
+        "date": "2026-11-15",
+        "label": "JORNADA 8 (15-11-2026)"
+      },
+      "date": "2026-11-15",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLÓ MUNICIPAL ANDREY XEPKIN",
+        "mapsUrl": "https://www.google.com/maps/?q=41.3912533,2.0415484999999762"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "208298",
+        "name": "CLUB HANDBOL SANT LLORENÇ"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "8-225824-215583",
+      "home": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "215583",
+        "name": "HANDBOL GAVA (C)"
+      },
+      "round": {
+        "number": 8,
+        "date": "2026-11-15",
+        "label": "JORNADA 8 (15-11-2026)"
+      },
+      "date": "2026-11-15",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "215583",
+        "name": "HANDBOL GAVA (C)"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "7-222367-225827",
+      "home": {
+        "id": "222367",
+        "name": "MGC MUTUA HANDBOL RIBES TRUE NORTH CANADA"
+      },
+      "away": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 7,
+        "date": "2026-11-22",
+        "label": "JORNADA 7 (22-11-2026)"
+      },
+      "date": "2026-11-22",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLó MUNICIPAL SANT PERE DE RIBES",
+        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=PAVELL%C3%83%C2%B3%20MUNICIPAL%20SANT%20PERE%20DE%20RIBES,Carrer%20Crist%C3%83%C2%B2fol%20Mestres,%2072,%2008810%20Sant%20Pere%20de%20Ribes,%20Barcelona,%20Espa%C3%83%C2%B1a,%2008810"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "222367",
+        "name": "MGC MUTUA HANDBOL RIBES TRUE NORTH CANADA"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "7-225826-222505",
+      "home": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "222505",
+        "name": "CLUB HANDBOL ALCARRAS"
+      },
+      "round": {
+        "number": 7,
+        "date": "2026-11-22",
+        "label": "JORNADA 7 (22-11-2026)"
+      },
+      "date": "2026-11-22",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "222505",
+        "name": "CLUB HANDBOL ALCARRAS"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "9-225825-215285",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "215285",
+        "name": "MOLINS de Q-HANDBOL MOLINS"
+      },
+      "round": {
+        "number": 9,
+        "date": "2026-11-22",
+        "label": "JORNADA 9 (22-11-2026)"
+      },
+      "date": "2026-11-22",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "215285",
+        "name": "MOLINS de Q-HANDBOL MOLINS"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "9-201861-225824",
+      "home": {
+        "id": "201861",
+        "name": "BM BARBERÀ 'B'"
+      },
+      "away": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 9,
+        "date": "2026-11-22",
+        "label": "JORNADA 9 (22-11-2026)"
+      },
+      "date": "2026-11-22",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "IEM ELISA BADIA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5128265,2.1238063000000693"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "201861",
+        "name": "BM BARBERÀ 'B'"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "8-225827-204131",
+      "home": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "204131",
+        "name": "HANDBOL BERGA"
+      },
+      "round": {
+        "number": 8,
+        "date": "2026-11-29",
+        "label": "JORNADA 8 (29-11-2026)"
+      },
+      "date": "2026-11-29",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "204131",
+        "name": "HANDBOL BERGA"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "8-225826-225689",
+      "home": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "225689",
+        "name": "HANDBOL TERRASSA - CREU ALTA SABADELL"
+      },
+      "round": {
+        "number": 8,
+        "date": "2026-11-29",
+        "label": "JORNADA 8 (29-11-2026)"
+      },
+      "date": "2026-11-29",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "225689",
+        "name": "HANDBOL TERRASSA - CREU ALTA SABADELL"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "10-222437-225825",
+      "home": {
+        "id": "222437",
+        "name": "CH. SANT ESTEVE SESROVIRES-B"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 10,
+        "date": "2026-11-29",
+        "label": "JORNADA 10 (29-11-2026)"
+      },
+      "date": "2026-11-29",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "Pavelló Poliesportiu Municipal",
+        "mapsUrl": "https://www.google.com/maps/?q=41.496244,1.8722860999999966"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "222437",
+        "name": "CH. SANT ESTEVE SESROVIRES-B"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "10-219076-225824",
+      "home": {
+        "id": "219076",
+        "name": "CH SALOU SENIOR MAS"
+      },
+      "away": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 10,
+        "date": "2026-11-29",
+        "label": "JORNADA 10 (29-11-2026)"
+      },
+      "date": "2026-11-29",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "Pavelló de Ponent Salou",
+        "mapsUrl": "https://www.google.com/maps/?q=41.0839718,1.1271423000000595"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "219076",
+        "name": "CH SALOU SENIOR MAS"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "9-225717-225827",
+      "home": {
+        "id": "225717",
+        "name": "CLUB HANDBOL ALCARRÀS"
+      },
+      "away": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 9,
+        "date": "2026-12-13",
+        "label": "JORNADA 9 (13-12-2026)"
+      },
+      "date": "2026-12-13",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLó POLIESPORTIU ANDREU AIXALà",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5662724,0.5216381999999999"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "225717",
+        "name": "CLUB HANDBOL ALCARRÀS"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "9-210119-225826",
+      "home": {
+        "id": "210119",
+        "name": "CLUB HANDBOL SANT LLORENÇ"
+      },
+      "away": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 9,
+        "date": "2026-12-13",
+        "label": "JORNADA 9 (13-12-2026)"
+      },
+      "date": "2026-12-13",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLÓ MUNICIPAL ANDREY XEPKIN",
+        "mapsUrl": "https://www.google.com/maps/?q=41.3912533,2.0415484999999762"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "210119",
+        "name": "CLUB HANDBOL SANT LLORENÇ"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "11-225825-201445",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "201445",
+        "name": "HC PERELLO"
+      },
+      "round": {
+        "number": 11,
+        "date": "2026-12-13",
+        "label": "JORNADA 11 (13-12-2026)"
+      },
+      "date": "2026-12-13",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "201445",
+        "name": "HC PERELLO"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "11-225824-211125",
+      "home": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "211125",
+        "name": "HANDBOL COOPERATIVA SANT BOI C"
+      },
+      "round": {
+        "number": 11,
+        "date": "2026-12-13",
+        "label": "JORNADA 11 (13-12-2026)"
+      },
+      "date": "2026-12-13",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "211125",
+        "name": "HANDBOL COOPERATIVA SANT BOI C"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "10-225951-225827",
+      "home": {
+        "id": "225951",
+        "name": "TARRAGONA HC"
+      },
+      "away": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 10,
+        "date": "2026-12-20",
+        "label": "JORNADA 10 (20-12-2026)"
+      },
+      "date": "2026-12-20",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "Pavelló Municipal de Sant Salvador Tarragona",
+        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=Pavell%C3%83%C2%B3%20Municipal%20de%20Sant%20Salvador%20Tarragona,Carrer%20Stadium,%2012,%2043130%20Tarragona,%20Espanya,%2043130"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "225951",
+        "name": "TARRAGONA HC"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "10-202754-225826",
+      "home": {
+        "id": "202754",
+        "name": "CEACA TÀRREGA"
+      },
+      "away": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 10,
+        "date": "2026-12-20",
+        "label": "JORNADA 10 (20-12-2026)"
+      },
+      "date": "2026-12-20",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "POLIESPORTIU MUNICIPAL DE TÀRREGA",
+        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=POLIESPORTIU%20MUNICIPAL%20DE%20T%C3%83%E2%82%ACRREGA,Carrer%20de%20Joan%20Brossa,%20s/n,%2025300%20T%C3%83%C2%A0rrega,%20Lleida,%20Espanya,%2025300"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "202754",
+        "name": "CEACA TÀRREGA"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "12-201610-225825",
+      "home": {
+        "id": "201610",
+        "name": "C.HRAPID CORNELLA"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 12,
+        "date": "2026-12-20",
+        "label": "JORNADA 12 (20-12-2026)"
+      },
+      "date": "2026-12-20",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLO SANT ILDEFONS (CORNELLA LLOBREGAT)",
+        "mapsUrl": "https://www.google.com/maps/?q=40.4167754,3.7037901999999576"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "201610",
+        "name": "C.HRAPID CORNELLA"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "12-201833-225824",
+      "home": {
+        "id": "201833",
+        "name": "B. M. PAU CASALS SABADELL"
+      },
+      "away": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 12,
+        "date": "2026-12-20",
+        "label": "JORNADA 12 (20-12-2026)"
+      },
+      "date": "2026-12-20",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLÓ NORD",
+        "mapsUrl": "https://www.google.com/maps/?q=41.568644,2.0919834000000037"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "201833",
+        "name": "B. M. PAU CASALS SABADELL"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "13-225825-217518",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "217518",
+        "name": "CH SANT ANDREU DE LA BARCA"
+      },
+      "round": {
+        "number": 13,
+        "date": "2027-01-10",
+        "label": "JORNADA 13 (10-01-2027)"
+      },
+      "date": "2027-01-10",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "217518",
+        "name": "CH SANT ANDREU DE LA BARCA"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "13-225824-209512",
+      "home": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "209512",
+        "name": "CLUB HANDBOL RIPOLLET"
+      },
+      "round": {
+        "number": 13,
+        "date": "2027-01-10",
+        "label": "JORNADA 13 (10-01-2027)"
+      },
+      "date": "2027-01-10",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "209512",
+        "name": "CLUB HANDBOL RIPOLLET"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "11-225827-201988",
+      "home": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "201988",
+        "name": "CEACA TARREGA"
+      },
+      "round": {
+        "number": 11,
+        "date": "2027-01-17",
+        "label": "JORNADA 11 (17-01-2027)"
+      },
+      "date": "2027-01-17",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "201988",
+        "name": "CEACA TARREGA"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "11-225826-225977",
+      "home": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "225977",
+        "name": "MOLINS de Q-HANDBOL MOLINS"
+      },
+      "round": {
+        "number": 11,
+        "date": "2027-01-17",
+        "label": "JORNADA 11 (17-01-2027)"
+      },
+      "date": "2027-01-17",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "225977",
+        "name": "MOLINS de Q-HANDBOL MOLINS"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "14-225825-222447",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "222447",
+        "name": "CLUB HANDBOL SANT ANDREU"
+      },
+      "round": {
+        "number": 14,
+        "date": "2027-01-17",
+        "label": "JORNADA 14 (17-01-2027)"
+      },
+      "date": "2027-01-17",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "222447",
+        "name": "CLUB HANDBOL SANT ANDREU"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "14-209618-225824",
+      "home": {
+        "id": "209618",
+        "name": "NUROIL CERDANYOLA JUNIOR"
+      },
+      "away": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 14,
+        "date": "2027-01-17",
+        "label": "JORNADA 14 (17-01-2027)"
+      },
+      "date": "2027-01-17",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PEM GUIERA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.4846863,2.1385047"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "209618",
+        "name": "NUROIL CERDANYOLA JUNIOR"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "12-201616-225826",
+      "home": {
+        "id": "201616",
+        "name": "C.H. RAPID CORNELLA"
+      },
+      "away": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 12,
+        "date": "2027-01-24",
+        "label": "JORNADA 12 (24-01-2027)"
+      },
+      "date": "2027-01-24",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLO SANT ILDEFONS (CORNELLA LLOBREGAT)",
+        "mapsUrl": "https://www.google.com/maps/?q=40.4167754,3.7037901999999576"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "201616",
+        "name": "C.H. RAPID CORNELLA"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "15-219208-225825",
+      "home": {
+        "id": "219208",
+        "name": "C.E. TORTOSA-BIGMAT MAYOR"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 15,
+        "date": "2027-01-24",
+        "label": "JORNADA 15 (24-01-2027)"
+      },
+      "date": "2027-01-24",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLÓ DE FERRERIES",
+        "mapsUrl": "https://www.google.com/maps/?q=40.8121699,0.5144894000000022"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "219208",
+        "name": "C.E. TORTOSA-BIGMAT MAYOR"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "15-225824-225711",
+      "home": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "225711",
+        "name": "CEH VENDRELL-JUNIOR"
+      },
+      "round": {
+        "number": 15,
+        "date": "2027-01-24",
+        "label": "JORNADA 15 (24-01-2027)"
+      },
+      "date": "2027-01-24",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "225711",
+        "name": "CEH VENDRELL-JUNIOR"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "13-202396-225827",
+      "home": {
+        "id": "202396",
+        "name": "CLUB HANDBOL VILANOVA I LA GELTRU"
+      },
+      "away": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 13,
+        "date": "2027-01-31",
+        "label": "JORNADA 13 (31-01-2027)"
+      },
+      "date": "2027-01-31",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "CEM ISSAC GALVEZ",
+        "mapsUrl": "https://www.google.com/maps/?q=41.2312669,1.7302344"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "202396",
+        "name": "CLUB HANDBOL VILANOVA I LA GELTRU"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "13-225826-201938",
+      "home": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "201938",
+        "name": "HANDBOL BERGA"
+      },
+      "round": {
+        "number": 13,
+        "date": "2027-01-31",
+        "label": "JORNADA 13 (31-01-2027)"
+      },
+      "date": "2027-01-31",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "201938",
+        "name": "HANDBOL BERGA"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "16-204225-225825",
+      "home": {
+        "id": "204225",
+        "name": "CHE-SANTS B"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 16,
+        "date": "2027-01-31",
+        "label": "JORNADA 16 (31-01-2027)"
+      },
+      "date": "2027-01-31",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "Poliesportiu Municipal l'Espanya Industrial",
+        "mapsUrl": "https://www.google.com/maps/?q=41.3766364,2.142307100000039"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "204225",
+        "name": "CHE-SANTS B"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "16-201878-225824",
+      "home": {
+        "id": "201878",
+        "name": "CH SANT ANDREU DE LA BARCA B"
+      },
+      "away": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 16,
+        "date": "2027-01-31",
+        "label": "JORNADA 16 (31-01-2027)"
+      },
+      "date": "2027-01-31",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "COMPLEX ESPORTIU L'ONZE",
+        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=COMPLEX%20ESPORTIU%20L%27ONZE,Carrer%20de%20Bonaventura%20Pedemonte,%2013,%2008740%20Sant%20Andreu%20de%20la%20Barca,%20Barcelona,%20Espa%C3%83%C2%B1a,%2008740"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "201878",
+        "name": "CH SANT ANDREU DE LA BARCA B"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "14-225827-201460",
+      "home": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "201460",
+        "name": "CH ASCO"
+      },
+      "round": {
+        "number": 14,
+        "date": "2027-02-07",
+        "label": "JORNADA 14 (07-02-2027)"
+      },
+      "date": "2027-02-07",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "201460",
+        "name": "CH ASCO"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "14-215734-225826",
+      "home": {
+        "id": "215734",
+        "name": "CH MONTORNES"
+      },
+      "away": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 14,
+        "date": "2027-02-07",
+        "label": "JORNADA 14 (07-02-2027)"
+      },
+      "date": "2027-02-07",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "CARPA POLIVALENT EL SORRALET",
+        "mapsUrl": "https://www.google.com/maps/?q=41.54640983796506,2.2669576675285352"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "215734",
+        "name": "CH MONTORNES"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "17-225825-215382",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "215382",
+        "name": "TARRAGONA HC"
+      },
+      "round": {
+        "number": 17,
+        "date": "2027-02-07",
+        "label": "JORNADA 17 (07-02-2027)"
+      },
+      "date": "2027-02-07",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "215382",
+        "name": "TARRAGONA HC"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "17-215583-225824",
+      "home": {
+        "id": "215583",
+        "name": "HANDBOL GAVA (C)"
+      },
+      "away": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 17,
+        "date": "2027-02-07",
+        "label": "JORNADA 17 (07-02-2027)"
+      },
+      "date": "2027-02-07",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "JACME MARCH",
+        "mapsUrl": "https://www.google.com/maps/?q=41.30347,1.9972400000000334"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "215583",
+        "name": "HANDBOL GAVA (C)"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "18-207140-225825",
+      "home": {
+        "id": "207140",
+        "name": "CLUB HANDBOL VILANOVA I LA GELTRU"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 18,
+        "date": "2027-02-14",
+        "label": "JORNADA 18 (14-02-2027)"
+      },
+      "date": "2027-02-14",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "CEM ISSAC GALVEZ",
+        "mapsUrl": "https://www.google.com/maps/?q=41.2312669,1.7302344"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "207140",
+        "name": "CLUB HANDBOL VILANOVA I LA GELTRU"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "18-225824-201861",
+      "home": {
+        "id": "225824",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "201861",
+        "name": "BM BARBERÀ 'B'"
+      },
+      "round": {
+        "number": 18,
+        "date": "2027-02-14",
+        "label": "JORNADA 18 (14-02-2027)"
+      },
+      "date": "2027-02-14",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-masculi-tercera-b",
+        "label": "Sènior masculí",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "201861",
+        "name": "BM BARBERÀ 'B'"
+      },
+      "competition": {
+        "category": "SÈNIOR MASCULÍ",
+        "name": "TERCERA CATALANA SÈNIOR MASCULINA",
+        "phase": "PRIMERA FASE - Grup B",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3077",
+        "competitionId": "211809",
+        "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "15-225720-225827",
+      "home": {
+        "id": "225720",
+        "name": "HANDBOL AGRAMUNT"
+      },
+      "away": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 15,
+        "date": "2027-02-21",
+        "label": "JORNADA 15 (21-02-2027)"
+      },
+      "date": "2027-02-21",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLO MUNICIPAL D'AGRAMUNT",
+        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=PAVELLO%20MUNICIPAL%20D%27AGRAMUNT,PLA%C3%A7A%20DE%20LA%20FONDANDANA,%20AGRAMUNT,%20URGEL,%20CATALU%C3%B1A,%2025310,%20ESPA%C3%B1A,%2025310"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "225720",
+        "name": "HANDBOL AGRAMUNT"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "15-225826-225273",
+      "home": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "225273",
+        "name": "CH PARETS"
+      },
+      "round": {
+        "number": 15,
+        "date": "2027-02-21",
+        "label": "JORNADA 15 (21-02-2027)"
+      },
+      "date": "2027-02-21",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "225273",
+        "name": "CH PARETS"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "19-225825-222242",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "222242",
+        "name": "AMICS H.C."
+      },
+      "round": {
+        "number": 19,
+        "date": "2027-02-21",
+        "label": "JORNADA 19 (21-02-2027)"
+      },
+      "date": "2027-02-21",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "222242",
+        "name": "AMICS H.C."
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "16-225827-222367",
+      "home": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "222367",
+        "name": "MGC MUTUA HANDBOL RIBES TRUE NORTH CANADA"
+      },
+      "round": {
+        "number": 16,
+        "date": "2027-02-28",
+        "label": "JORNADA 16 (28-02-2027)"
+      },
+      "date": "2027-02-28",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "222367",
+        "name": "MGC MUTUA HANDBOL RIBES TRUE NORTH CANADA"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "16-222505-225826",
+      "home": {
+        "id": "222505",
+        "name": "CLUB HANDBOL ALCARRAS"
+      },
+      "away": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 16,
+        "date": "2027-02-28",
+        "label": "JORNADA 16 (28-02-2027)"
+      },
+      "date": "2027-02-28",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLO MUNICIPAL ANDREU AIXALA D\\'ALCARRAS",
+        "mapsUrl": "https://www.google.com/maps/?q=41.567833605124214,0.5221926448787517"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "222505",
+        "name": "CLUB HANDBOL ALCARRAS"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "20-215600-225825",
+      "home": {
+        "id": "215600",
+        "name": "CEH VENDRELL-EVOLUTION TIME"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 20,
+        "date": "2027-02-28",
+        "label": "JORNADA 20 (28-02-2027)"
+      },
+      "date": "2027-02-28",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLO MUNICIPAL DEL VENDRELL",
+        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=PAVELLO%20MUNICIPAL%20DEL%20VENDRELL,Av.%20Camp%20d%27Esports,%2036-38,%2043700%20El%20Vendrell,%20Tarragona,%20Espanya,%2043700"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "215600",
+        "name": "CEH VENDRELL-EVOLUTION TIME"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "17-204131-225827",
+      "home": {
+        "id": "204131",
+        "name": "HANDBOL BERGA"
+      },
+      "away": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 17,
+        "date": "2027-03-07",
+        "label": "JORNADA 17 (07-03-2027)"
+      },
+      "date": "2027-03-07",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "Zona esportiva Antoni Sabata",
+        "mapsUrl": "https://www.google.com/maps/?q=42.09810790208299,1.8490008142944347"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "204131",
+        "name": "HANDBOL BERGA"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "17-225689-225826",
+      "home": {
+        "id": "225689",
+        "name": "HANDBOL TERRASSA - CREU ALTA SABADELL"
+      },
+      "away": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 17,
+        "date": "2027-03-07",
+        "label": "JORNADA 17 (07-03-2027)"
+      },
+      "date": "2027-03-07",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLÓ MUNICIPAL CAN JOFRESA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5475355,2.022139100000004"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "225689",
+        "name": "HANDBOL TERRASSA - CREU ALTA SABADELL"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "21-225825-225867",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "225867",
+        "name": "CH LA SALLE MONTCADA B"
+      },
+      "round": {
+        "number": 21,
+        "date": "2027-03-07",
+        "label": "JORNADA 21 (07-03-2027)"
+      },
+      "date": "2027-03-07",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "225867",
+        "name": "CH LA SALLE MONTCADA B"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "18-225827-225717",
+      "home": {
+        "id": "225827",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "225717",
+        "name": "CLUB HANDBOL ALCARRÀS"
+      },
+      "round": {
+        "number": 18,
+        "date": "2027-03-14",
+        "label": "JORNADA 18 (14-03-2027)"
+      },
+      "date": "2027-03-14",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "cadet-femeni-segona-a",
+        "label": "Cadet femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "225717",
+        "name": "CLUB HANDBOL ALCARRÀS"
+      },
+      "competition": {
+        "category": "CADET FEMENÍ",
+        "name": "SEGONA CATALANA CADET FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3080",
+        "competitionId": "211817",
+        "tournamentId": "1038697"
+      }
+    },
+    {
+      "key": "18-225826-210119",
+      "home": {
+        "id": "225826",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "210119",
+        "name": "CLUB HANDBOL SANT LLORENÇ"
+      },
+      "round": {
+        "number": 18,
+        "date": "2027-03-14",
+        "label": "JORNADA 18 (14-03-2027)"
+      },
+      "date": "2027-03-14",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "juvenil-femeni-segona-unic",
+        "label": "Juvenil femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "210119",
+        "name": "CLUB HANDBOL SANT LLORENÇ"
+      },
+      "competition": {
+        "category": "JUVENIL FEMENÍ",
+        "name": "SEGONA CATALANA JUVENIL FEMENINA",
+        "phase": "FASE UNICA - Grup Únic",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3078",
+        "competitionId": "211814",
+        "tournamentId": "1038691"
+      }
+    },
+    {
+      "key": "22-222407-225825",
+      "home": {
+        "id": "222407",
+        "name": "HANDBOL CLARET - GRACIA"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 22,
+        "date": "2027-03-14",
+        "label": "JORNADA 22 (14-03-2027)"
+      },
+      "date": "2027-03-14",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "COMPLEX ESPORTIU LA VERNEDA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.4252213,2.2044464000000517"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "222407",
+        "name": "HANDBOL CLARET - GRACIA"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "23-225825-208298",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "208298",
+        "name": "CLUB HANDBOL SANT LLORENÇ"
+      },
+      "round": {
+        "number": 23,
+        "date": "2027-03-21",
+        "label": "JORNADA 23 (21-03-2027)"
+      },
+      "date": "2027-03-21",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "208298",
+        "name": "CLUB HANDBOL SANT LLORENÇ"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "24-215285-225825",
+      "home": {
+        "id": "215285",
+        "name": "MOLINS de Q-HANDBOL MOLINS"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 24,
+        "date": "2027-04-04",
+        "label": "JORNADA 24 (04-04-2027)"
+      },
+      "date": "2027-04-04",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "POLIESPORTIU MUNICIPAL",
+        "mapsUrl": "https://www.google.com/maps/?q=41.4098218,2.021595100000013"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "215285",
+        "name": "MOLINS de Q-HANDBOL MOLINS"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "25-225825-222437",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "222437",
+        "name": "CH. SANT ESTEVE SESROVIRES-B"
+      },
+      "round": {
+        "number": 25,
+        "date": "2027-04-11",
+        "label": "JORNADA 25 (11-04-2027)"
+      },
+      "date": "2027-04-11",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "222437",
+        "name": "CH. SANT ESTEVE SESROVIRES-B"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "26-201445-225825",
+      "home": {
+        "id": "201445",
+        "name": "HC PERELLO"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 26,
+        "date": "2027-04-18",
+        "label": "JORNADA 26 (18-04-2027)"
+      },
+      "date": "2027-04-18",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "PAVELLO MUNICIPAL EL PERELLO",
+        "mapsUrl": "https://www.google.com/maps/?q=40.4167754,3.7037901999999576"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "201445",
+        "name": "HC PERELLO"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "27-225825-201610",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "201610",
+        "name": "C.HRAPID CORNELLA"
+      },
+      "round": {
+        "number": 27,
+        "date": "2027-04-25",
+        "label": "JORNADA 27 (25-04-2027)"
+      },
+      "date": "2027-04-25",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "201610",
+        "name": "C.HRAPID CORNELLA"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "28-217518-225825",
+      "home": {
+        "id": "217518",
+        "name": "CH SANT ANDREU DE LA BARCA"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 28,
+        "date": "2027-05-02",
+        "label": "JORNADA 28 (02-05-2027)"
+      },
+      "date": "2027-05-02",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "COMPLEX ESPORTIU L'ONZE",
+        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=COMPLEX%20ESPORTIU%20L%27ONZE,Carrer%20de%20Bonaventura%20Pedemonte,%2013,%2008740%20Sant%20Andreu%20de%20la%20Barca,%20Barcelona,%20Espa%C3%83%C2%B1a,%2008740"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "217518",
+        "name": "CH SANT ANDREU DE LA BARCA"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "29-222447-225825",
+      "home": {
+        "id": "222447",
+        "name": "CLUB HANDBOL SANT ANDREU"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 29,
+        "date": "2027-05-09",
+        "label": "JORNADA 29 (09-05-2027)"
+      },
+      "date": "2027-05-09",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "Poliesportiu Camp del Ferro",
+        "mapsUrl": "https://www.google.com/maps/?q=41.4277446,2.1935359"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "222447",
+        "name": "CLUB HANDBOL SANT ANDREU"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
+      "key": "30-225825-219208",
+      "home": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "away": {
+        "id": "219208",
+        "name": "C.E. TORTOSA-BIGMAT MAYOR"
+      },
+      "round": {
+        "number": 30,
+        "date": "2027-05-16",
+        "label": "JORNADA 30 (16-05-2027)"
+      },
+      "date": "2027-05-16",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": null,
+      "venue": {
+        "name": "MONT-AQUA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
+        "iSquad todavía no muestra una hora válida"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": true
+      },
+      "opponent": {
+        "id": "219208",
+        "name": "C.E. TORTOSA-BIGMAT MAYOR"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    }
+  ]
+}
