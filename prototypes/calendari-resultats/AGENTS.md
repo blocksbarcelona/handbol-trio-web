@@ -20,4 +20,6 @@ Calendar navigation must stop at the real boundaries: do not show a previous arr
 
 The top-level `Calendari` navigation item must open a dedicated calendar view. That dedicated view keeps the site header and calendar/results experience, but must not show the photographic Club Handbol Montbui homepage hero, recruitment, team, Actualitat, contact, or footer content. The `Inici` view remains the complete homepage and includes the same calendar experience between the compact Club Handbol Montbui hero and the 2026–2027 recruitment section.
 
+The main calendar heading must state the season explicitly: `Temporada 2026-2027`, translated together with the rest of the interface.
+
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.

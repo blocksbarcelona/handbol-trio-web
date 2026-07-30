@@ -42,7 +42,7 @@ const copy = {
     history: "Anys d’història",
     victories: "Victòries",
     season: "TEMPORADA 2026/27",
-    calendarTitle: "Calendari i resultats",
+    calendarTitle: "Calendari i resultats · Temporada 2026-2027",
     calendarSubtitle: "Tots els partits programats dels equips del club.",
     sourceNotice: "Dades reals d’iSquad. El dia i l’hora exactes s’actualitzen quan la federació els confirma.",
     updated: "Actualitzat",
@@ -121,7 +121,7 @@ const copy = {
     history: "Años de historia",
     victories: "Victorias",
     season: "TEMPORADA 2026/27",
-    calendarTitle: "Calendario y resultados",
+    calendarTitle: "Calendario y resultados · Temporada 2026-2027",
     calendarSubtitle: "Todos los partidos programados de los equipos del club.",
     sourceNotice: "Datos reales de iSquad. El día y la hora exactos se actualizan cuando la federación los confirma.",
     updated: "Actualizado",
@@ -200,7 +200,7 @@ const copy = {
     history: "Years of history",
     victories: "Victories",
     season: "2026/27 SEASON",
-    calendarTitle: "Calendar and results",
+    calendarTitle: "Calendar and results · 2026-2027 season",
     calendarSubtitle: "Every scheduled match for all club teams.",
     sourceNotice: "Live iSquad data. The exact day and time are updated when confirmed by the federation.",
     updated: "Updated",
@@ -903,7 +903,6 @@ export function App() {
         <div className="calendar-area" id={pageView === "calendar" ? "calendari-main" : "home-calendar"}>
           <section className="calendar-intro" aria-labelledby="calendar-title">
             <div>
-              <p>{t.season}</p>
               <h2 id="calendar-title">{t.calendarTitle}</h2>
               <span>{t.calendarSubtitle}</span>
             </div>
