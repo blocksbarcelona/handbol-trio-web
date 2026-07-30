@@ -212,7 +212,6 @@ a {
 
 .home-hero-content h1,
 .home-hero-season {
-  font-size: clamp(42px, 4.2vw, 58px);
   font-weight: 750;
   line-height: 1.05;
   letter-spacing: -0.04em;
@@ -221,10 +220,12 @@ a {
 
 .home-hero-content h1 {
   margin: 0;
+  font-size: clamp(42px, 4.2vw, 58px);
 }
 
 .home-hero-season {
   margin: 9px 0 0;
+  font-size: clamp(33.6px, 3.36vw, 46.4px);
 }
 
 .home-hero-kicker {
@@ -1903,7 +1904,14 @@ main {
   .home-hero-content h1,
   .home-hero-season {
     max-width: 350px;
+  }
+
+  .home-hero-content h1 {
     font-size: 39px;
+  }
+
+  .home-hero-season {
+    font-size: 31.2px;
   }
 
   .home-hero-kicker {
