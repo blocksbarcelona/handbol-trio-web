@@ -36,13 +36,14 @@ const copy = {
   ca: {
     nav: ["Inici", "Equip", "Calendari", "Actualitat", "Patrocini", "Contacte"],
     heroKicker: "Passió · Equip · Victòria",
+    heroSeason: "Temporada 2026-2027",
     heroDescription: "Uneix-te al nostre equip d’handbol i viu l’emoció de l’esport en equip. Entrenaments, competició i una gran família esportiva t’esperen.",
     join: "Uneix-te a l’Equip",
     players: "Jugadores",
     history: "Anys d’història",
     victories: "Victòries",
     season: "TEMPORADA 2026/27",
-    calendarTitle: "Calendari i resultats · Temporada 2026-2027",
+    calendarTitle: "Calendari i resultats",
     calendarSubtitle: "Tots els partits programats dels equips del club.",
     sourceNotice: "Dades reals d’iSquad. El dia i l’hora exactes s’actualitzen quan la federació els confirma.",
     updated: "Actualitzat",
@@ -115,13 +116,14 @@ const copy = {
   es: {
     nav: ["Inicio", "Equipo", "Calendario", "Actualidad", "Patrocinio", "Contacto"],
     heroKicker: "Pasión · Equipo · Victoria",
+    heroSeason: "Temporada 2026-2027",
     heroDescription: "Únete a nuestro equipo de balonmano y vive la emoción del deporte en equipo. Entrenamientos, competición y una gran familia deportiva te esperan.",
     join: "Únete al Equipo",
     players: "Jugadores",
     history: "Años de historia",
     victories: "Victorias",
     season: "TEMPORADA 2026/27",
-    calendarTitle: "Calendario y resultados · Temporada 2026-2027",
+    calendarTitle: "Calendario y resultados",
     calendarSubtitle: "Todos los partidos programados de los equipos del club.",
     sourceNotice: "Datos reales de iSquad. El día y la hora exactos se actualizan cuando la federación los confirma.",
     updated: "Actualizado",
@@ -194,13 +196,14 @@ const copy = {
   en: {
     nav: ["Home", "Team", "Calendar", "News", "Sponsorship", "Contact"],
     heroKicker: "Passion · Team · Victory",
+    heroSeason: "2026-2027 season",
     heroDescription: "Join our handball club and experience the excitement of team sport. Training, competition and a great sporting family are waiting for you.",
     join: "Join the Team",
     players: "Players",
     history: "Years of history",
     victories: "Victories",
     season: "2026/27 SEASON",
-    calendarTitle: "Calendar and results · 2026-2027 season",
+    calendarTitle: "Calendar and results",
     calendarSubtitle: "Every scheduled match for all club teams.",
     sourceNotice: "Live iSquad data. The exact day and time are updated when confirmed by the federation.",
     updated: "Updated",
@@ -887,6 +890,7 @@ export function App() {
           <div className="home-hero-overlay" />
           <div className="home-hero-content">
             <h1 id="page-title">Club Handbol Montbui</h1>
+            <p className="home-hero-season">{t.heroSeason}</p>
             <p className="home-hero-kicker">{t.heroKicker}</p>
             <p className="home-hero-description">{t.heroDescription}</p>
             <a className="home-cta" href="#nueva-temporada"><UsersThree size={20} weight="bold" />{t.join}</a>

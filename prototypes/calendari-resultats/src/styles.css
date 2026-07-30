@@ -219,8 +219,16 @@ a {
   text-shadow: 0 2px 18px rgba(25, 22, 70, 0.12);
 }
 
+.home-hero-season {
+  margin: 9px 0 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  opacity: 0.92;
+}
+
 .home-hero-kicker {
-  margin: 12px 0 0;
+  margin: 8px 0 0;
   font-size: 23px;
   font-weight: 650;
 }
