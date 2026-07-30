@@ -210,8 +210,8 @@ a {
   text-align: center;
 }
 
-.home-hero-content h1 {
-  margin: 0;
+.home-hero-content h1,
+.home-hero-season {
   font-size: clamp(42px, 4.2vw, 58px);
   font-weight: 750;
   line-height: 1.05;
@@ -219,12 +219,12 @@ a {
   text-shadow: 0 2px 18px rgba(25, 22, 70, 0.12);
 }
 
+.home-hero-content h1 {
+  margin: 0;
+}
+
 .home-hero-season {
   margin: 9px 0 0;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.035em;
-  opacity: 0.92;
 }
 
 .home-hero-kicker {
@@ -1900,7 +1900,8 @@ main {
     width: calc(100% - 36px);
   }
 
-  .home-hero-content h1 {
+  .home-hero-content h1,
+  .home-hero-season {
     max-width: 350px;
     font-size: 39px;
   }
