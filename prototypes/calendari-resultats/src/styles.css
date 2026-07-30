@@ -178,6 +178,7 @@ a {
   overflow: hidden;
   isolation: isolate;
   color: #fff;
+  scroll-margin-top: 58px;
 }
 
 .home-hero > img {
@@ -1744,6 +1745,7 @@ main {
 
   .home-hero {
     height: 430px;
+    scroll-margin-top: 66px;
   }
 
   .home-hero-content,
