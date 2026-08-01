@@ -1617,13 +1617,13 @@ main {
 .site-footer h2 {
   margin: 0 0 12px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .site-footer p,
 .site-footer a {
   color: #b9c0cc;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.55;
   text-decoration: none;
 }
@@ -1668,7 +1668,7 @@ main {
   justify-content: space-between;
   gap: 24px;
   color: #929aa8;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .footer-bottom div {
@@ -1678,7 +1678,7 @@ main {
 
 .footer-bottom a {
   color: #929aa8;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .footer-credit {
