@@ -110,6 +110,7 @@ const copy = {
     follow: "Segueix-nos",
     contactPerson: "Contacte: Laia · 633 556 228",
     rights: "Tots els drets reservats.",
+    webCredit: "Web creada per",
     privacy: "Política de Privacitat",
     legal: "Avís Legal",
   },
@@ -190,6 +191,7 @@ const copy = {
     follow: "Síguenos",
     contactPerson: "Contacto: Laia · 633 556 228",
     rights: "Todos los derechos reservados.",
+    webCredit: "Web creada por",
     privacy: "Política de Privacidad",
     legal: "Aviso Legal",
   },
@@ -270,6 +272,7 @@ const copy = {
     follow: "Follow us",
     contactPerson: "Contact: Laia · +34 633 556 228",
     rights: "All rights reserved.",
+    webCredit: "Web created by",
     privacy: "Privacy Policy",
     legal: "Legal Notice",
   },
@@ -805,7 +808,13 @@ function Footer({ language }) {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 Club Handbol Montbui. {t.rights}</span>
+        <span className="footer-copyright">
+          © 2026 Club Handbol Montbui. {t.rights}
+          <span className="footer-credit">
+            {t.webCredit}{" "}
+            <a href="https://uberleap.com" target="_blank" rel="noreferrer">uberleap.com</a>
+          </span>
+        </span>
         <div>
           <a href={`https://chmontbui.es/privacy${suffix}.html`}>{t.privacy}</a>
           <a href={`https://chmontbui.es/legal${suffix}.html`}>{t.legal}</a>

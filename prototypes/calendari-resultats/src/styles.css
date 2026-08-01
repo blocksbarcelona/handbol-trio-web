@@ -1681,6 +1681,15 @@ main {
   font-size: 10px;
 }
 
+.footer-credit {
+  margin-left: 16px;
+}
+
+.footer-credit a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 @media (max-width: 1120px) {
   .site-header {
     width: 100%;
@@ -2205,5 +2214,10 @@ main {
 
   .footer-bottom div {
     flex-wrap: wrap;
+  }
+
+  .footer-credit {
+    display: block;
+    margin: 4px 0 0;
   }
 }
