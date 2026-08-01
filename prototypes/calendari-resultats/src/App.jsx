@@ -81,6 +81,10 @@ const copy = {
     recruitmentTitle: "Uneix-te a la Temporada 2026-2027!",
     recruitmentSubtitle: "Busquem nous jugadors i jugadores",
     recruitmentDescription: "Sigui quin sigui el teu nivell, al Club Handbol Montbui tenim un lloc per a tu. Vine a entrenar amb nosaltres i viu la passió de l’handbol.",
+    trainingTitle: "Horaris d’entrenament",
+    trainingConfirmed: "Horari confirmat",
+    trainingSoon: "Horaris disponibles aviat",
+    trainingTimes: ["Dimecres · 17:00–18:30", "Divendres · 18:00–19:30"],
     womenTeam: "Equip femení",
     newWomen: "Noves jugadores",
     menTeam: "Equip masculí",
@@ -162,6 +166,10 @@ const copy = {
     recruitmentTitle: "¡Únete a la Temporada 2026-2027!",
     recruitmentSubtitle: "Buscamos nuevos jugadores y jugadoras",
     recruitmentDescription: "Sea cual sea tu nivel, en el Club Handbol Montbui tenemos un lugar para ti. Ven a entrenar con nosotros y vive la pasión del balonmano.",
+    trainingTitle: "Horarios de entrenamiento",
+    trainingConfirmed: "Horario confirmado",
+    trainingSoon: "Horarios disponibles próximamente",
+    trainingTimes: ["Miércoles · 17:00–18:30", "Viernes · 18:00–19:30"],
     womenTeam: "Equipo femenino",
     newWomen: "Nuevas jugadoras",
     menTeam: "Equipo masculino",
@@ -243,6 +251,10 @@ const copy = {
     recruitmentTitle: "Join us for the 2026-2027 Season!",
     recruitmentSubtitle: "We are looking for new players",
     recruitmentDescription: "Whatever your level, there is a place for you at Club Handbol Montbui. Come and train with us and experience the passion of handball.",
+    trainingTitle: "Training times",
+    trainingConfirmed: "Confirmed schedule",
+    trainingSoon: "Training times available soon",
+    trainingTimes: ["Wednesday · 17:00–18:30", "Friday · 18:00–19:30"],
     womenTeam: "Women’s team",
     newWomen: "New players",
     menTeam: "Men’s team",
@@ -318,6 +330,12 @@ const teamMeta = {
 };
 
 const teamIds = Object.keys(teamMeta);
+const trainingTeamIds = [
+  "cadet-femeni-segona-a",
+  "juvenil-femeni-segona-unic",
+  "senior-masculi-tercera-b",
+  "senior-femeni-primera-a",
+];
 const teamIndex = Object.fromEntries(teamIds.map((teamId, index) => [teamId, index]));
 
 function asDate(value) {
@@ -654,6 +672,38 @@ function RecruitmentSection({ language }) {
         <p className="content-description">{t.recruitmentDescription}</p>
       </div>
 
+      <section className="training-schedule" aria-labelledby="training-schedule-title">
+        <div className="training-schedule-heading">
+          <span><Clock size={21} weight="duotone" /></span>
+          <h3 id="training-schedule-title">{t.trainingTitle}</h3>
+        </div>
+
+        <div className="training-schedule-grid">
+          {trainingTeamIds.map((teamId) => {
+            const team = teamMeta[teamId];
+            const hasConfirmedSchedule = teamId === "cadet-femeni-segona-a";
+            return (
+              <article className={`training-team-card ${team.tone} ${hasConfirmedSchedule ? "confirmed" : "pending"}`} key={teamId}>
+                <span className={`training-team-shirt ${team.tone}`}><TShirt size={25} weight="fill" /></span>
+                <div>
+                  <h4>{team.labels[language]}</h4>
+                  {hasConfirmedSchedule ? (
+                    <>
+                      <small>{t.trainingConfirmed}</small>
+                      <ul>
+                        {t.trainingTimes.map((time) => <li key={time}><Clock size={15} />{time}</li>)}
+                      </ul>
+                    </>
+                  ) : (
+                    <p><Info size={16} weight="fill" />{t.trainingSoon}</p>
+                  )}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+
       <div className="recruitment-grid">
         <article className="recruit-card female">
           <div className="recruit-card-copy">
@@ -661,7 +711,7 @@ function RecruitmentSection({ language }) {
             <h3>{t.newWomen}</h3>
             <a href={whatsappUrl} target="_blank" rel="noreferrer"><WhatsappLogo size={20} weight="fill" />{t.interested}</a>
           </div>
-          <img src="/assets/f1.png" alt="" />
+          <img src="/assets/f1-face-fixed.png" alt="" />
         </article>
 
         <article className="recruit-card male">

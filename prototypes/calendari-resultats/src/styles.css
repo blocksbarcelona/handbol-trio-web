@@ -1135,6 +1135,148 @@ main {
   padding-bottom: 76px;
 }
 
+.training-schedule {
+  margin: -6px 0 28px;
+  padding: 18px;
+  border: 1px solid #dfe5ef;
+  border-radius: 16px;
+  background: #f8faff;
+  box-shadow: 0 10px 30px rgba(28, 44, 81, 0.055);
+}
+
+.training-schedule-heading {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.training-schedule-heading > span {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  color: #6843dc;
+  background: #eee9ff;
+}
+
+.training-schedule-heading h3 {
+  margin: 0;
+  color: #293247;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+
+.training-schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.training-team-card {
+  min-height: 132px;
+  padding: 14px;
+  border: 1px solid #e1e6ef;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  background: #fff;
+}
+
+.training-team-card.confirmed {
+  border-color: #f7b4ca;
+  box-shadow: 0 8px 20px rgba(233, 45, 110, 0.08);
+}
+
+.training-team-shirt {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+.training-team-shirt.blue {
+  background: linear-gradient(160deg, #177cf3, #0065e4);
+}
+
+.training-team-shirt.pink {
+  background: linear-gradient(160deg, #fa3f91, #e91b72);
+}
+
+.training-team-shirt.violet {
+  background: linear-gradient(160deg, #9a49f2, #7532db);
+}
+
+.training-team-shirt.coral {
+  background: linear-gradient(160deg, #fb5c8d, #e92d6e);
+}
+
+.training-team-card > div {
+  min-width: 0;
+}
+
+.training-team-card h4 {
+  margin: 2px 0 0;
+  color: #293247;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.training-team-card small {
+  margin-top: 4px;
+  display: block;
+  color: #d9276d;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.training-team-card ul {
+  margin: 9px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+  list-style: none;
+}
+
+.training-team-card li,
+.training-team-card p {
+  color: #5d687b;
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.training-team-card li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 650;
+}
+
+.training-team-card li svg {
+  flex: 0 0 auto;
+  color: #e92d6e;
+}
+
+.training-team-card p {
+  margin: 12px 0 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.training-team-card p svg {
+  margin-top: 1px;
+  flex: 0 0 auto;
+  color: #9aa3b2;
+}
+
 .recruitment-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1849,6 +1991,10 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .training-schedule-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .recruit-card {
     min-height: 320px;
   }
@@ -2119,6 +2265,19 @@ main {
 
   .content-subtitle {
     font-size: 16px;
+  }
+
+  .training-schedule {
+    margin-top: -2px;
+    padding: 14px;
+  }
+
+  .training-schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-team-card {
+    min-height: 0;
   }
 
   .recruit-card {
