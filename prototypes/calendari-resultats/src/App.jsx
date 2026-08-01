@@ -1030,7 +1030,7 @@ export function App() {
         )}
       </main>
 
-      {pageView === "home" && <Footer language={language} />}
+      <Footer language={language} />
     </div>
   );
 }
