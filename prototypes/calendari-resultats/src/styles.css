@@ -1170,7 +1170,7 @@ main {
 
 .training-schedule-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -1179,9 +1179,6 @@ main {
   padding: 14px;
   border: 1px solid #e1e6ef;
   border-radius: 12px;
-  display: flex;
-  align-items: flex-start;
-  gap: 11px;
   background: #fff;
 }
 
@@ -1216,7 +1213,17 @@ main {
   background: linear-gradient(160deg, #fb5c8d, #e92d6e);
 }
 
-.training-team-card > div {
+.training-team-shirt.aqua {
+  background: linear-gradient(160deg, #13b6cf, #087cba);
+}
+
+.training-team-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.training-team-heading > div {
   min-width: 0;
 }
 
@@ -1238,7 +1245,7 @@ main {
 }
 
 .training-team-card ul {
-  margin: 9px 0 0;
+  margin: 10px 0 0;
   padding: 0;
   display: grid;
   gap: 6px;
@@ -1881,6 +1888,10 @@ main {
   .season-select {
     grid-column: 1 / -1;
     justify-self: end;
+  }
+
+  .training-schedule-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

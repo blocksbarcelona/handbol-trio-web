@@ -84,7 +84,13 @@ const copy = {
     trainingTitle: "Horaris d’entrenament",
     trainingConfirmed: "Horari confirmat",
     trainingSoon: "Horaris disponibles aviat",
-    trainingTimes: ["Dimecres · 17:00–18:30", "Divendres · 18:00–19:30"],
+    trainingSchedules: {
+      "alevi": ["Dimecres · 17:15–18:30", "Divendres · 17:15–18:30"],
+      "cadet-femeni-segona-a": ["Dimecres · 17:15–18:30", "Divendres · 18:15–19:30"],
+      "juvenil-femeni-segona-unic": ["Dimecres · 18:15–19:30", "Divendres · 19:15–20:30"],
+      "senior-masculi-tercera-b": ["Dimecres · 19:15–20:30", "Divendres · 20:15–21:30"],
+      "senior-femeni-primera-a": ["Dimecres · 20:15–21:30", "Divendres · 19:15–20:30"],
+    },
     womenTeam: "Equip femení",
     newWomen: "Noves jugadores",
     menTeam: "Equip masculí",
@@ -169,7 +175,13 @@ const copy = {
     trainingTitle: "Horarios de entrenamiento",
     trainingConfirmed: "Horario confirmado",
     trainingSoon: "Horarios disponibles próximamente",
-    trainingTimes: ["Miércoles · 17:00–18:30", "Viernes · 18:00–19:30"],
+    trainingSchedules: {
+      "alevi": ["Miércoles · 17:15–18:30", "Viernes · 17:15–18:30"],
+      "cadet-femeni-segona-a": ["Miércoles · 17:15–18:30", "Viernes · 18:15–19:30"],
+      "juvenil-femeni-segona-unic": ["Miércoles · 18:15–19:30", "Viernes · 19:15–20:30"],
+      "senior-masculi-tercera-b": ["Miércoles · 19:15–20:30", "Viernes · 20:15–21:30"],
+      "senior-femeni-primera-a": ["Miércoles · 20:15–21:30", "Viernes · 19:15–20:30"],
+    },
     womenTeam: "Equipo femenino",
     newWomen: "Nuevas jugadoras",
     menTeam: "Equipo masculino",
@@ -254,7 +266,13 @@ const copy = {
     trainingTitle: "Training times",
     trainingConfirmed: "Confirmed schedule",
     trainingSoon: "Training times available soon",
-    trainingTimes: ["Wednesday · 17:00–18:30", "Friday · 18:00–19:30"],
+    trainingSchedules: {
+      "alevi": ["Wednesday · 17:15–18:30", "Friday · 17:15–18:30"],
+      "cadet-femeni-segona-a": ["Wednesday · 17:15–18:30", "Friday · 18:15–19:30"],
+      "juvenil-femeni-segona-unic": ["Wednesday · 18:15–19:30", "Friday · 19:15–20:30"],
+      "senior-masculi-tercera-b": ["Wednesday · 19:15–20:30", "Friday · 20:15–21:30"],
+      "senior-femeni-primera-a": ["Wednesday · 20:15–21:30", "Friday · 19:15–20:30"],
+    },
     womenTeam: "Women’s team",
     newWomen: "New players",
     menTeam: "Men’s team",
@@ -330,7 +348,15 @@ const teamMeta = {
 };
 
 const teamIds = Object.keys(teamMeta);
+const trainingTeamMeta = {
+  alevi: {
+    tone: "aqua",
+    labels: { ca: "Aleví", es: "Alevín", en: "U12" },
+  },
+  ...teamMeta,
+};
 const trainingTeamIds = [
+  "alevi",
   "cadet-femeni-segona-a",
   "juvenil-femeni-segona-unic",
   "senior-masculi-tercera-b",
@@ -680,24 +706,25 @@ function RecruitmentSection({ language }) {
 
         <div className="training-schedule-grid">
           {trainingTeamIds.map((teamId) => {
-            const team = teamMeta[teamId];
-            const hasConfirmedSchedule = teamId === "cadet-femeni-segona-a";
+            const team = trainingTeamMeta[teamId];
+            const trainingTimes = t.trainingSchedules[teamId];
+            const hasConfirmedSchedule = trainingTimes?.length > 0;
             return (
               <article className={`training-team-card ${team.tone} ${hasConfirmedSchedule ? "confirmed" : "pending"}`} key={teamId}>
-                <span className={`training-team-shirt ${team.tone}`}><TShirt size={25} weight="fill" /></span>
-                <div>
-                  <h4>{team.labels[language]}</h4>
-                  {hasConfirmedSchedule ? (
-                    <>
-                      <small>{t.trainingConfirmed}</small>
-                      <ul>
-                        {t.trainingTimes.map((time) => <li key={time}><Clock size={15} />{time}</li>)}
-                      </ul>
-                    </>
-                  ) : (
-                    <p><Info size={16} weight="fill" />{t.trainingSoon}</p>
-                  )}
+                <div className="training-team-heading">
+                  <span className={`training-team-shirt ${team.tone}`}><TShirt size={25} weight="fill" /></span>
+                  <div>
+                    <h4>{team.labels[language]}</h4>
+                    {hasConfirmedSchedule && <small>{t.trainingConfirmed}</small>}
+                  </div>
                 </div>
+                {hasConfirmedSchedule ? (
+                  <ul>
+                    {trainingTimes.map((time) => <li key={time}><Clock size={15} />{time}</li>)}
+                  </ul>
+                ) : (
+                  <p><Info size={16} weight="fill" />{t.trainingSoon}</p>
+                )}
               </article>
             );
           })}
