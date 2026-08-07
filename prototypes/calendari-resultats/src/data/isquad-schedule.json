@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-28T15:55:27.095Z",
+  "generatedAt": "2026-08-07T07:34:58.150Z",
   "timezone": "Europe/Madrid",
   "clubName": "Club Handbol Montbui",
   "status": "pending_confirmation",
@@ -14,28 +14,28 @@
     {
       "teamId": "senior-masculi-tercera-b",
       "competitionTitle": "TERCERA CATALANA SÈNIOR MASCULINA - TERCERA CATALANA SÈNIOR MASCULINA - PRIMERA FASE - Grup B",
-      "fetchedAt": "2026-07-28T15:55:26.707Z",
+      "fetchedAt": "2026-08-07T07:34:56.754Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
       "matchesFound": 18
     },
     {
       "teamId": "senior-femeni-primera-a",
       "competitionTitle": "PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-07-28T15:55:26.693Z",
+      "fetchedAt": "2026-08-07T07:34:57.851Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
       "matchesFound": 30
     },
     {
       "teamId": "juvenil-femeni-segona-unic",
       "competitionTitle": "SEGONA CATALANA JUVENIL FEMENINA - SEGONA CATALANA JUVENIL FEMENINA - FASE UNICA - Grup Únic",
-      "fetchedAt": "2026-07-28T15:55:26.701Z",
+      "fetchedAt": "2026-08-07T07:34:57.410Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
       "matchesFound": 18
     },
     {
       "teamId": "cadet-femeni-segona-a",
       "competitionTitle": "SEGONA CATALANA CADET FEMENINA - SEGONA CATALANA CADET FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-07-28T15:55:26.705Z",
+      "fetchedAt": "2026-08-07T07:34:57.483Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
       "matchesFound": 16
     }
@@ -1476,7 +1476,7 @@
       "key": "7-222367-225827",
       "home": {
         "id": "222367",
-        "name": "MGC MUTUA HANDBOL RIBES TRUE NORTH CANADA"
+        "name": "MGC MUTUA HANDBOL RIBES ECOCLEAN"
       },
       "away": {
         "id": "225827",
@@ -1512,7 +1512,7 @@
       },
       "opponent": {
         "id": "222367",
-        "name": "MGC MUTUA HANDBOL RIBES TRUE NORTH CANADA"
+        "name": "MGC MUTUA HANDBOL RIBES ECOCLEAN"
       },
       "competition": {
         "category": "CADET FEMENÍ",
@@ -3494,7 +3494,7 @@
       },
       "away": {
         "id": "222367",
-        "name": "MGC MUTUA HANDBOL RIBES TRUE NORTH CANADA"
+        "name": "MGC MUTUA HANDBOL RIBES ECOCLEAN"
       },
       "round": {
         "number": 16,
@@ -3526,7 +3526,7 @@
       },
       "opponent": {
         "id": "222367",
-        "name": "MGC MUTUA HANDBOL RIBES TRUE NORTH CANADA"
+        "name": "MGC MUTUA HANDBOL RIBES ECOCLEAN"
       },
       "competition": {
         "category": "CADET FEMENÍ",
