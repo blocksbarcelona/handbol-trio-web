@@ -1,41 +1,41 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-19T04:24:23.541Z",
+  "generatedAt": "2026-09-05T06:15:03.071Z",
   "timezone": "Europe/Madrid",
   "clubName": "Club Handbol Montbui",
   "status": "pending_confirmation",
   "summary": {
     "teams": 4,
-    "matches": 78,
+    "matches": 76,
     "publishable": 0,
-    "pendingConfirmation": 78
+    "pendingConfirmation": 76
   },
   "sourceStatus": [
     {
       "teamId": "senior-masculi-tercera-b",
       "competitionTitle": "TERCERA CATALANA SÈNIOR MASCULINA - TERCERA CATALANA SÈNIOR MASCULINA - PRIMERA FASE - Grup B",
-      "fetchedAt": "2026-08-19T04:24:22.853Z",
+      "fetchedAt": "2026-09-05T06:15:02.375Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
       "matchesFound": 18
     },
     {
       "teamId": "senior-femeni-primera-a",
       "competitionTitle": "PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-08-19T04:24:23.104Z",
+      "fetchedAt": "2026-09-05T06:15:02.631Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
       "matchesFound": 30
     },
     {
       "teamId": "juvenil-femeni-segona-unic",
       "competitionTitle": "SEGONA CATALANA JUVENIL FEMENINA - SEGONA CATALANA JUVENIL FEMENINA - FASE UNICA - Grup Únic",
-      "fetchedAt": "2026-08-19T04:24:23.096Z",
+      "fetchedAt": "2026-09-05T06:15:02.623Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
-      "matchesFound": 14
+      "matchesFound": 12
     },
     {
       "teamId": "cadet-femeni-segona-a",
       "competitionTitle": "SEGONA CATALANA CADET FEMENINA - SEGONA CATALANA CADET FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-08-19T04:24:23.090Z",
+      "fetchedAt": "2026-09-05T06:15:02.358Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
       "matchesFound": 16
     }
@@ -304,59 +304,6 @@
         "categoryId": "3080",
         "competitionId": "211817",
         "tournamentId": "1038697"
-      }
-    },
-    {
-      "key": "2-225977-225826",
-      "home": {
-        "id": "225977",
-        "name": "MOLINS de Q-HANDBOL MOLINS"
-      },
-      "away": {
-        "id": "225826",
-        "name": "CH MONTBUI"
-      },
-      "round": {
-        "number": 2,
-        "date": "2026-10-04",
-        "label": "JORNADA 2 (04-10-2026)"
-      },
-      "date": "2026-10-04",
-      "exactDate": null,
-      "dateSource": "round",
-      "time": null,
-      "venue": {
-        "name": "POLIESPORTIU MUNICIPAL",
-        "mapsUrl": "https://www.google.com/maps/?q=41.4098218,2.021595100000013"
-      },
-      "readyForPublication": false,
-      "warnings": [
-        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
-        "iSquad todavía no muestra una hora válida"
-      ],
-      "source": {
-        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
-        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
-      },
-      "configuredTeam": {
-        "id": "juvenil-femeni-segona-unic",
-        "label": "Juvenil femení",
-        "name": "CH MONTBUI",
-        "isHome": false
-      },
-      "opponent": {
-        "id": "225977",
-        "name": "MOLINS de Q-HANDBOL MOLINS"
-      },
-      "competition": {
-        "category": "JUVENIL FEMENÍ",
-        "name": "SEGONA CATALANA JUVENIL FEMENINA",
-        "phase": "FASE UNICA - Grup Únic",
-        "season": "2026/2027",
-        "territorialId": "17",
-        "categoryId": "3078",
-        "competitionId": "211814",
-        "tournamentId": "1038691"
       }
     },
     {
@@ -2371,59 +2318,6 @@
         "categoryId": "3080",
         "competitionId": "211817",
         "tournamentId": "1038697"
-      }
-    },
-    {
-      "key": "11-225826-225977",
-      "home": {
-        "id": "225826",
-        "name": "CH MONTBUI"
-      },
-      "away": {
-        "id": "225977",
-        "name": "MOLINS de Q-HANDBOL MOLINS"
-      },
-      "round": {
-        "number": 11,
-        "date": "2027-01-17",
-        "label": "JORNADA 11 (17-01-2027)"
-      },
-      "date": "2027-01-17",
-      "exactDate": null,
-      "dateSource": "round",
-      "time": null,
-      "venue": {
-        "name": "MONT-AQUA",
-        "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
-      },
-      "readyForPublication": false,
-      "warnings": [
-        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
-        "iSquad todavía no muestra una hora válida"
-      ],
-      "source": {
-        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
-        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
-      },
-      "configuredTeam": {
-        "id": "juvenil-femeni-segona-unic",
-        "label": "Juvenil femení",
-        "name": "CH MONTBUI",
-        "isHome": true
-      },
-      "opponent": {
-        "id": "225977",
-        "name": "MOLINS de Q-HANDBOL MOLINS"
-      },
-      "competition": {
-        "category": "JUVENIL FEMENÍ",
-        "name": "SEGONA CATALANA JUVENIL FEMENINA",
-        "phase": "FASE UNICA - Grup Únic",
-        "season": "2026/2027",
-        "territorialId": "17",
-        "categoryId": "3078",
-        "competitionId": "211814",
-        "tournamentId": "1038691"
       }
     },
     {
