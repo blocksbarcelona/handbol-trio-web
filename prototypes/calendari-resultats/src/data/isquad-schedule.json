@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-17T03:29:37.878Z",
+  "generatedAt": "2026-09-22T22:00:04.715Z",
   "timezone": "Europe/Madrid",
   "clubName": "Club Handbol Montbui",
   "status": "pending_confirmation",
@@ -14,28 +14,28 @@
     {
       "teamId": "senior-masculi-tercera-b",
       "competitionTitle": "TERCERA CATALANA SÈNIOR MASCULINA - TERCERA CATALANA SÈNIOR MASCULINA - PRIMERA FASE - Grup B",
-      "fetchedAt": "2026-09-17T03:29:37.146Z",
+      "fetchedAt": "2026-09-22T22:00:03.910Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
       "matchesFound": 18
     },
     {
       "teamId": "senior-femeni-primera-a",
       "competitionTitle": "PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-09-17T03:29:37.416Z",
+      "fetchedAt": "2026-09-22T22:00:03.898Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
       "matchesFound": 30
     },
     {
       "teamId": "juvenil-femeni-segona-unic",
       "competitionTitle": "SEGONA CATALANA JUVENIL FEMENINA - SEGONA CATALANA JUVENIL FEMENINA - FASE UNICA - Grup Únic",
-      "fetchedAt": "2026-09-17T03:29:37.407Z",
+      "fetchedAt": "2026-09-22T22:00:04.359Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
       "matchesFound": 12
     },
     {
       "teamId": "cadet-femeni-segona-a",
       "competitionTitle": "SEGONA CATALANA CADET FEMENINA - SEGONA CATALANA CADET FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-09-17T03:29:37.401Z",
+      "fetchedAt": "2026-09-22T22:00:04.576Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
       "matchesFound": 16
     }
@@ -259,15 +259,14 @@
       "date": "2026-10-04",
       "exactDate": null,
       "dateSource": "round",
-      "time": null,
+      "time": "11:00",
       "venue": {
         "name": "POLIESPORTIU MUNICIPAL DE TÀRREGA",
         "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=POLIESPORTIU%20MUNICIPAL%20DE%20T%C3%83%E2%82%ACRREGA,Carrer%20de%20Joan%20Brossa,%20s/n,%2025300%20T%C3%83%C2%A0rrega,%20Lleida,%20Espanya,%2025300"
       },
       "readyForPublication": false,
       "warnings": [
-        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
-        "iSquad todavía no muestra una hora válida"
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido"
       ],
       "source": {
         "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
@@ -295,59 +294,6 @@
       }
     },
     {
-      "key": "2-215382-225825",
-      "home": {
-        "id": "215382",
-        "name": "TARRAGONA HC"
-      },
-      "away": {
-        "id": "225825",
-        "name": "CH MONTBUI"
-      },
-      "round": {
-        "number": 2,
-        "date": "2026-10-04",
-        "label": "JORNADA 2 (04-10-2026)"
-      },
-      "date": "2026-10-04",
-      "exactDate": null,
-      "dateSource": "round",
-      "time": null,
-      "venue": {
-        "name": "Pavelló Municipal de Sant Salvador Tarragona",
-        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=Pavell%C3%83%C2%B3%20Municipal%20de%20Sant%20Salvador%20Tarragona,Carrer%20Stadium,%2012,%2043130%20Tarragona,%20Espanya,%2043130"
-      },
-      "readyForPublication": false,
-      "warnings": [
-        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
-        "iSquad todavía no muestra una hora válida"
-      ],
-      "source": {
-        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
-        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
-      },
-      "configuredTeam": {
-        "id": "senior-femeni-primera-a",
-        "label": "Sènior femení",
-        "name": "CH MONTBUI",
-        "isHome": false
-      },
-      "opponent": {
-        "id": "215382",
-        "name": "TARRAGONA HC"
-      },
-      "competition": {
-        "category": "SÈNIOR FEMENÍ",
-        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
-        "phase": "PRIMERA FASE - Grup A",
-        "season": "2026/2027",
-        "territorialId": "17",
-        "categoryId": "3076",
-        "competitionId": "211803",
-        "tournamentId": "1038568"
-      }
-    },
-    {
       "key": "2-211125-225824",
       "home": {
         "id": "211125",
@@ -365,15 +311,14 @@
       "date": "2026-10-04",
       "exactDate": null,
       "dateSource": "round",
-      "time": null,
+      "time": "18:00",
       "venue": {
         "name": "CEM PAU GASOL",
         "mapsUrl": "https://www.google.com/maps/?q=41.3574715,2.02860110000006"
       },
       "readyForPublication": false,
       "warnings": [
-        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido",
-        "iSquad todavía no muestra una hora válida"
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido"
       ],
       "source": {
         "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
@@ -398,6 +343,58 @@
         "categoryId": "3077",
         "competitionId": "211809",
         "tournamentId": "1038564"
+      }
+    },
+    {
+      "key": "2-215382-225825",
+      "home": {
+        "id": "215382",
+        "name": "TARRAGONA HC"
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "round": {
+        "number": 2,
+        "date": "2026-10-04",
+        "label": "JORNADA 2 (04-10-2026)"
+      },
+      "date": "2026-10-04",
+      "exactDate": null,
+      "dateSource": "round",
+      "time": "20:00",
+      "venue": {
+        "name": "Pavelló Municipal de Sant Salvador Tarragona",
+        "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=Pavell%C3%83%C2%B3%20Municipal%20de%20Sant%20Salvador%20Tarragona,Carrer%20Stadium,%2012,%2043130%20Tarragona,%20Espanya,%2043130"
+      },
+      "readyForPublication": false,
+      "warnings": [
+        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido"
+      ],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "215382",
+        "name": "TARRAGONA HC"
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
       }
     },
     {
