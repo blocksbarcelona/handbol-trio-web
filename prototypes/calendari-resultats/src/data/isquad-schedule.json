@@ -1,41 +1,41 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-22T22:00:04.715Z",
+  "generatedAt": "2026-09-23T16:00:03.782Z",
   "timezone": "Europe/Madrid",
   "clubName": "Club Handbol Montbui",
   "status": "pending_confirmation",
   "summary": {
     "teams": 4,
     "matches": 76,
-    "publishable": 4,
-    "pendingConfirmation": 72
+    "publishable": 7,
+    "pendingConfirmation": 69
   },
   "sourceStatus": [
     {
       "teamId": "senior-masculi-tercera-b",
       "competitionTitle": "TERCERA CATALANA SÈNIOR MASCULINA - TERCERA CATALANA SÈNIOR MASCULINA - PRIMERA FASE - Grup B",
-      "fetchedAt": "2026-09-22T22:00:03.910Z",
+      "fetchedAt": "2026-09-23T16:00:03.036Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
       "matchesFound": 18
     },
     {
       "teamId": "senior-femeni-primera-a",
       "competitionTitle": "PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-09-22T22:00:03.898Z",
+      "fetchedAt": "2026-09-23T16:00:03.302Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
       "matchesFound": 30
     },
     {
       "teamId": "juvenil-femeni-segona-unic",
       "competitionTitle": "SEGONA CATALANA JUVENIL FEMENINA - SEGONA CATALANA JUVENIL FEMENINA - FASE UNICA - Grup Únic",
-      "fetchedAt": "2026-09-22T22:00:04.359Z",
+      "fetchedAt": "2026-09-23T16:00:03.010Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
       "matchesFound": 12
     },
     {
       "teamId": "cadet-femeni-segona-a",
       "competitionTitle": "SEGONA CATALANA CADET FEMENINA - SEGONA CATALANA CADET FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-09-22T22:00:04.576Z",
+      "fetchedAt": "2026-09-23T16:00:03.289Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
       "matchesFound": 16
     }
@@ -256,18 +256,16 @@
         "date": "2026-10-04",
         "label": "JORNADA 2 (04-10-2026)"
       },
-      "date": "2026-10-04",
-      "exactDate": null,
-      "dateSource": "round",
+      "date": "2026-10-03",
+      "exactDate": "2026-10-03",
+      "dateSource": "match",
       "time": "11:00",
       "venue": {
         "name": "POLIESPORTIU MUNICIPAL DE TÀRREGA",
         "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=POLIESPORTIU%20MUNICIPAL%20DE%20T%C3%83%E2%82%ACRREGA,Carrer%20de%20Joan%20Brossa,%20s/n,%2025300%20T%C3%83%C2%A0rrega,%20Lleida,%20Espanya,%2025300"
       },
-      "readyForPublication": false,
-      "warnings": [
-        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido"
-      ],
+      "readyForPublication": true,
+      "warnings": [],
       "source": {
         "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
         "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3080&id_competicion=211817&id=1038697&id_temp=2627&id_ambito=0&id_territorial=17"
@@ -308,18 +306,16 @@
         "date": "2026-10-04",
         "label": "JORNADA 2 (04-10-2026)"
       },
-      "date": "2026-10-04",
-      "exactDate": null,
-      "dateSource": "round",
-      "time": "18:00",
+      "date": "2026-10-03",
+      "exactDate": "2026-10-03",
+      "dateSource": "match",
+      "time": "17:00",
       "venue": {
         "name": "CEM PAU GASOL",
         "mapsUrl": "https://www.google.com/maps/?q=41.3574715,2.02860110000006"
       },
-      "readyForPublication": false,
-      "warnings": [
-        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido"
-      ],
+      "readyForPublication": true,
+      "warnings": [],
       "source": {
         "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
         "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
@@ -360,18 +356,16 @@
         "date": "2026-10-04",
         "label": "JORNADA 2 (04-10-2026)"
       },
-      "date": "2026-10-04",
-      "exactDate": null,
-      "dateSource": "round",
+      "date": "2026-10-03",
+      "exactDate": "2026-10-03",
+      "dateSource": "match",
       "time": "20:00",
       "venue": {
         "name": "Pavelló Municipal de Sant Salvador Tarragona",
         "mapsUrl": "http://maps.google.es/maps?f=q&hl=es&q=Pavell%C3%83%C2%B3%20Municipal%20de%20Sant%20Salvador%20Tarragona,Carrer%20Stadium,%2012,%2043130%20Tarragona,%20Espanya,%2043130"
       },
-      "readyForPublication": false,
-      "warnings": [
-        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido"
-      ],
+      "readyForPublication": true,
+      "warnings": [],
       "source": {
         "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
         "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
