@@ -1,5 +1,9 @@
 # Prototype Instructions
 
+## Published scores (2026-09-26)
+
+Show published iSquad scores inside the existing calendar match cards, preserving the team colors and filters. Use home team, home goals–away goals, away team in that order, with date/time/venue beside the score on desktop and below on mobile. Label scores as published, never final unless the source confirms that state. Pending matches must not display an invented 0–0. Show real scores in the complete calendar and Results section too. Keep Catalan, Spanish and English copy in sync.
+
 Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
 
 Before making substantial visual changes, use the Product Design plugin's `get-context` skill when the visual source is unclear or no longer matches the current goal. When the user gives durable prototype-specific design feedback, preferences, or decisions, record them in `AGENTS.md`.

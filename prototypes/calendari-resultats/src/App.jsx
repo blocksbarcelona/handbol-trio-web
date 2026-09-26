@@ -64,6 +64,9 @@ const copy = {
     venue: "Pavelló",
     timePending: "Horari pendent",
     confirmationPending: "El dia exacte i l’hora encara estan pendents de confirmació a iSquad.",
+    scorePublished: "Resultat publicat a iSquad",
+    scheduleConfirmed: "Horari i pavelló confirmats a iSquad",
+    detailsPending: "Hi ha dades del partit pendents de confirmació a iSquad.",
     noMatch: "Sense partit aquesta jornada",
     noMatchDescription: "Aquest equip no té cap partit programat en aquesta jornada.",
     fullCalendar: "Veure tot el calendari",
@@ -155,6 +158,9 @@ const copy = {
     venue: "Pabellón",
     timePending: "Horario pendiente",
     confirmationPending: "El día exacto y la hora todavía están pendientes de confirmación en iSquad.",
+    scorePublished: "Resultado publicado en iSquad",
+    scheduleConfirmed: "Horario y pabellón confirmados en iSquad",
+    detailsPending: "Hay datos del partido pendientes de confirmación en iSquad.",
     noMatch: "Sin partido en esta jornada",
     noMatchDescription: "Este equipo no tiene ningún partido programado en esta jornada.",
     fullCalendar: "Ver todo el calendario",
@@ -246,6 +252,9 @@ const copy = {
     venue: "Venue",
     timePending: "Time pending",
     confirmationPending: "The exact day and time are still awaiting confirmation on iSquad.",
+    scorePublished: "Score published on iSquad",
+    scheduleConfirmed: "Time and venue confirmed on iSquad",
+    detailsPending: "Some match details are awaiting confirmation on iSquad.",
     noMatch: "No match on this matchday",
     noMatchDescription: "This team has no scheduled match on this matchday.",
     fullCalendar: "View the full calendar",
@@ -546,6 +555,7 @@ function MatchCard({ teamId, match, language }) {
   }
 
   const isHome = match.configuredTeam.isHome;
+  const hasScore = Number.isInteger(match.score?.home) && Number.isInteger(match.score?.away);
 
   return (
     <article className={`match-card ${team.tone}`}>
@@ -566,11 +576,19 @@ function MatchCard({ teamId, match, language }) {
           </span>
         </div>
 
-        <dl className="match-meta real-data">
-          <div>
+        <div className={hasScore ? "match-score-layout" : ""}>
+        {hasScore && (
+          <div className="match-score" aria-label={`${match.home.name} ${match.score.home}, ${match.away.name} ${match.score.away}`}>
+            <span className={isHome ? "club-name" : ""}>{match.home.name}</span>
+            <strong>{match.score.home} – {match.score.away}</strong>
+            <span className={!isHome ? "club-name" : ""}>{match.away.name}</span>
+          </div>
+        )}
+        <dl className={`match-meta real-data ${hasScore ? "score-details" : ""}`}>
+          {!hasScore && <div>
             <dt><UsersThree size={20} weight="fill" /><span>{t.opponent}</span></dt>
             <dd>{match.opponent.name}</dd>
-          </div>
+          </div>}
           <div>
             <dt><CalendarBlank size={20} /><span>{t.date}</span></dt>
             <dd>{formatDate(match.date, language)}</dd>
@@ -589,10 +607,11 @@ function MatchCard({ teamId, match, language }) {
             </dd>
           </div>
         </dl>
+        </div>
 
         <div className="pending-note" role="status">
           <Info size={18} weight="fill" />
-          <span>{t.confirmationPending}</span>
+          <span>{hasScore ? t.scorePublished : match.readyForPublication ? t.scheduleConfirmed : t.detailsPending}</span>
           <a href={match.source.pageUrl} target="_blank" rel="noreferrer">
             {t.source}
             <ArrowSquareOut size={13} />
@@ -645,8 +664,11 @@ function CompleteCalendar({ selectedTeam, language }) {
                 </a>
               </div>
               <div className="calendar-status">
-                <Clock size={17} />
-                {match.time ?? t.timePending}
+                {match.score ? (
+                  <strong title={`${match.home.name} – ${match.away.name}: ${t.scorePublished}`}>
+                    <span className="sr-only">{match.home.name} </span>{match.score.home} – {match.score.away}<span className="sr-only"> {match.away.name}</span>
+                  </strong>
+                ) : <><Clock size={17} />{match.time ?? t.timePending}</>}
               </div>
             </article>
           );
@@ -658,8 +680,9 @@ function CompleteCalendar({ selectedTeam, language }) {
 
 function ResultsSection({ language }) {
   const t = copy[language];
+  const published = matches.filter(match => match.score).sort((a, b) => b.date.localeCompare(a.date));
   return (
-    <section className="results-section" aria-labelledby="results-title">
+    <section className={`results-section ${published.length ? "has-results" : ""}`} aria-labelledby="results-title">
       <div className="section-title">
         <div className="section-icon"><Trophy size={26} weight="duotone" /></div>
         <div>
@@ -668,13 +691,17 @@ function ResultsSection({ language }) {
         </div>
       </div>
 
-      <div className="results-empty">
+      {published.length > 0 ? (
+        <div className="published-results">
+          {published.map(match => <MatchCard key={`${match.configuredTeam.id}-${match.key}`} teamId={match.configuredTeam.id} match={match} language={language} />)}
+        </div>
+      ) : <div className="results-empty">
         <div className="empty-icon"><CalendarBlank size={38} weight="duotone" /></div>
         <div>
           <h3>{t.noResults}</h3>
           <p>{t.noResultsDescription}</p>
         </div>
-      </div>
+      </div>}
 
       <label className="season-select">
         <span>{t.seasonLabel}</span>

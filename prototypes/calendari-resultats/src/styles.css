@@ -57,6 +57,49 @@ a {
   color: inherit;
 }
 
+.match-score-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(180px, 1fr);
+  align-items: center;
+  gap: 24px;
+  margin: 18px 0;
+}
+
+
+.match-score {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+}
+
+.match-score > span { font-size: 14px; font-weight: 700; overflow-wrap: anywhere; }
+.match-score > strong { font-size: clamp(26px, 3vw, 42px); line-height: 1.15; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.match-score .club-name { color: var(--blue); }
+.coral .match-score .club-name { color: var(--coral); }
+.pink .match-score .club-name { color: var(--pink); }
+.violet .match-score .club-name { color: var(--violet); }
+.match-score-layout .match-meta.score-details { display: flex; flex-direction: column; gap: 12px; margin: 0; padding-left: 16px; border-left: 1px solid var(--line); }
+.match-score-layout .match-meta.score-details > div { border: 0; padding: 0; width: 100%; }
+.published-results { display: grid; gap: 16px; margin: 24px 0; }
+
+.match-card { container-type: inline-size; }
+@container (max-width: 650px) {
+  .match-score-layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .match-score { gap: 8px; }
+  .match-score > strong { font-size: 28px; }
+  .match-score > span { font-size: 12px; }
+  .match-score-layout .match-meta.score-details { border-left: 0; padding-left: 0; }
+}
+
+@media (max-width: 700px) {
+  .match-score-layout { grid-template-columns: 1fr; gap: 18px; }
+  .match-score { gap: 8px; }
+  .match-score > span { font-size: 12px; }
+  .match-score-layout .match-meta.score-details { border-left: 0; padding-left: 0; }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1023,6 +1066,14 @@ main {
   gap: 24px;
   background: rgba(255, 255, 255, 0.94);
   box-shadow: 0 6px 24px rgba(20, 38, 69, 0.04);
+}
+
+.results-section.has-results { grid-template-columns: minmax(0, 1fr) auto; }
+.results-section.has-results .published-results { grid-column: 1 / -1; grid-row: 2; margin: 0; }
+.results-section.has-results .season-select { grid-column: 2; grid-row: 1; }
+@media (max-width: 700px) {
+  .results-section.has-results { grid-template-columns: minmax(0, 1fr); }
+  .results-section.has-results .season-select { grid-column: 1; grid-row: 3; }
 }
 
 .results-empty {

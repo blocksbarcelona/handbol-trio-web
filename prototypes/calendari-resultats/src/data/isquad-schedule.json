@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-25T10:00:03.646Z",
+  "generatedAt": "2026-09-26T13:35:42.027Z",
   "timezone": "Europe/Madrid",
   "clubName": "Club Handbol Montbui",
   "status": "pending_confirmation",
@@ -14,28 +14,28 @@
     {
       "teamId": "senior-masculi-tercera-b",
       "competitionTitle": "TERCERA CATALANA SÈNIOR MASCULINA - TERCERA CATALANA SÈNIOR MASCULINA - PRIMERA FASE - Grup B",
-      "fetchedAt": "2026-09-25T10:00:02.886Z",
+      "fetchedAt": "2026-09-26T13:35:41.254Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
       "matchesFound": 18
     },
     {
       "teamId": "senior-femeni-primera-a",
       "competitionTitle": "PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-09-25T10:00:03.155Z",
+      "fetchedAt": "2026-09-26T13:35:41.524Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
       "matchesFound": 30
     },
     {
       "teamId": "juvenil-femeni-segona-unic",
       "competitionTitle": "SEGONA CATALANA JUVENIL FEMENINA - SEGONA CATALANA JUVENIL FEMENINA - FASE UNICA - Grup Únic",
-      "fetchedAt": "2026-09-25T10:00:03.146Z",
+      "fetchedAt": "2026-09-26T13:35:41.231Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
       "matchesFound": 12
     },
     {
       "teamId": "cadet-femeni-segona-a",
       "competitionTitle": "SEGONA CATALANA CADET FEMENINA - SEGONA CATALANA CADET FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-09-25T10:00:03.138Z",
+      "fetchedAt": "2026-09-26T13:35:41.246Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
       "matchesFound": 16
     }
@@ -51,6 +51,17 @@
         "id": "225951",
         "name": "TARRAGONA HC"
       },
+      "score": {
+        "home": 27,
+        "away": 23,
+        "status": "published"
+      },
+      "scoreSource": [
+        "27 - 23",
+        "-",
+        "-",
+        "1 - 0"
+      ],
       "round": {
         "number": 1,
         "date": "2026-09-27",
@@ -101,6 +112,17 @@
         "id": "202754",
         "name": "CEACA TÀRREGA"
       },
+      "score": {
+        "home": 29,
+        "away": 26,
+        "status": "published"
+      },
+      "scoreSource": [
+        "29 - 26",
+        "-",
+        "-",
+        "1 - 0"
+      ],
       "round": {
         "number": 1,
         "date": "2026-09-27",
@@ -151,6 +173,13 @@
         "id": "204225",
         "name": "CHE-SANTS B"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 1,
         "date": "2026-09-27",
@@ -201,6 +230,13 @@
         "id": "219076",
         "name": "CH SALOU SENIOR MAS"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 1,
         "date": "2026-09-27",
@@ -251,6 +287,13 @@
         "id": "225827",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 2,
         "date": "2026-10-04",
@@ -301,6 +344,13 @@
         "id": "225824",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 2,
         "date": "2026-10-04",
@@ -351,6 +401,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 2,
         "date": "2026-10-04",
@@ -401,6 +458,13 @@
         "id": "207140",
         "name": "CLUB HANDBOL VILANOVA I LA GELTRU"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 3,
         "date": "2026-10-11",
@@ -454,6 +518,13 @@
         "id": "201833",
         "name": "B. M. PAU CASALS SABADELL"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 3,
         "date": "2026-10-11",
@@ -507,6 +578,13 @@
         "id": "201616",
         "name": "C.H. RAPID CORNELLA"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 3,
         "date": "2026-10-18",
@@ -560,6 +638,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 4,
         "date": "2026-10-18",
@@ -613,6 +698,13 @@
         "id": "225824",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 4,
         "date": "2026-10-18",
@@ -666,6 +758,13 @@
         "id": "202396",
         "name": "CLUB HANDBOL VILANOVA I LA GELTRU"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 4,
         "date": "2026-10-25",
@@ -719,6 +818,13 @@
         "id": "225826",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 4,
         "date": "2026-10-25",
@@ -772,6 +878,13 @@
         "id": "215600",
         "name": "CEH VENDRELL-EVOLUTION TIME"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 5,
         "date": "2026-10-25",
@@ -825,6 +938,13 @@
         "id": "209618",
         "name": "NUROIL CERDANYOLA JUNIOR"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 5,
         "date": "2026-10-25",
@@ -878,6 +998,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 6,
         "date": "2026-11-01",
@@ -931,6 +1058,13 @@
         "id": "225824",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 6,
         "date": "2026-11-01",
@@ -984,6 +1118,13 @@
         "id": "225827",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 5,
         "date": "2026-11-08",
@@ -1037,6 +1178,13 @@
         "id": "222407",
         "name": "HANDBOL CLARET - GRACIA"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 7,
         "date": "2026-11-08",
@@ -1090,6 +1238,13 @@
         "id": "201878",
         "name": "CH SANT ANDREU DE LA BARCA B"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 7,
         "date": "2026-11-08",
@@ -1143,6 +1298,13 @@
         "id": "225720",
         "name": "HANDBOL AGRAMUNT"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 6,
         "date": "2026-11-15",
@@ -1196,6 +1358,13 @@
         "id": "225826",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 6,
         "date": "2026-11-15",
@@ -1249,6 +1418,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 8,
         "date": "2026-11-15",
@@ -1302,6 +1478,13 @@
         "id": "215583",
         "name": "HANDBOL GAVA (C)"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 8,
         "date": "2026-11-15",
@@ -1355,6 +1538,13 @@
         "id": "225827",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 7,
         "date": "2026-11-22",
@@ -1408,6 +1598,13 @@
         "id": "215285",
         "name": "MOLINS de Q-HANDBOL MOLINS"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 9,
         "date": "2026-11-22",
@@ -1461,6 +1658,13 @@
         "id": "225824",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 9,
         "date": "2026-11-22",
@@ -1514,6 +1718,13 @@
         "id": "204131",
         "name": "HANDBOL BERGA"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 8,
         "date": "2026-11-29",
@@ -1567,6 +1778,13 @@
         "id": "225689",
         "name": "HANDBOL TERRASSA - CREU ALTA SABADELL"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 8,
         "date": "2026-11-29",
@@ -1620,6 +1838,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 10,
         "date": "2026-11-29",
@@ -1673,6 +1898,13 @@
         "id": "225824",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 10,
         "date": "2026-11-29",
@@ -1726,6 +1958,13 @@
         "id": "225827",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 9,
         "date": "2026-12-13",
@@ -1779,6 +2018,13 @@
         "id": "225826",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 9,
         "date": "2026-12-13",
@@ -1832,6 +2078,13 @@
         "id": "201445",
         "name": "HC PERELLO"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 11,
         "date": "2026-12-13",
@@ -1885,6 +2138,13 @@
         "id": "211125",
         "name": "HANDBOL COOPERATIVA SANT BOI C"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 11,
         "date": "2026-12-13",
@@ -1938,6 +2198,13 @@
         "id": "225827",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 10,
         "date": "2026-12-20",
@@ -1991,6 +2258,13 @@
         "id": "225826",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 10,
         "date": "2026-12-20",
@@ -2044,6 +2318,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 12,
         "date": "2026-12-20",
@@ -2097,6 +2378,13 @@
         "id": "225824",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 12,
         "date": "2026-12-20",
@@ -2150,6 +2438,13 @@
         "id": "217518",
         "name": "CH SANT ANDREU DE LA BARCA"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 13,
         "date": "2027-01-10",
@@ -2203,6 +2498,13 @@
         "id": "209512",
         "name": "CLUB HANDBOL RIPOLLET"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 13,
         "date": "2027-01-10",
@@ -2256,6 +2558,13 @@
         "id": "201988",
         "name": "CEACA TARREGA"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 11,
         "date": "2027-01-17",
@@ -2309,6 +2618,13 @@
         "id": "222447",
         "name": "CLUB HANDBOL SANT ANDREU"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 14,
         "date": "2027-01-17",
@@ -2362,6 +2678,13 @@
         "id": "225824",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 14,
         "date": "2027-01-17",
@@ -2415,6 +2738,13 @@
         "id": "225826",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 12,
         "date": "2027-01-24",
@@ -2468,6 +2798,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 15,
         "date": "2027-01-24",
@@ -2521,6 +2858,13 @@
         "id": "225711",
         "name": "CEH VENDRELL-JUNIOR"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 15,
         "date": "2027-01-24",
@@ -2574,6 +2918,13 @@
         "id": "225827",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 13,
         "date": "2027-01-31",
@@ -2627,6 +2978,13 @@
         "id": "201938",
         "name": "HANDBOL BERGA"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 13,
         "date": "2027-01-31",
@@ -2680,6 +3038,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 16,
         "date": "2027-01-31",
@@ -2733,6 +3098,13 @@
         "id": "225824",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 16,
         "date": "2027-01-31",
@@ -2786,6 +3158,13 @@
         "id": "201460",
         "name": "CH ASCO"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 14,
         "date": "2027-02-07",
@@ -2839,6 +3218,13 @@
         "id": "215382",
         "name": "TARRAGONA HC"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 17,
         "date": "2027-02-07",
@@ -2892,6 +3278,13 @@
         "id": "225824",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 17,
         "date": "2027-02-07",
@@ -2945,6 +3338,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 18,
         "date": "2027-02-14",
@@ -2998,6 +3398,13 @@
         "id": "201861",
         "name": "BM BARBERÀ 'B'"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 18,
         "date": "2027-02-14",
@@ -3051,6 +3458,13 @@
         "id": "225827",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 15,
         "date": "2027-02-21",
@@ -3104,6 +3518,13 @@
         "id": "225273",
         "name": "CH PARETS"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 15,
         "date": "2027-02-21",
@@ -3157,6 +3578,13 @@
         "id": "222242",
         "name": "AMICS H.C."
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 19,
         "date": "2027-02-21",
@@ -3210,6 +3638,13 @@
         "id": "222367",
         "name": "MGC MUTUA HANDBOL RIBES ECOCLEAN"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 16,
         "date": "2027-02-28",
@@ -3263,6 +3698,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 20,
         "date": "2027-02-28",
@@ -3316,6 +3758,13 @@
         "id": "225827",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 17,
         "date": "2027-03-07",
@@ -3369,6 +3818,13 @@
         "id": "225826",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 17,
         "date": "2027-03-07",
@@ -3422,6 +3878,13 @@
         "id": "225867",
         "name": "CH LA SALLE MONTCADA B"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 21,
         "date": "2027-03-07",
@@ -3475,6 +3938,13 @@
         "id": "225717",
         "name": "CLUB HANDBOL ALCARRÀS"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 18,
         "date": "2027-03-14",
@@ -3528,6 +3998,13 @@
         "id": "210119",
         "name": "CLUB HANDBOL SANT LLORENÇ"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 18,
         "date": "2027-03-14",
@@ -3581,6 +4058,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 22,
         "date": "2027-03-14",
@@ -3634,6 +4118,13 @@
         "id": "208298",
         "name": "CLUB HANDBOL SANT LLORENÇ"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 23,
         "date": "2027-03-21",
@@ -3687,6 +4178,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 24,
         "date": "2027-04-04",
@@ -3740,6 +4238,13 @@
         "id": "222437",
         "name": "CH. SANT ESTEVE SESROVIRES-B"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 25,
         "date": "2027-04-11",
@@ -3793,6 +4298,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 26,
         "date": "2027-04-18",
@@ -3846,6 +4358,13 @@
         "id": "201610",
         "name": "C.HRAPID CORNELLA"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 27,
         "date": "2027-04-25",
@@ -3899,6 +4418,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 28,
         "date": "2027-05-02",
@@ -3952,6 +4478,13 @@
         "id": "225825",
         "name": "CH MONTBUI"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 29,
         "date": "2027-05-09",
@@ -4005,6 +4538,13 @@
         "id": "219208",
         "name": "C.E. TORTOSA-BIGMAT MAYOR"
       },
+      "score": null,
+      "scoreSource": [
+        "-",
+        "-",
+        "-",
+        "0 - 0"
+      ],
       "round": {
         "number": 30,
         "date": "2027-05-16",
