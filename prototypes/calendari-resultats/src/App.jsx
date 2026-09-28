@@ -317,6 +317,10 @@ const copy = {
   },
 };
 
+// Temporary product decision: scores already appear in the calendar cards, so
+// keep the standalone results section available in code but hidden for review.
+const SHOW_RESULTS_SECTION = false;
+
 const teamMeta = {
   "senior-masculi-tercera-b": {
     tone: "blue",
@@ -1071,7 +1075,7 @@ export function App() {
           </section>
 
           {showCalendar && <CompleteCalendar selectedTeam={selectedTeam} language={language} />}
-          <ResultsSection language={language} />
+          {SHOW_RESULTS_SECTION && <ResultsSection language={language} />}
           <PersonSimpleThrow className="court-motif" size={420} weight="thin" aria-hidden="true" />
         </div>
 
