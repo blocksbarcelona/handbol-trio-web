@@ -789,24 +789,13 @@ function ResultsSection({ language }) {
   );
 }
 
-function RecruitmentSection({ language }) {
+function TrainingSchedule({ language, title }) {
   const t = copy[language];
-  const whatsappUrl = `https://wa.me/${club.phoneE164.replace("+", "")}`;
-  const featureIcons = [Heart, UsersThree, Trophy, Target];
-
   return (
-    <section className="recruitment-section" id="nueva-temporada" aria-labelledby="recruitment-title">
-      <div className="content-heading">
-        <p className="eyebrow">{t.recruitmentEyebrow}</p>
-        <h2 id="recruitment-title">{t.recruitmentTitle}</h2>
-        <p className="content-subtitle">{t.recruitmentSubtitle}</p>
-        <p className="content-description">{t.recruitmentDescription}</p>
-      </div>
-
       <section className="training-schedule" aria-labelledby="training-schedule-title">
         <div className="training-schedule-heading">
           <span><Clock size={21} weight="duotone" /></span>
-          <h3 id="training-schedule-title">{t.trainingTitle}</h3>
+          <h3 id="training-schedule-title">{title ?? t.trainingTitle}</h3>
         </div>
 
         <div className="training-schedule-grid">
@@ -823,6 +812,7 @@ function RecruitmentSection({ language }) {
                     {hasConfirmedSchedule && <small>{t.trainingConfirmed}</small>}
                   </div>
                 </div>
+                <div className="training-team-category">{teamMeta[teamId]?.competition[language] ?? {ca: "Aleví · Sense competició federada", es: "Alevín · Sin competición federada", en: "Under-12 · No federation competition"}[language]}</div>
                 {hasConfirmedSchedule ? (
                   <ul>
                     {trainingTimes.map((time) => <li key={time}><Clock size={15} />{time}</li>)}
@@ -835,6 +825,22 @@ function RecruitmentSection({ language }) {
           })}
         </div>
       </section>
+  );
+}
+
+function RecruitmentSection({ language, showTraining = true }) {
+  const t = copy[language];
+  const whatsappUrl = `https://wa.me/${club.phoneE164.replace("+", "")}`;
+  const featureIcons = [Heart, UsersThree, Trophy, Target];
+  return (
+    <section className="recruitment-section" id="nueva-temporada" aria-labelledby="recruitment-title">
+      <div className="content-heading">
+        <p className="eyebrow">{t.recruitmentEyebrow}</p>
+        <h2 id="recruitment-title">{t.recruitmentTitle}</h2>
+        <p className="content-subtitle">{t.recruitmentSubtitle}</p>
+        <p className="content-description">{t.recruitmentDescription}</p>
+      </div>
+      {showTraining && <TrainingSchedule language={language} />}
 
       <div className="recruitment-grid">
         <article className="recruit-card female">
@@ -991,19 +997,9 @@ function ClubPage({ language }) {
         <p className="content-eyebrow">{club.shortName} · {club.county}</p>
         <h1 id="club-page-title">{t.clubPageTitle}</h1>
         <p>{t.clubPageIntro}</p>
-        <div className="entity-summary-grid">
-          <article>
-            <h2>{t.verifiedTeams}</h2>
-            <ul>
-              {trainingTeamIds.map((teamId) => (
-                <li key={teamId} className="club-team-item">
-                  <TShirt size={24} weight="fill" className={`club-team-shirt ${trainingTeamMeta[teamId].tone}`} aria-hidden="true" />
-                  <div><strong>{trainingTeamMeta[teamId].labels[language]}</strong><span>{teamMeta[teamId]?.competition[language] ?? t.trainingSchedules[teamId].join(" · ")}</span></div>
-                </li>
-              ))}
-            </ul>
+        <TrainingSchedule language={language} title={t.verifiedTeams} />
             <a className="text-link" href={route.calendarPath}>{t.viewCalendar}<ArrowSquareOut size={16} aria-hidden="true" /></a>
-          </article>
+        <div className="entity-summary-grid club-location-summary">
           <article>
             <h2>{t.clubLocationTitle}</h2>
             <p>{t.clubLocationText}</p>
@@ -1013,7 +1009,7 @@ function ClubPage({ language }) {
         </div>
       </section>
       <TeamSection language={language} />
-      <RecruitmentSection language={language} />
+      <RecruitmentSection language={language} showTraining={false} />
     </div>
   );
 }
@@ -1065,7 +1061,7 @@ function Footer({ language }) {
       <div className="footer-grid">
         <a className="footer-brand" href={languageRoutes[language].homePath}><img src="/assets/logo.png" alt="" width="200" height="199" /><span>Club Handbol Montbui</span></a>
         <div>
-          <h2>{t.contact}</h2>
+          <h2><a href={languageRoutes[language].contactPath}>{t.contact}</a></h2>
           <p><MapPin size={18} weight="fill" /> {club.address.streetAddress}<br />{club.address.postalCode} {club.address.addressLocality}</p>
           <p>{t.contactPerson} · <a href={`tel:${club.phoneE164}`}>{club.phoneDisplay}</a></p>
           <a href={`mailto:${club.email}`}>{club.email}</a>

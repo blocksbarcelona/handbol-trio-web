@@ -1456,6 +1456,17 @@ main {
   background: #fff;
 }
 
+.training-team-category {
+  margin: 12px 0;
+  color: #596780;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.entity-summary-grid.club-location-summary {
+  grid-template-columns: 1fr;
+}
+
 .training-team-card.confirmed {
   border-color: #f7b4ca;
   box-shadow: 0 8px 20px rgba(233, 45, 110, 0.08);
@@ -1760,6 +1771,7 @@ main {
 
 .team-layout > img {
   width: 100%;
+  height: auto;
   aspect-ratio: 3 / 2;
   border-radius: 18px;
   object-fit: cover;
