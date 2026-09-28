@@ -982,10 +982,15 @@ export function App() {
 
   function toggleCalendar() {
     setShowCalendar((visible) => !visible);
-    window.setTimeout(() => {
-      document.querySelector("#calendari-complet")?.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 40);
   }
+
+  useEffect(() => {
+    if (!showCalendar) return;
+    const frame = window.requestAnimationFrame(() => {
+      document.getElementById("calendari-complet")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [showCalendar]);
 
   const initialNotice = periodIndex === initialPeriod.index
     ? initialPeriod.mode === "preseason"

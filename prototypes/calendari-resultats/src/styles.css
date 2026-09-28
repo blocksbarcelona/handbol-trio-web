@@ -349,7 +349,9 @@ main {
 
 .calendar-area {
   position: relative;
-  overflow: hidden;
+  /* Clip decoration without creating a scroll container for scrollIntoView. */
+  overflow: clip;
+  display: flow-root;
   padding-bottom: 1px;
   background: #fff;
   scroll-margin-top: 70px;
