@@ -88,6 +88,18 @@ test("machine-readable public resources are generated and valid", async () => {
   await access(path.join(root, "llms.txt"));
 });
 
+test("crawlable calendar and data feed preserve the current published scores", async () => {
+  const source = JSON.parse(await readFile(path.resolve(root, "..", "..", "src", "data", "isquad-schedule.json"), "utf8"));
+  const feed = JSON.parse(await readFile(path.join(root, "dades", "calendari.json"), "utf8"));
+  assert.deepEqual(feed, source);
+  for (const file of ["calendari/index.html", "es/calendario/index.html", "en/calendar/index.html"]) {
+    const html = await readFile(path.join(root, file), "utf8");
+    for (const match of source.matches.filter(match => match.score)) {
+      assert.ok(html.includes(`${match.score.home}–${match.score.away}`), `Missing published score in ${file}`);
+    }
+  }
+});
+
 test("the interactive application preserves one semantic page heading and mobile navigation", async () => {
   const app = await readFile(path.resolve(root, "..", "..", "src", "App.jsx"), "utf8");
   assert.match(app, /const CalendarHeading = pageView === "calendar" \? "h1" : "h2"/);
