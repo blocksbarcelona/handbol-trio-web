@@ -11,6 +11,7 @@ import {
   HouseLine,
   Info,
   InstagramLogo,
+  List,
   MapPin,
   Medal,
   PersonSimpleThrow,
@@ -25,6 +26,7 @@ import {
   YoutubeLogo,
 } from "@phosphor-icons/react";
 import scheduleData from "./data/isquad-schedule.json";
+import { club, languageRoutes } from "./data/club.js";
 
 const locales = {
   ca: "ca-ES",
@@ -34,10 +36,26 @@ const locales = {
 
 const copy = {
   ca: {
-    nav: ["Inici", "Equip", "Calendari", "Actualitat", "Patrocini", "Contacte"],
+    nav: ["Inici", "El club", "Calendari", "Actualitat", "Patrocini", "Contacte"],
+    menu: "Obrir el menú principal",
+    breadcrumbHome: "Inici",
+    clubPageTitle: "Club d’handbol a Santa Margarida de Montbui",
+    clubPageIntro: "El Club Handbol Montbui ofereix entrenaments i competició d’handbol a Santa Margarida de Montbui, a l’Anoia, prop d’Igualada i Vilanova del Camí. Hi participen equips de base i sèniors.",
+    verifiedTeams: "Els nostres equips · Temporada 2026-2027",
+    clubLocationTitle: "Àmbit local",
+    clubLocationText: "Entrenem a Sant Maure, a Santa Margarida de Montbui, i formem part de la comunitat esportiva de l’Anoia.",
+    contactPageTitle: "Contacte i ubicació del Club Handbol Montbui",
+    contactPageIntro: "Contacta amb el club per consultar la incorporació a un equip, una sessió de prova o qualsevol dubte sobre entrenaments i partits.",
+    directContact: "Contacte directe",
+    postalLocation: "Adreça",
+    howToArrive: "Com arribar-hi",
+    fromIgualada: "Obrir la ruta des d’Igualada",
+    fromVilanova: "Obrir la ruta des de Vilanova del Camí",
+    viewCalendar: "Veure el calendari de partits",
     heroKicker: "Passió · Equip · Victòria",
     heroSeason: "Temporada 2026-2027",
     heroDescription: "Uneix-te al nostre equip d’handbol i viu l’emoció de l’esport en equip. Entrenaments, competició i una gran família esportiva t’esperen.",
+    localIdentity: "Som un club d’handbol de Santa Margarida de Montbui, a l’Anoia, al costat d’Igualada i Vilanova del Camí.",
     join: "Uneix-te a l’Equip",
     players: "Jugadores",
     history: "Anys d’història",
@@ -107,6 +125,7 @@ const copy = {
     teamTitle: "El Nostre Equip",
     teamSubtitle: "Coneix la passió que ens mou",
     teamText: "Som més que un equip, som una família unida per la passió de l’handbol. Amb anys d’experiència i dedicació, hem construït un llegat d’excel·lència esportiva i valors humans.",
+    teamImageAlt: "Jugadors i jugadores del Club Handbol Montbui al pavelló",
     values: [
       ["Excel·lència", "Busquem la perfecció en cada entrenament i partit."],
       ["Treball en Equip", "Units som més forts, junts assolim les nostres metes."],
@@ -121,17 +140,35 @@ const copy = {
     featuredDate: "24 de maig de 2026",
     contact: "Contacte",
     follow: "Segueix-nos",
-    contactPerson: "Contacte: Laia · 633 556 228",
+    contactPerson: "Contacte: Laia",
     rights: "Tots els drets reservats.",
     webCredit: "Web creada per",
     privacy: "Política de Privacitat",
     legal: "Avís Legal",
+    directions: "Com arribar al Club Handbol Montbui",
+    directionsText: "Ens trobaràs a l’avinguda de l’Esport, al nucli de Sant Maure de Santa Margarida de Montbui.",
   },
   es: {
-    nav: ["Inicio", "Equipo", "Calendario", "Actualidad", "Patrocinio", "Contacto"],
+    nav: ["Inicio", "El club", "Calendario", "Actualidad", "Patrocinio", "Contacto"],
+    menu: "Abrir el menú principal",
+    breadcrumbHome: "Inicio",
+    clubPageTitle: "Club de balonmano en Santa Margarida de Montbui",
+    clubPageIntro: "El Club Handbol Montbui ofrece entrenamientos y competición de balonmano en Santa Margarida de Montbui, en l’Anoia, cerca de Igualada y Vilanova del Camí. Participan equipos de base y sénior.",
+    verifiedTeams: "Nuestros equipos · Temporada 2026-2027",
+    clubLocationTitle: "Ámbito local",
+    clubLocationText: "Entrenamos en Sant Maure, en Santa Margarida de Montbui, y formamos parte de la comunidad deportiva de l’Anoia.",
+    contactPageTitle: "Contacto y ubicación del Club Handbol Montbui",
+    contactPageIntro: "Contacta con el club para consultar la incorporación a un equipo, una sesión de prueba o cualquier duda sobre entrenamientos y partidos.",
+    directContact: "Contacto directo",
+    postalLocation: "Dirección",
+    howToArrive: "Cómo llegar",
+    fromIgualada: "Abrir la ruta desde Igualada",
+    fromVilanova: "Abrir la ruta desde Vilanova del Camí",
+    viewCalendar: "Ver el calendario de partidos",
     heroKicker: "Pasión · Equipo · Victoria",
     heroSeason: "Temporada 2026-2027",
     heroDescription: "Únete a nuestro equipo de balonmano y vive la emoción del deporte en equipo. Entrenamientos, competición y una gran familia deportiva te esperan.",
+    localIdentity: "Somos un club de balonmano de Santa Margarida de Montbui, en l’Anoia, junto a Igualada y Vilanova del Camí.",
     join: "Únete al Equipo",
     players: "Jugadores",
     history: "Años de historia",
@@ -201,6 +238,7 @@ const copy = {
     teamTitle: "Nuestro Equipo",
     teamSubtitle: "Conoce la pasión que nos mueve",
     teamText: "Somos más que un equipo, somos una familia unida por la pasión del balonmano. Con años de experiencia y dedicación, hemos construido un legado de excelencia deportiva y valores humanos.",
+    teamImageAlt: "Jugadores y jugadoras del Club Handbol Montbui en el pabellón",
     values: [
       ["Excelencia", "Buscamos la perfección en cada entrenamiento y partido."],
       ["Trabajo en Equipo", "Unidos somos más fuertes, juntos alcanzamos nuestras metas."],
@@ -215,17 +253,35 @@ const copy = {
     featuredDate: "24 de mayo de 2026",
     contact: "Contacto",
     follow: "Síguenos",
-    contactPerson: "Contacto: Laia · 633 556 228",
+    contactPerson: "Contacto: Laia",
     rights: "Todos los derechos reservados.",
     webCredit: "Web creada por",
     privacy: "Política de Privacidad",
     legal: "Aviso Legal",
+    directions: "Cómo llegar al Club Handbol Montbui",
+    directionsText: "Nos encontrarás en la avenida de l’Esport, en el núcleo de Sant Maure de Santa Margarida de Montbui.",
   },
   en: {
-    nav: ["Home", "Team", "Calendar", "News", "Sponsorship", "Contact"],
+    nav: ["Home", "The club", "Calendar", "News", "Sponsorship", "Contact"],
+    menu: "Open the main menu",
+    breadcrumbHome: "Home",
+    clubPageTitle: "Handball club in Santa Margarida de Montbui",
+    clubPageIntro: "Club Handbol Montbui provides handball training and competition in Santa Margarida de Montbui, in the Anoia county, near Igualada and Vilanova del Camí. Youth and senior teams take part.",
+    verifiedTeams: "Our teams · 2026-2027 season",
+    clubLocationTitle: "Local area",
+    clubLocationText: "We train in Sant Maure, Santa Margarida de Montbui, and are part of the Anoia sporting community.",
+    contactPageTitle: "Contact and location of Club Handbol Montbui",
+    contactPageIntro: "Contact the club to ask about joining a team, attending a trial training session, or any questions about training and matches.",
+    directContact: "Direct contact",
+    postalLocation: "Address",
+    howToArrive: "How to get here",
+    fromIgualada: "Open directions from Igualada",
+    fromVilanova: "Open directions from Vilanova del Camí",
+    viewCalendar: "View match calendar",
     heroKicker: "Passion · Team · Victory",
     heroSeason: "2026-2027 season",
     heroDescription: "Join our handball club and experience the excitement of team sport. Training, competition and a great sporting family are waiting for you.",
+    localIdentity: "We are a handball club in Santa Margarida de Montbui, in the Anoia county, next to Igualada and Vilanova del Camí.",
     join: "Join the Team",
     players: "Players",
     history: "Years of history",
@@ -295,6 +351,7 @@ const copy = {
     teamTitle: "Our Team",
     teamSubtitle: "Meet the passion that drives us",
     teamText: "We are more than a team: we are a family brought together by a passion for handball. Years of experience and dedication have helped us build a legacy of sporting excellence and strong human values.",
+    teamImageAlt: "Club Handbol Montbui players at the sports hall",
     values: [
       ["Excellence", "We strive for excellence in every training session and match."],
       ["Teamwork", "We are stronger together and reach our goals as one team."],
@@ -309,11 +366,13 @@ const copy = {
     featuredDate: "24 May 2026",
     contact: "Contact",
     follow: "Follow us",
-    contactPerson: "Contact: Laia · +34 633 556 228",
+    contactPerson: "Contact: Laia",
     rights: "All rights reserved.",
     webCredit: "Web created by",
     privacy: "Privacy Policy",
     legal: "Legal Notice",
+    directions: "How to reach Club Handbol Montbui",
+    directionsText: "You will find us on Avinguda de l’Esport, in Sant Maure, Santa Margarida de Montbui.",
   },
 };
 
@@ -468,37 +527,52 @@ function formatRoundLabel(period, language) {
   return `${dictionary.jornadas} ${period.rounds.join(" · ")}`;
 }
 
-function Header({ language, onLanguageChange, pageView }) {
+function Header({ language, pageView }) {
   const t = copy[language];
+  const route = languageRoutes[language];
+  const sponsorshipPath = language === "ca" ? "/patrocinadors.html" : language === "es" ? "/patrocinadores.html" : "/sponsors.html";
   return (
     <header className="site-header">
-      <a className="brand" href="#home" aria-label="Club Handbol Montbui">
-        <img src="/assets/logo.png" alt="" />
+      <a className="brand" href={route.homePath} aria-label="Club Handbol Montbui">
+        <img src="/assets/logo.png" alt="" width="200" height="199" />
         <span>Club Handbol <strong>Montbui</strong></span>
       </a>
 
       <nav className="main-nav" aria-label={t.nav[0]}>
-        <a className={pageView === "home" ? "active" : ""} href="#home">{t.nav[0]}</a>
-        <a href="#team">{t.nav[1]}</a>
-        <a className={pageView === "calendar" ? "active" : ""} href="#calendari-main">{t.nav[2]}</a>
-        <a href="#social-hub">{t.nav[3]}</a>
-        <a href="https://chmontbui.es/patrocinadors.html">{t.nav[4]}</a>
-        <a href="#contacte">{t.nav[5]}</a>
+        <a className={pageView === "home" ? "active" : ""} href={route.homePath}>{t.nav[0]}</a>
+        <a className={pageView === "club" ? "active" : ""} href={route.clubPath}>{t.nav[1]}</a>
+        <a className={pageView === "calendar" ? "active" : ""} href={route.calendarPath}>{t.nav[2]}</a>
+        <a href={`${route.homePath}#social-hub`}>{t.nav[3]}</a>
+        <a href={sponsorshipPath}>{t.nav[4]}</a>
+        <a className={pageView === "contact" ? "active" : ""} href={route.contactPath}>{t.nav[5]}</a>
       </nav>
 
-      <div className="languages" aria-label="Language">
+      <details className="mobile-nav">
+        <summary aria-label={t.menu} title={t.menu}><List size={23} aria-hidden="true" /></summary>
+        <nav aria-label={t.menu}>
+          <a className={pageView === "home" ? "active" : ""} href={route.homePath}>{t.nav[0]}</a>
+          <a className={pageView === "club" ? "active" : ""} href={route.clubPath}>{t.nav[1]}</a>
+          <a className={pageView === "calendar" ? "active" : ""} href={route.calendarPath}>{t.nav[2]}</a>
+          <a href={`${route.homePath}#social-hub`}>{t.nav[3]}</a>
+          <a href={sponsorshipPath}>{t.nav[4]}</a>
+          <a className={pageView === "contact" ? "active" : ""} href={route.contactPath}>{t.nav[5]}</a>
+        </nav>
+      </details>
+
+      <nav className="languages" aria-label="Language">
         {["es", "ca", "en"].map((code) => (
-          <button
-            type="button"
+          <a
             key={code}
             className={language === code ? "active" : ""}
-            onClick={() => onLanguageChange(code)}
-            aria-pressed={language === code}
+            href={languageRoutes[code][`${pageView}Path`] || languageRoutes[code].homePath}
+            hrefLang={languageRoutes[code].locale}
+            lang={code}
+            aria-current={language === code ? "page" : undefined}
           >
             {code.toUpperCase()}
-          </button>
+          </a>
         ))}
-      </div>
+      </nav>
     </header>
   );
 }
@@ -717,7 +791,7 @@ function ResultsSection({ language }) {
 
 function RecruitmentSection({ language }) {
   const t = copy[language];
-  const whatsappUrl = "https://wa.me/34633556228";
+  const whatsappUrl = `https://wa.me/${club.phoneE164.replace("+", "")}`;
   const featureIcons = [Heart, UsersThree, Trophy, Target];
 
   return (
@@ -769,7 +843,7 @@ function RecruitmentSection({ language }) {
             <h3>{t.newWomen}</h3>
             <a href={whatsappUrl} target="_blank" rel="noreferrer"><WhatsappLogo size={20} weight="fill" />{t.interested}</a>
           </div>
-          <img src="/assets/f1-face-fixed.png" alt="" />
+          <img src="/assets/f1-face-fixed.webp" alt="" width="1254" height="1254" loading="lazy" />
         </article>
 
         <article className="recruit-card male">
@@ -778,7 +852,7 @@ function RecruitmentSection({ language }) {
             <h3>{t.newMen}</h3>
             <a href={whatsappUrl} target="_blank" rel="noreferrer"><WhatsappLogo size={20} weight="fill" />{t.interested}</a>
           </div>
-          <img src="/assets/m1.png" alt="" />
+          <img src="/assets/m1.webp" alt="" width="1254" height="1254" loading="lazy" />
         </article>
       </div>
 
@@ -796,7 +870,7 @@ function RecruitmentSection({ language }) {
         <div><strong>{t.interestedQuestion}</strong><span>{t.interestedText}</span></div>
         <div>
           <a className="whatsapp-action" href={whatsappUrl} target="_blank" rel="noreferrer"><WhatsappLogo size={20} weight="fill" />WhatsApp</a>
-          <a className="email-action" href="mailto:chmontbui06@gmail.com"><EnvelopeSimple size={20} weight="bold" />Email</a>
+          <a className="email-action" href={`mailto:${club.email}`}><EnvelopeSimple size={20} weight="bold" />Email</a>
         </div>
       </div>
     </section>
@@ -816,8 +890,9 @@ function TeamSection({ language }) {
         </div>
 
         <div className="team-layout">
-          <img src="/assets/equipos-25-26.jpg" alt="Club Handbol Montbui" />
+          <img src="/assets/equipos-25-26.webp" alt={t.teamImageAlt} width="1920" height="1280" loading="lazy" />
           <div className="team-copy">
+            <p>{t.localIdentity}</p>
             <p>{t.teamText}</p>
             <div className="club-values">
               {t.values.map(([title, text], index) => {
@@ -880,7 +955,7 @@ function SocialHubSection({ language }) {
             {clubVideos.map((video) => (
               <a key={video.id} href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer">
                 <span className="video-thumbnail">
-                  <img src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt="" loading="lazy" />
+                  <img src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt="" width="480" height="360" loading="lazy" />
                   <Play size={19} weight="fill" aria-hidden="true" />
                 </span>
                 <span><strong>{video.title}</strong><small>{video.date}</small></span>
@@ -894,24 +969,117 @@ function SocialHubSection({ language }) {
   );
 }
 
+function Breadcrumbs({ language, current }) {
+  const t = copy[language];
+  return (
+    <nav className="breadcrumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href={languageRoutes[language].homePath}><HouseLine size={16} aria-hidden="true" />{t.breadcrumbHome}</a></li>
+        <li aria-current="page">{current}</li>
+      </ol>
+    </nav>
+  );
+}
+
+function ClubPage({ language }) {
+  const t = copy[language];
+  const route = languageRoutes[language];
+  return (
+    <div id="club-main" className="interior-page">
+      <Breadcrumbs language={language} current={t.nav[1]} />
+      <section className="interior-hero" aria-labelledby="club-page-title">
+        <p className="content-eyebrow">{club.shortName} · {club.county}</p>
+        <h1 id="club-page-title">{t.clubPageTitle}</h1>
+        <p>{t.clubPageIntro}</p>
+        <div className="entity-summary-grid">
+          <article>
+            <h2>{t.verifiedTeams}</h2>
+            <ul>
+              {trainingTeamIds.map((teamId) => (
+                <li key={teamId} className="club-team-item">
+                  <TShirt size={24} weight="fill" className={`club-team-shirt ${trainingTeamMeta[teamId].tone}`} aria-hidden="true" />
+                  <div><strong>{trainingTeamMeta[teamId].labels[language]}</strong><span>{teamMeta[teamId]?.competition[language] ?? t.trainingSchedules[teamId].join(" · ")}</span></div>
+                </li>
+              ))}
+            </ul>
+            <a className="text-link" href={route.calendarPath}>{t.viewCalendar}<ArrowSquareOut size={16} aria-hidden="true" /></a>
+          </article>
+          <article>
+            <h2>{t.clubLocationTitle}</h2>
+            <p>{t.clubLocationText}</p>
+            <address>{club.address.streetAddress}, {club.address.addressDistrict}<br />{club.address.postalCode} {club.address.addressLocality}, {club.address.addressRegion}</address>
+            <a className="text-link" href={route.contactPath}>{t.contact}<ArrowSquareOut size={16} aria-hidden="true" /></a>
+          </article>
+        </div>
+      </section>
+      <TeamSection language={language} />
+      <RecruitmentSection language={language} />
+    </div>
+  );
+}
+
+function ContactPage({ language }) {
+  const t = copy[language];
+  const route = languageRoutes[language];
+  const mapsDestination = "41.5719504,1.6030128";
+  return (
+    <div id="contact-main" className="interior-page">
+      <Breadcrumbs language={language} current={t.nav[5]} />
+      <section className="interior-hero contact-page" aria-labelledby="contact-page-title">
+        <p className="content-eyebrow">{club.shortName} · {club.county}</p>
+        <h1 id="contact-page-title">{t.contactPageTitle}</h1>
+        <p>{t.contactPageIntro}</p>
+        <div className="contact-grid">
+          <article className="contact-card">
+            <MapPin size={28} weight="duotone" aria-hidden="true" />
+            <h2>{t.postalLocation}</h2>
+            <address>{club.address.streetAddress}<br />{club.address.addressDistrict}<br />{club.address.postalCode} {club.address.addressLocality}<br />{club.county}, {club.address.addressRegion}</address>
+            <a className="text-link" href={`https://www.google.com/maps/?q=${mapsDestination}`} target="_blank" rel="noreferrer">Google Maps<ArrowSquareOut size={16} aria-hidden="true" /></a>
+          </article>
+          <article className="contact-card">
+            <EnvelopeSimple size={28} weight="duotone" aria-hidden="true" />
+            <h2>{t.directContact}</h2>
+            <a href={`mailto:${club.email}`}>{club.email}</a>
+            <a href={`tel:${club.phoneE164}`}>{club.phoneDisplay}</a>
+            <a className="text-link" href={`https://wa.me/${club.phoneE164.replace("+", "")}`} target="_blank" rel="noreferrer">WhatsApp<ArrowSquareOut size={16} aria-hidden="true" /></a>
+          </article>
+          <article className="contact-card">
+            <HouseLine size={28} weight="duotone" aria-hidden="true" />
+            <h2>{t.howToArrive}</h2>
+            <p>{t.directionsText}</p>
+            <a className="text-link" href={`https://www.google.com/maps/dir/Igualada/${mapsDestination}`} target="_blank" rel="noreferrer">{t.fromIgualada}<ArrowSquareOut size={16} aria-hidden="true" /></a>
+            <a className="text-link" href={`https://www.google.com/maps/dir/Vilanova+del+Camí/${mapsDestination}`} target="_blank" rel="noreferrer">{t.fromVilanova}<ArrowSquareOut size={16} aria-hidden="true" /></a>
+          </article>
+        </div>
+        <a className="home-cta" href={route.calendarPath}><CalendarBlank size={20} weight="bold" />{t.viewCalendar}</a>
+      </section>
+    </div>
+  );
+}
+
 function Footer({ language }) {
   const t = copy[language];
   const suffix = language === "es" ? "" : `_${language}`;
   return (
     <footer className="site-footer" id="contacte">
       <div className="footer-grid">
-        <a className="footer-brand" href="https://chmontbui.es/"><img src="/assets/logo.png" alt="" /><span>Club Handbol Montbui</span></a>
+        <a className="footer-brand" href={languageRoutes[language].homePath}><img src="/assets/logo.png" alt="" width="200" height="199" /><span>Club Handbol Montbui</span></a>
         <div>
           <h2>{t.contact}</h2>
-          <p><MapPin size={18} weight="fill" /> Av. de l’Esport<br />08710 Santa Margarida de Montbui</p>
-          <p>{t.contactPerson}</p>
-          <a href="mailto:chmontbui06@gmail.com">chmontbui06@gmail.com</a>
+          <p><MapPin size={18} weight="fill" /> {club.address.streetAddress}<br />{club.address.postalCode} {club.address.addressLocality}</p>
+          <p>{t.contactPerson} · <a href={`tel:${club.phoneE164}`}>{club.phoneDisplay}</a></p>
+          <a href={`mailto:${club.email}`}>{club.email}</a>
+          <a className="footer-directions" href="https://www.google.com/maps/?q=41.5719504,1.6030128" target="_blank" rel="noreferrer">
+            {t.directions}
+            <ArrowSquareOut size={14} />
+          </a>
+          <p className="footer-directions-copy">{t.directionsText}</p>
         </div>
         <div>
           <h2>{t.follow}</h2>
           <div className="social-links">
-            <a href="https://www.instagram.com/chmontbui/" aria-label="Instagram"><InstagramLogo size={22} /></a>
-            <a href="https://www.youtube.com/@clubhandbolmontbui" aria-label="YouTube"><YoutubeLogo size={22} /></a>
+            <a href={club.socialProfiles[0]} aria-label="Instagram"><InstagramLogo size={22} /></a>
+            <a href={club.socialProfiles[1]} aria-label="YouTube"><YoutubeLogo size={22} /></a>
           </div>
         </div>
       </div>
@@ -934,17 +1102,26 @@ function Footer({ language }) {
 
 function getPageView() {
   if (typeof window === "undefined") return "home";
+  const declaredPage = document.body.dataset.page;
+  if (["calendar", "club", "contact"].includes(declaredPage)) return declaredPage;
   return ["#calendari", "#calendari-main"].includes(window.location.hash) ? "calendar" : "home";
 }
 
+function getInitialLanguage() {
+  if (typeof document === "undefined") return "ca";
+  const language = document.documentElement.lang.split("-")[0];
+  return Object.hasOwn(languageRoutes, language) ? language : "ca";
+}
+
 export function App() {
-  const [language, setLanguage] = useState("ca");
+  const [language] = useState(getInitialLanguage);
   const [pageView, setPageView] = useState(getPageView);
   const [periodIndex, setPeriodIndex] = useState(initialPeriod.index);
   const [selectedTeam, setSelectedTeam] = useState("all");
   const [showCalendar, setShowCalendar] = useState(false);
   const t = copy[language];
   const currentPeriod = periods[periodIndex];
+  const CalendarHeading = pageView === "calendar" ? "h1" : "h2";
 
   useEffect(() => {
     document.documentElement.lang = language;
@@ -963,7 +1140,9 @@ export function App() {
     window.requestAnimationFrame(() => {
       const targetId = pageView === "calendar"
         ? "calendari-main"
-        : window.location.hash.slice(1) || "home";
+        : pageView === "home"
+          ? window.location.hash.slice(1) || "home"
+          : `${pageView}-main`;
       document.getElementById(targetId)?.scrollIntoView({ block: "start" });
     });
   }, [pageView]);
@@ -1004,11 +1183,11 @@ export function App() {
 
   return (
     <div className="app-shell">
-      <Header language={language} onLanguageChange={setLanguage} pageView={pageView} />
+      <Header language={language} pageView={pageView} />
 
       {pageView === "home" && (
         <section id="home" className="home-hero" aria-labelledby="page-title">
-          <img src="/assets/grupo.jpg" alt="" />
+          <img src="/assets/grupo.webp" alt="" width="1920" height="1280" fetchPriority="high" />
           <div className="home-hero-overlay" />
           <div className="home-hero-content">
             <h1 id="page-title">Club Handbol Montbui</h1>
@@ -1025,11 +1204,12 @@ export function App() {
         </section>
       )}
 
-      <main className={pageView === "calendar" ? "calendar-only-main" : ""}>
-        <div className="calendar-area" id={pageView === "calendar" ? "calendari-main" : "home-calendar"}>
+      <main className={pageView === "home" ? "" : "interior-main"}>
+        {["home", "calendar"].includes(pageView) && <div className="calendar-area" id={pageView === "calendar" ? "calendari-main" : "home-calendar"}>
+          {pageView === "calendar" && <Breadcrumbs language={language} current={t.nav[2]} />}
           <section className="calendar-intro" aria-labelledby="calendar-title">
             <div>
-              <h2 id="calendar-title">{t.calendarTitle}</h2>
+              <CalendarHeading id="calendar-title">{t.calendarTitle}</CalendarHeading>
               <span>{t.calendarSubtitle}</span>
             </div>
             <div className="calendar-data-summary">
@@ -1082,7 +1262,7 @@ export function App() {
           {showCalendar && <CompleteCalendar selectedTeam={selectedTeam} language={language} />}
           {SHOW_RESULTS_SECTION && <ResultsSection language={language} />}
           <PersonSimpleThrow className="court-motif" size={420} weight="thin" aria-hidden="true" />
-        </div>
+        </div>}
 
         {pageView === "home" && (
           <>
@@ -1091,6 +1271,8 @@ export function App() {
             <SocialHubSection language={language} />
           </>
         )}
+        {pageView === "club" && <ClubPage language={language} />}
+        {pageView === "contact" && <ContactPage language={language} />}
       </main>
 
       <Footer language={language} />

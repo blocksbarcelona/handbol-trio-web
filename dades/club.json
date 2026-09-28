@@ -1,0 +1,43 @@
+{
+  "id": "https://chmontbui.es/#organization",
+  "websiteId": "https://chmontbui.es/#website",
+  "name": "Club Handbol Montbui",
+  "shortName": "CH Montbui",
+  "legalType": "Entitat esportiva local sense ànim de lucre",
+  "sport": "Handball",
+  "canonicalUrl": "https://chmontbui.es/",
+  "email": "chmontbui06@gmail.com",
+  "phoneDisplay": "+34 633 556 228",
+  "phoneE164": "+34633556228",
+  "address": {
+    "streetAddress": "Av. de l’Esport",
+    "addressLocality": "Santa Margarida de Montbui",
+    "addressDistrict": "Sant Maure",
+    "postalCode": "08710",
+    "addressRegion": "Barcelona",
+    "addressCountry": "ES"
+  },
+  "county": "l’Anoia",
+  "autonomousCommunity": "Catalunya",
+  "immediateArea": [
+    "Santa Margarida de Montbui",
+    "Igualada",
+    "Vilanova del Camí"
+  ],
+  "logo": "https://chmontbui.es/assets/logo.png",
+  "image": "https://chmontbui.es/assets/grupo.jpg",
+  "socialProfiles": [
+    "https://www.instagram.com/chmontbui/",
+    "https://www.youtube.com/@clubhandbolmontbui"
+  ],
+  "officialReferences": {
+    "municipality": "https://www.montbui.cat/el-municipi/guia-del-municipi/entitats/club-handbol-montbui.html"
+  },
+  "languages": [
+    "ca-ES",
+    "es-ES",
+    "en"
+  ],
+  "season": "2026/2027",
+  "contentLastModified": "2026-09-28"
+}

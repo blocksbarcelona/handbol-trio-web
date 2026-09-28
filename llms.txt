@@ -1,0 +1,26 @@
+# Club Handbol Montbui
+
+Official website of Club Handbol Montbui, a handball club in Santa Margarida de Montbui, l'Anoia, near Igualada, Catalonia. This file is a complementary navigation aid and does not replace HTML pages, robots.txt or sitemap.xml.
+
+## Canonical pages
+
+- Català: https://chmontbui.es/
+- El club: https://chmontbui.es/club/
+- Calendari: https://chmontbui.es/calendari/
+- Contacte: https://chmontbui.es/contacte/
+- Castellano: https://chmontbui.es/es/
+- El club (ES): https://chmontbui.es/es/club/
+- Calendario: https://chmontbui.es/es/calendario/
+- Contacto: https://chmontbui.es/es/contacto/
+- English: https://chmontbui.es/en/
+- The club: https://chmontbui.es/en/club/
+- Calendar: https://chmontbui.es/en/calendar/
+- Contact: https://chmontbui.es/en/contact/
+- Sitemap: https://chmontbui.es/sitemap.xml
+
+## Verified contact
+
+- Email: chmontbui06@gmail.com
+- Address: Av. de l’Esport, Sant Maure, 08710 Santa Margarida de Montbui, l’Anoia, Catalunya
+
+Calendar data is sourced from iSquad and updated when the Catalan Handball Federation confirms changes.

@@ -1,5 +1,9 @@
 # Prototype Instructions
 
+## SEO integration draft (2026-09-28)
+
+The pending August SEO work is adapted on top of production commit 08bcb5c. Preserve published scores in calendar cards, the hidden standalone results section, overflow: clip on the calendar area, all five training teams and their current schedules, the compact home hero, and the footer in every view. The new club/contact pages reuse current colors and team shirts. Localized routes and generated HTML/data feeds must be included in the automatic calendar publication allowlist before deployment. Keep this draft local for review.
+
 ## Published scores (2026-09-26)
 
 Show published iSquad scores inside the existing calendar match cards, preserving the team colors and filters. Use home team, home goals–away goals, away team in that order, with date/time/venue beside the score on desktop and below on mobile. Label scores as published, never final unless the source confirms that state. Pending matches must not display an invented 0–0. Show real scores in the complete calendar and Results section too. Keep Catalan, Spanish and English copy in sync.

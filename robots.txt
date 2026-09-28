@@ -1,4 +1,10 @@
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: *
 Allow: /
+Disallow: /prototypes/
+Disallow: /docs/
+Disallow: /.github/
 
 Sitemap: https://chmontbui.es/sitemap.xml
