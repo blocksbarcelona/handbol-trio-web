@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-10-06T14:00:03.961Z",
+  "generatedAt": "2026-10-07T14:00:03.508Z",
   "timezone": "Europe/Madrid",
   "clubName": "Club Handbol Montbui",
   "status": "pending_confirmation",
@@ -14,28 +14,28 @@
     {
       "teamId": "senior-masculi-tercera-b",
       "competitionTitle": "TERCERA CATALANA SÈNIOR MASCULINA - TERCERA CATALANA SÈNIOR MASCULINA - PRIMERA FASE - Grup B",
-      "fetchedAt": "2026-10-06T14:00:03.131Z",
+      "fetchedAt": "2026-10-07T14:00:02.746Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
       "matchesFound": 18
     },
     {
       "teamId": "senior-femeni-primera-a",
       "competitionTitle": "PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-10-06T14:00:03.108Z",
+      "fetchedAt": "2026-10-07T14:00:02.689Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
       "matchesFound": 30
     },
     {
       "teamId": "juvenil-femeni-segona-unic",
       "competitionTitle": "SEGONA CATALANA JUVENIL FEMENINA - SEGONA CATALANA JUVENIL FEMENINA - FASE UNICA - Grup Únic",
-      "fetchedAt": "2026-10-06T14:00:03.690Z",
+      "fetchedAt": "2026-10-07T14:00:03.255Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
       "matchesFound": 12
     },
     {
       "teamId": "cadet-femeni-segona-a",
       "competitionTitle": "SEGONA CATALANA CADET FEMENINA - SEGONA CATALANA CADET FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-10-06T14:00:03.124Z",
+      "fetchedAt": "2026-10-07T14:00:03.229Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
       "matchesFound": 16
     }
@@ -57,10 +57,7 @@
         "status": "published"
       },
       "scoreSource": [
-        "27 - 23",
-        "-",
-        "-",
-        "1 - 0"
+        "27 - 23"
       ],
       "round": {
         "number": 1,
@@ -118,10 +115,7 @@
         "status": "published"
       },
       "scoreSource": [
-        "29 - 26",
-        "-",
-        "-",
-        "1 - 0"
+        "29 - 26"
       ],
       "round": {
         "number": 1,
@@ -179,10 +173,7 @@
         "status": "published"
       },
       "scoreSource": [
-        "29 - 14",
-        "-",
-        "-",
-        "1 - 0"
+        "29 - 14"
       ],
       "round": {
         "number": 1,
@@ -240,10 +231,7 @@
         "status": "published"
       },
       "scoreSource": [
-        "38 - 27",
-        "-",
-        "-",
-        "1 - 0"
+        "38 - 27"
       ],
       "round": {
         "number": 1,
@@ -301,10 +289,7 @@
         "status": "published"
       },
       "scoreSource": [
-        "20 - 14",
-        "-",
-        "-",
-        "1 - 0"
+        "20 - 14"
       ],
       "round": {
         "number": 2,
@@ -358,10 +343,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 2,
@@ -417,10 +399,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 2,
@@ -476,10 +455,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 3,
@@ -533,10 +509,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 3,
@@ -590,10 +563,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 4,
@@ -649,10 +619,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 3,
@@ -708,10 +675,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 4,
@@ -767,10 +731,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 4,
@@ -827,10 +788,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 4,
@@ -887,10 +845,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 5,
@@ -947,10 +902,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 5,
@@ -1007,10 +959,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 6,
@@ -1067,10 +1016,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 6,
@@ -1127,10 +1073,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 5,
@@ -1187,10 +1130,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 7,
@@ -1247,10 +1187,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 7,
@@ -1307,10 +1244,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 6,
@@ -1367,10 +1301,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 6,
@@ -1427,10 +1358,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 8,
@@ -1487,10 +1415,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 8,
@@ -1547,10 +1472,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 7,
@@ -1607,10 +1529,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 9,
@@ -1667,10 +1586,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 9,
@@ -1727,10 +1643,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 8,
@@ -1787,10 +1700,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 8,
@@ -1847,10 +1757,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 10,
@@ -1907,10 +1814,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 10,
@@ -1967,10 +1871,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 9,
@@ -2027,10 +1928,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 9,
@@ -2087,10 +1985,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 11,
@@ -2147,10 +2042,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 11,
@@ -2207,10 +2099,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 10,
@@ -2267,10 +2156,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 10,
@@ -2327,10 +2213,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 12,
@@ -2387,10 +2270,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 12,
@@ -2447,10 +2327,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 13,
@@ -2507,10 +2384,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 13,
@@ -2567,10 +2441,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 11,
@@ -2627,10 +2498,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 14,
@@ -2687,10 +2555,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 14,
@@ -2747,10 +2612,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 12,
@@ -2807,10 +2669,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 15,
@@ -2867,10 +2726,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 15,
@@ -2927,10 +2783,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 13,
@@ -2987,10 +2840,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 13,
@@ -3047,10 +2897,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 16,
@@ -3107,10 +2954,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 16,
@@ -3167,10 +3011,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 14,
@@ -3227,10 +3068,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 17,
@@ -3287,10 +3125,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 17,
@@ -3347,10 +3182,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 18,
@@ -3407,10 +3239,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 18,
@@ -3467,10 +3296,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 15,
@@ -3527,10 +3353,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 15,
@@ -3587,10 +3410,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 19,
@@ -3647,10 +3467,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 16,
@@ -3707,10 +3524,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 20,
@@ -3767,10 +3581,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 17,
@@ -3827,10 +3638,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 17,
@@ -3887,10 +3695,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 21,
@@ -3947,10 +3752,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 18,
@@ -4007,10 +3809,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 18,
@@ -4067,10 +3866,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 22,
@@ -4127,10 +3923,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 23,
@@ -4187,10 +3980,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 24,
@@ -4247,10 +4037,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 25,
@@ -4307,10 +4094,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 26,
@@ -4367,10 +4151,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 27,
@@ -4427,10 +4208,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 28,
@@ -4487,10 +4265,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 29,
@@ -4547,10 +4322,7 @@
       },
       "score": null,
       "scoreSource": [
-        "-",
-        "-",
-        "-",
-        "0 - 0"
+        "-"
       ],
       "round": {
         "number": 30,
