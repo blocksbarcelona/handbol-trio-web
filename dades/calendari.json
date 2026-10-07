@@ -1,41 +1,41 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-10-07T14:00:03.508Z",
+  "generatedAt": "2026-10-07T18:00:04.942Z",
   "timezone": "Europe/Madrid",
   "clubName": "Club Handbol Montbui",
   "status": "pending_confirmation",
   "summary": {
     "teams": 4,
     "matches": 76,
-    "publishable": 7,
-    "pendingConfirmation": 69
+    "publishable": 10,
+    "pendingConfirmation": 66
   },
   "sourceStatus": [
     {
       "teamId": "senior-masculi-tercera-b",
       "competitionTitle": "TERCERA CATALANA SÈNIOR MASCULINA - TERCERA CATALANA SÈNIOR MASCULINA - PRIMERA FASE - Grup B",
-      "fetchedAt": "2026-10-07T14:00:02.746Z",
+      "fetchedAt": "2026-10-07T18:00:04.190Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
       "matchesFound": 18
     },
     {
       "teamId": "senior-femeni-primera-a",
       "competitionTitle": "PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-10-07T14:00:02.689Z",
+      "fetchedAt": "2026-10-07T18:00:03.970Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
       "matchesFound": 30
     },
     {
       "teamId": "juvenil-femeni-segona-unic",
       "competitionTitle": "SEGONA CATALANA JUVENIL FEMENINA - SEGONA CATALANA JUVENIL FEMENINA - FASE UNICA - Grup Únic",
-      "fetchedAt": "2026-10-07T14:00:03.255Z",
+      "fetchedAt": "2026-10-07T18:00:03.977Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
       "matchesFound": 12
     },
     {
       "teamId": "cadet-femeni-segona-a",
       "competitionTitle": "SEGONA CATALANA CADET FEMENINA - SEGONA CATALANA CADET FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-10-07T14:00:03.229Z",
+      "fetchedAt": "2026-10-07T18:00:04.792Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
       "matchesFound": 16
     }
@@ -552,6 +552,60 @@
       }
     },
     {
+      "key": "4-222242-225825",
+      "home": {
+        "id": "222242",
+        "name": "AMICS H.C."
+      },
+      "away": {
+        "id": "225825",
+        "name": "CH MONTBUI"
+      },
+      "score": null,
+      "scoreSource": [
+        "-"
+      ],
+      "round": {
+        "number": 4,
+        "date": "2026-10-18",
+        "label": "JORNADA 4 (18-10-2026)"
+      },
+      "date": "2026-10-17",
+      "exactDate": "2026-10-17",
+      "dateSource": "match",
+      "time": "20:00",
+      "venue": {
+        "name": "POLIESPORTIU JOSEP CANADELL I VECIANA",
+        "mapsUrl": "https://www.google.com/maps/?q=41.1228321,1.1816045"
+      },
+      "readyForPublication": true,
+      "warnings": [],
+      "source": {
+        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
+        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
+      },
+      "configuredTeam": {
+        "id": "senior-femeni-primera-a",
+        "label": "Sènior femení",
+        "name": "CH MONTBUI",
+        "isHome": false
+      },
+      "opponent": {
+        "id": "222242",
+        "name": "AMICS H.C."
+      },
+      "competition": {
+        "category": "SÈNIOR FEMENÍ",
+        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
+        "phase": "PRIMERA FASE - Grup A",
+        "season": "2026/2027",
+        "territorialId": "17",
+        "categoryId": "3076",
+        "competitionId": "211803",
+        "tournamentId": "1038568"
+      }
+    },
+    {
       "key": "4-209512-225824",
       "home": {
         "id": "209512",
@@ -571,17 +625,15 @@
         "label": "JORNADA 4 (18-10-2026)"
       },
       "date": "2026-10-18",
-      "exactDate": null,
-      "dateSource": "round",
+      "exactDate": "2026-10-18",
+      "dateSource": "match",
       "time": "12:00",
       "venue": {
         "name": "PABELLON JOAN CREUS O ANEXA",
         "mapsUrl": "https://www.google.com/maps/?q=41.5016431,2.1579815000000053"
       },
-      "readyForPublication": false,
-      "warnings": [
-        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido"
-      ],
+      "readyForPublication": true,
+      "warnings": [],
       "source": {
         "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
         "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3077&id_competicion=211809&id=1038564&id_temp=2627&id_ambito=0&id_territorial=17"
@@ -627,17 +679,15 @@
         "label": "JORNADA 3 (18-10-2026)"
       },
       "date": "2026-10-18",
-      "exactDate": null,
-      "dateSource": "round",
+      "exactDate": "2026-10-18",
+      "dateSource": "match",
       "time": "12:30",
       "venue": {
         "name": "MONT-AQUA",
         "mapsUrl": "https://www.google.com/maps/?q=41.5719504,1.6030128"
       },
-      "readyForPublication": false,
-      "warnings": [
-        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido"
-      ],
+      "readyForPublication": true,
+      "warnings": [],
       "source": {
         "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
         "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3078&id_competicion=211814&id=1038691&id_temp=2627&id_ambito=0&id_territorial=17"
@@ -661,62 +711,6 @@
         "categoryId": "3078",
         "competitionId": "211814",
         "tournamentId": "1038691"
-      }
-    },
-    {
-      "key": "4-222242-225825",
-      "home": {
-        "id": "222242",
-        "name": "AMICS H.C."
-      },
-      "away": {
-        "id": "225825",
-        "name": "CH MONTBUI"
-      },
-      "score": null,
-      "scoreSource": [
-        "-"
-      ],
-      "round": {
-        "number": 4,
-        "date": "2026-10-18",
-        "label": "JORNADA 4 (18-10-2026)"
-      },
-      "date": "2026-10-18",
-      "exactDate": null,
-      "dateSource": "round",
-      "time": "20:00",
-      "venue": {
-        "name": "POLIESPORTIU JOSEP CANADELL I VECIANA",
-        "mapsUrl": "https://www.google.com/maps/?q=41.1228321,1.1816045"
-      },
-      "readyForPublication": false,
-      "warnings": [
-        "iSquad solo muestra la fecha de jornada; falta confirmar el día exacto del partido"
-      ],
-      "source": {
-        "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
-        "pageUrl": "https://resultadosbalonmano.isquad.es/competicion.php?id_superficie=1&seleccion=0&id_categoria=3076&id_competicion=211803&id=1038568&id_temp=2627&id_ambito=0&id_territorial=17"
-      },
-      "configuredTeam": {
-        "id": "senior-femeni-primera-a",
-        "label": "Sènior femení",
-        "name": "CH MONTBUI",
-        "isHome": false
-      },
-      "opponent": {
-        "id": "222242",
-        "name": "AMICS H.C."
-      },
-      "competition": {
-        "category": "SÈNIOR FEMENÍ",
-        "name": "PRIMERA CATALANA SÈNIOR FEMENINA",
-        "phase": "PRIMERA FASE - Grup A",
-        "season": "2026/2027",
-        "territorialId": "17",
-        "categoryId": "3076",
-        "competitionId": "211803",
-        "tournamentId": "1038568"
       }
     },
     {
