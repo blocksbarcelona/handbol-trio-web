@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-10-21T18:00:04.020Z",
+  "generatedAt": "2026-10-24T14:00:02.640Z",
   "timezone": "Europe/Madrid",
   "clubName": "Club Handbol Montbui",
   "status": "pending_confirmation",
@@ -14,28 +14,28 @@
     {
       "teamId": "senior-masculi-tercera-b",
       "competitionTitle": "TERCERA CATALANA SÈNIOR MASCULINA - TERCERA CATALANA SÈNIOR MASCULINA - PRIMERA FASE - Grup B",
-      "fetchedAt": "2026-10-21T18:00:03.226Z",
+      "fetchedAt": "2026-10-24T14:00:01.902Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
       "matchesFound": 18
     },
     {
       "teamId": "senior-femeni-primera-a",
       "competitionTitle": "PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-10-21T18:00:03.454Z",
+      "fetchedAt": "2026-10-24T14:00:02.120Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
       "matchesFound": 30
     },
     {
       "teamId": "juvenil-femeni-segona-unic",
       "competitionTitle": "SEGONA CATALANA JUVENIL FEMENINA - SEGONA CATALANA JUVENIL FEMENINA - FASE UNICA - Grup Únic",
-      "fetchedAt": "2026-10-21T18:00:03.160Z",
+      "fetchedAt": "2026-10-24T14:00:01.867Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
       "matchesFound": 12
     },
     {
       "teamId": "cadet-femeni-segona-a",
       "competitionTitle": "SEGONA CATALANA CADET FEMENINA - SEGONA CATALANA CADET FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-10-21T18:00:03.220Z",
+      "fetchedAt": "2026-10-24T14:00:01.893Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
       "matchesFound": 16
     }
@@ -745,9 +745,13 @@
         "id": "202396",
         "name": "CLUB HANDBOL VILANOVA I LA GELTRU"
       },
-      "score": null,
+      "score": {
+        "home": 18,
+        "away": 11,
+        "status": "published"
+      },
       "scoreSource": [
-        "-"
+        "18 - 11"
       ],
       "round": {
         "number": 4,
