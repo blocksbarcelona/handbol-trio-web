@@ -1888,6 +1888,27 @@ main {
   text-decoration: none;
 }
 
+.youtube-status {
+  padding: 18px;
+  border: 1px solid #e2e7ef;
+  color: #4b5563;
+}
+
+.youtube-status p {
+  margin: 0;
+}
+
+.youtube-status button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  color: #2249ac;
+  background: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
 .video-grid {
   padding: 18px;
   border: solid #e2e7ef;

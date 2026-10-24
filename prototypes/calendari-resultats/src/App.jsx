@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { useYouTubeVideos } from "./useYouTubeVideos.js";
 import {
   ArrowLeft,
   ArrowRight,
@@ -136,8 +137,11 @@ const copy = {
     newsSubtitle: "No et perdis res a les nostres xarxes socials",
     officialChannel: "Canal oficial de YouTube",
     subscribe: "Subscriu-te",
-    featuredVideo: "Vídeo destacat",
-    featuredDate: "24 de maig de 2026",
+    featuredVideo: "Últim vídeo",
+    videosLoading: "Carregant els últims vídeos…",
+    videosError: "No hem pogut carregar els vídeos. Pots consultar-los al canal de YouTube.",
+    videosRefreshError: "No hem pogut actualitzar els vídeos. Mostrem l’última llista carregada.",
+    videosRetry: "Torna-ho a provar",
     contact: "Contacte",
     follow: "Segueix-nos",
     contactPerson: "Contacte: Laia",
@@ -249,8 +253,11 @@ const copy = {
     newsSubtitle: "No te pierdas nada en nuestras redes sociales",
     officialChannel: "Canal oficial de YouTube",
     subscribe: "Suscríbete",
-    featuredVideo: "Vídeo destacado",
-    featuredDate: "24 de mayo de 2026",
+    featuredVideo: "Último vídeo",
+    videosLoading: "Cargando los últimos vídeos…",
+    videosError: "No se han podido cargar los vídeos. Puedes consultarlos en el canal de YouTube.",
+    videosRefreshError: "No se han podido actualizar los vídeos. Mostramos la última lista cargada.",
+    videosRetry: "Volver a intentar",
     contact: "Contacto",
     follow: "Síguenos",
     contactPerson: "Contacto: Laia",
@@ -362,8 +369,11 @@ const copy = {
     newsSubtitle: "Keep up with everything happening on our social channels",
     officialChannel: "Official YouTube channel",
     subscribe: "Subscribe",
-    featuredVideo: "Featured video",
-    featuredDate: "24 May 2026",
+    featuredVideo: "Latest video",
+    videosLoading: "Loading the latest videos…",
+    videosError: "Unable to load videos. You can watch them on the YouTube channel.",
+    videosRefreshError: "Unable to refresh videos. Showing the last loaded list.",
+    videosRetry: "Try again",
     contact: "Contact",
     follow: "Follow us",
     contactPerson: "Contact: Laia",
@@ -918,14 +928,13 @@ function TeamSection({ language }) {
   );
 }
 
-const clubVideos = [
-  { id: "FNRuSIof8YA", title: "CHM - CH Sant Esteve Sesrovires B · Primera Catalana", date: "2/3/2026" },
-  { id: "UKiLHjdMxG8", title: "CHM - CH Montgrí · Cadet", date: "2/3/2026" },
-  { id: "Oefcro06JNA", title: "Sant Boi - CHM · Cadet · Partit 2", date: "1/2/2026" },
-];
-
 function SocialHubSection({ language }) {
   const t = copy[language];
+  const { videos, status, retry } = useYouTubeVideos();
+  const [mainVideo, ...otherVideos] = videos;
+  const videoDate = (date) => new Intl.DateTimeFormat(locales[language], {
+    day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Madrid",
+  }).format(new Date(date));
   return (
     <section className="social-hub-section" id="social-hub" aria-labelledby="social-title">
       <div className="section-shell">
@@ -943,33 +952,38 @@ function SocialHubSection({ language }) {
           <a href="https://www.youtube.com/@clubhandbolmontbui" target="_blank" rel="noreferrer">{t.subscribe}<ArrowSquareOut size={17} weight="bold" /></a>
         </div>
 
-        <div className="video-grid">
+        {(status === "error" || (status === "loading" && !mainVideo)) && <div className="youtube-status">
+          <p role="status">{status === "loading" ? t.videosLoading : mainVideo ? t.videosRefreshError : t.videosError}</p>
+          {status === "error" && <button type="button" onClick={retry}>{t.videosRetry}</button>}
+        </div>}
+
+        {mainVideo && <div className="video-grid">
           <article className="featured-video">
             <div className="video-frame">
               <iframe
-                src="https://www.youtube.com/embed/fyYuH7XItXU"
-                title="CHM - CEACA Tàrrega"
+                src={`https://www.youtube.com/embed/${mainVideo.id}`}
+                title={mainVideo.title}
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
             </div>
-            <div><span>{t.featuredVideo}</span><h3>CHM - CEACA Tàrrega · Sènior Femení · Semifinals de Copa</h3><p>{t.featuredDate}</p></div>
+            <div><span>{t.featuredVideo}</span><h3>{mainVideo.title}</h3><p><time dateTime={mainVideo.publishedAt}>{videoDate(mainVideo.publishedAt)}</time></p></div>
           </article>
 
           <div className="video-list">
-            {clubVideos.map((video) => (
+            {otherVideos.map((video) => (
               <a key={video.id} href={`https://www.youtube.com/watch?v=${video.id}`} target="_blank" rel="noreferrer">
                 <span className="video-thumbnail">
                   <img src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt="" width="480" height="360" loading="lazy" />
                   <Play size={19} weight="fill" aria-hidden="true" />
                 </span>
-                <span><strong>{video.title}</strong><small>{video.date}</small></span>
+                <span><strong>{video.title}</strong><small><time dateTime={video.publishedAt}>{videoDate(video.publishedAt)}</time></small></span>
                 <ArrowSquareOut size={17} aria-hidden="true" />
               </a>
             ))}
           </div>
-        </div>
+        </div>}
       </div>
     </section>
   );

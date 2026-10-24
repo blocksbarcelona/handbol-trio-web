@@ -19,6 +19,23 @@ Web oficial del Club Handbol Montbui, desarrollada con HTML5, CSS3 y JavaScript 
 - **GitHub Pages**: Configuración de dominio personalizado (`CNAME`) y página de error `404.html`.
 - **Analítica**: Integración de Google Analytics (GA4).
 
+## Vídeos de YouTube
+
+La sección Actualitat consulta en el navegador la playlist de subidas del canal
+mediante YouTube Data API v3. Muestra los cuatro últimos vídeos públicos, con el
+más reciente como destacado y fechas de publicación traducidas. Consulta al abrir
+la página, cada cinco minutos mientras está visible y al volver a la pestaña
+(como máximo una vez por minuto). No requiere recompilar para mostrar nuevos vídeos.
+
+La compilación reutiliza la configuración de API de navegador ya existente en
+`js/social-feed.js`; se puede sustituir la clave al compilar con `YOUTUBE_API_KEY`.
+Si YouTube falla, aparece un aviso y un botón para reintentar; si ya se había
+cargado una lista, se conserva con un aviso de que no se pudo actualizar.
+
+Desde `prototypes/calendari-resultats`, ejecutar `npm run build:pages` y `npm test`
+antes de publicar. Las reconstrucciones automáticas del calendario conservan esta
+integración.
+
 ## Licencia y Derechos de Uso
 
 **© 2025 Club Handbol Montbui. Todos los derechos reservados.**
