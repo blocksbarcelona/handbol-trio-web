@@ -8,15 +8,20 @@ Official website of Club Handbol Montbui, a handball club in Santa Margarida de 
 - El club: https://chmontbui.es/club/
 - Calendari: https://chmontbui.es/calendari/
 - Contacte: https://chmontbui.es/contacte/
+- Patrocini social: https://chmontbui.es/patrocinadors.html
 - Castellano: https://chmontbui.es/es/
 - El club (ES): https://chmontbui.es/es/club/
 - Calendario: https://chmontbui.es/es/calendario/
 - Contacto: https://chmontbui.es/es/contacto/
+- Patrocinio social: https://chmontbui.es/patrocinadores.html
 - English: https://chmontbui.es/en/
 - The club: https://chmontbui.es/en/club/
 - Calendar: https://chmontbui.es/en/calendar/
 - Contact: https://chmontbui.es/en/contact/
+- Social sponsorship: https://chmontbui.es/sponsors.html
 - Sitemap: https://chmontbui.es/sitemap.xml
+- Club JSON: https://chmontbui.es/dades/club.json
+- Calendar JSON: https://chmontbui.es/dades/calendari.json
 
 ## Verified contact
 

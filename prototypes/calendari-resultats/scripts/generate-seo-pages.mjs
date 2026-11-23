@@ -42,6 +42,8 @@ const pageCopy = {
     clubLink: "Conèixer el club",
     contactLink: "Contactar amb el club",
     breadcrumbHome: "Inici",
+    roundWord: "Jornada",
+    seasonWord: "Temporada",
   },
   es: {
     homeTitle: languageRoutes.es.title,
@@ -71,6 +73,8 @@ const pageCopy = {
     clubLink: "Conocer el club",
     contactLink: "Contactar con el club",
     breadcrumbHome: "Inicio",
+    roundWord: "Jornada",
+    seasonWord: "Temporada",
   },
   en: {
     homeTitle: languageRoutes.en.title,
@@ -100,6 +104,8 @@ const pageCopy = {
     clubLink: "Learn about the club",
     contactLink: "Contact the club",
     breadcrumbHome: "Home",
+    roundWord: "Matchday",
+    seasonWord: "Season",
   },
 };
 
@@ -117,6 +123,67 @@ function alternates(kind) {
     locale: route.locale,
     path: route[`${kind}Path`],
   }));
+}
+
+function madridOffset(isoDate) {
+  const [year, month, day] = isoDate.split("-").map(Number);
+  const probe = new Date(Date.UTC(year, month - 1, day, 12, 0, 0));
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Europe/Madrid",
+    timeZoneName: "shortOffset",
+  }).formatToParts(probe);
+  const tz = parts.find((part) => part.type === "timeZoneName")?.value ?? "GMT+1";
+  const match = tz.match(/GMT([+-])(\d{1,2})(?::?(\d{2}))?/);
+  if (!match) return "+01:00";
+  return `${match[1]}${match[2].padStart(2, "0")}:${(match[3] ?? "00").padStart(2, "0")}`;
+}
+
+function confirmedSportsEvents(canonical) {
+  return schedule.matches
+    .filter((match) => match.readyForPublication && match.exactDate && match.time && match.venue?.name)
+    .map((match) => ({
+      "@type": "SportsEvent",
+      "@id": `${canonical}#match-${match.configuredTeam.id}-${match.key}`,
+      name: `${match.home.name} – ${match.away.name} (${match.competition.category})`,
+      sport: club.sport,
+      startDate: `${match.exactDate}T${match.time}:00${madridOffset(match.exactDate)}`,
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      location: {
+        "@type": "Place",
+        name: match.venue.name,
+        ...(match.venue.mapsUrl ? { hasMap: match.venue.mapsUrl } : {}),
+      },
+      homeTeam: {
+        "@type": "SportsTeam",
+        name: match.home.name,
+        sport: club.sport,
+        ...(match.configuredTeam.isHome ? { memberOf: { "@id": club.id } } : {}),
+      },
+      awayTeam: {
+        "@type": "SportsTeam",
+        name: match.away.name,
+        sport: club.sport,
+        ...(!match.configuredTeam.isHome ? { memberOf: { "@id": club.id } } : {}),
+      },
+      organizer: { "@id": club.id },
+      url: match.source.pageUrl,
+    }));
+}
+
+function clubSportsTeams() {
+  const seen = new Map();
+  for (const match of schedule.matches) {
+    if (seen.has(match.configuredTeam.id)) continue;
+    seen.set(match.configuredTeam.id, {
+      "@type": "SportsTeam",
+      "@id": `${club.canonicalUrl}#team-${match.configuredTeam.id}`,
+      name: `${club.name} — ${match.configuredTeam.label}`,
+      sport: club.sport,
+      memberOf: { "@id": club.id },
+    });
+  }
+  return [...seen.values()];
 }
 
 function organizationGraph(language, canonical, title, description, pageType, page) {
@@ -189,6 +256,14 @@ function organizationGraph(language, canonical, title, description, pageType, pa
     });
   }
 
+  if (page === "club") {
+    graph.push(...clubSportsTeams());
+  }
+
+  if (page === "calendar") {
+    graph.push(...confirmedSportsEvents(canonical));
+  }
+
   return {
     "@context": "https://schema.org",
     "@graph": graph,
@@ -213,13 +288,13 @@ function fallbackMarkup(language, page) {
       ? `${match.score.home}–${match.score.away}` : null;
     const scoreLabel = { ca: "Resultat publicat", es: "Resultado publicado", en: "Published score" }[language];
     const status = [match.readyForPublication && match.time ? match.time : copy.pending, publishedScore ? `${scoreLabel}: ${publishedScore}` : null].filter(Boolean).join(" · ");
-    return `<li><article><h2>${htmlEscape(side)}</h2><p>${htmlEscape(match.competition.category)} · Jornada ${match.round.number} · ${htmlEscape(match.date)} · ${htmlEscape(status)}</p><p>${htmlEscape(match.venue.name)} · <a href="${htmlEscape(match.venue.mapsUrl)}">Google Maps</a> · <a href="${htmlEscape(match.source.pageUrl)}">${copy.source}</a></p></article></li>`;
+    return `<li><article><h2>${htmlEscape(side)}</h2><p>${htmlEscape(match.competition.category)} · ${copy.roundWord} ${match.round.number} · ${htmlEscape(match.date)} · ${htmlEscape(status)}</p><p>${htmlEscape(match.venue.name)} · <a href="${htmlEscape(match.venue.mapsUrl)}">Google Maps</a> · <a href="${htmlEscape(match.source.pageUrl)}">${copy.source}</a></p></article></li>`;
   }).join("");
 
   const breadcrumb = `<nav aria-label="Breadcrumb"><a href="${route.homePath}">${copy.breadcrumbHome}</a> / <span aria-current="page">${htmlEscape(page === "calendar" ? copy.calendarH1 : page === "club" ? copy.clubH1 : copy.contactH1)}</span></nav>`;
 
   if (page === "calendar") {
-    return `<div class="seo-fallback"><header><a href="${route.homePath}">${club.name}</a></header>${breadcrumb}<main><h1>${copy.calendarH1}</h1><p>${copy.calendarIntro}</p><p><strong>${schedule.summary.matches}</strong> ${copy.matchesHeading.toLowerCase()} · Temporada ${club.season}</p><ol>${matches}</ol><p><a href="${route.clubPath}">${copy.clubLink}</a> · <a href="${route.contactPath}">${copy.contactLink}</a></p></main><footer><address>${club.address.streetAddress}, ${club.address.addressDistrict}, ${club.address.postalCode} ${club.address.addressLocality}</address><a href="mailto:${club.email}">${club.email}</a></footer></div>`;
+    return `<div class="seo-fallback"><header><a href="${route.homePath}">${club.name}</a></header>${breadcrumb}<main><h1>${copy.calendarH1}</h1><p>${copy.calendarIntro}</p><p><strong>${schedule.summary.matches}</strong> ${copy.matchesHeading.toLowerCase()} · ${copy.seasonWord} ${club.season}</p><ol>${matches}</ol><p><a href="${route.clubPath}">${copy.clubLink}</a> · <a href="${route.contactPath}">${copy.contactLink}</a></p></main><footer><address>${club.address.streetAddress}, ${club.address.addressDistrict}, ${club.address.postalCode} ${club.address.addressLocality}</address><a href="mailto:${club.email}">${club.email}</a></footer></div>`;
   }
 
   if (page === "club") {
@@ -249,6 +324,11 @@ function renderPage(language, page) {
   const xDefault = absoluteUrl(languageRoutes.ca[`${page}Path`]);
   const graph = organizationGraph(language, canonical, title, description, type, page);
 
+  const ogLocaleAlternates = routeEntries
+    .filter(([lang]) => lang !== language)
+    .map(([, other]) => `    <meta property="og:locale:alternate" content="${other.ogLocale}" />`)
+    .join("\n");
+
   return `<!doctype html>
 <html lang="${route.locale}">
   <head>
@@ -264,12 +344,14 @@ ${page === "home" ? '    <link rel="preload" as="image" href="/assets/grupo.webp
 ${hreflang}
     <link rel="alternate" hreflang="x-default" href="${xDefault}" />
     <link rel="icon" type="image/png" href="/assets/logo.png" />
+    <meta property="og:site_name" content="${club.name}" />
     <meta property="og:title" content="${htmlEscape(title)}" />
     <meta property="og:description" content="${htmlEscape(description)}" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="${canonical}" />
     <meta property="og:image" content="${club.image}" />
-    <meta property="og:locale" content="${route.locale.replace("-", "_")}" />
+    <meta property="og:locale" content="${route.ogLocale}" />
+${ogLocaleAlternates}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${htmlEscape(title)}" />
     <meta name="twitter:description" content="${htmlEscape(description)}" />
@@ -303,19 +385,24 @@ for (const [language, route] of routeEntries) {
   }
 }
 
-const legacyRedirects = {
-  "ca.html": "/",
-  "es.html": "/es/",
-  "en.html": "/en/",
-};
-for (const [file, target] of Object.entries(legacyRedirects)) {
-  await writeOutput(file, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, follow"><link rel="canonical" href="${absoluteUrl(target)}"><meta http-equiv="refresh" content="0;url=${target}"><title>Club Handbol Montbui</title></head><body><p><a href="${target}">Club Handbol Montbui</a></p></body></html>\n`);
+const legacyRedirects = [
+  ["ca.html", "/", "ca-ES"],
+  ["es.html", "/es/", "es-ES"],
+  ["en.html", "/en/", "en"],
+];
+for (const [file, target, locale] of legacyRedirects) {
+  await writeOutput(file, `<!doctype html><html lang="${locale}"><head><meta charset="utf-8"><meta name="robots" content="noindex, follow"><link rel="canonical" href="${absoluteUrl(target)}"><meta http-equiv="refresh" content="0;url=${target}"><title>Club Handbol Montbui</title></head><body><p><a href="${target}">Club Handbol Montbui</a></p></body></html>\n`);
 }
 
 await writeOutput("404.html", `<!doctype html>
-<html lang="ca-ES"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, follow"><title>Pàgina no trobada | Club Handbol Montbui</title><link rel="icon" href="/assets/logo.png"><style>body{margin:0;display:grid;min-height:100vh;place-items:center;background:#f5f7fb;color:#1d2330;font:16px/1.6 system-ui,sans-serif}main{max-width:38rem;padding:2rem;text-align:center}h1{font-size:clamp(3rem,12vw,7rem);margin:0;color:#1575ef}a{color:#c42592;font-weight:700}</style></head><body><main><h1>404</h1><h2>Pàgina no trobada</h2><p>La pàgina no existeix o ha canviat d’adreça.</p><p><a href="/">Torna al web del Club Handbol Montbui</a></p></main></body></html>\n`);
+<html lang="ca-ES"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, follow"><title>Pàgina no trobada | Club Handbol Montbui</title><link rel="icon" href="/assets/logo.png"><style>body{margin:0;display:grid;min-height:100vh;place-items:center;background:#f5f7fb;color:#1d2330;font:16px/1.6 system-ui,sans-serif}main{max-width:38rem;padding:2rem;text-align:center}h1{font-size:clamp(3rem,12vw,7rem);margin:0;color:#1575ef}a{color:#c42592;font-weight:700}.langs{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.25rem}</style></head><body><main><h1>404</h1><h2>Pàgina no trobada · Página no encontrada · Page not found</h2><p>La pàgina no existeix o ha canviat d’adreça.</p><nav class="langs" aria-label="Idiomes"><a href="/">Català (Inici)</a><a href="/es/">Castellano (Inicio)</a><a href="/en/">English (Home)</a></nav></main></body></html>\n`);
 
-const sitemapEntries = generatedPages.map(({ page, routePath }) => {
+const sitemapPages = [
+  ...generatedPages,
+  ...routeEntries.map(([language, route]) => ({ language, page: "sponsorship", routePath: route.sponsorshipPath })),
+];
+
+const sitemapEntries = sitemapPages.map(({ page, routePath }) => {
   const lastmod = page === "calendar" ? schedule.generatedAt.slice(0, 10) : club.contentLastModified;
   const links = alternates(page).map(({ locale, path: alternatePath }) => `    <xhtml:link rel="alternate" hreflang="${locale}" href="${xmlEscape(absoluteUrl(alternatePath))}"/>`).join("\n");
   const xDefault = absoluteUrl(languageRoutes.ca[`${page}Path`]);
@@ -324,7 +411,7 @@ const sitemapEntries = generatedPages.map(({ page, routePath }) => {
 
 await writeOutput("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sitemapEntries}\n</urlset>\n`);
 await writeOutput("robots.txt", `User-agent: OAI-SearchBot\nAllow: /\n\nUser-agent: *\nAllow: /\nDisallow: /prototypes/\nDisallow: /docs/\nDisallow: /.github/\n\nSitemap: ${absoluteUrl("/sitemap.xml")}\n`);
-await writeOutput("llms.txt", `# Club Handbol Montbui\n\nOfficial website of Club Handbol Montbui, a handball club in Santa Margarida de Montbui, l'Anoia, near Igualada, Catalonia. This file is a complementary navigation aid and does not replace HTML pages, robots.txt or sitemap.xml.\n\n## Canonical pages\n\n- Català: ${absoluteUrl("/")}\n- El club: ${absoluteUrl("/club/")}\n- Calendari: ${absoluteUrl("/calendari/")}\n- Contacte: ${absoluteUrl("/contacte/")}\n- Castellano: ${absoluteUrl("/es/")}\n- El club (ES): ${absoluteUrl("/es/club/")}\n- Calendario: ${absoluteUrl("/es/calendario/")}\n- Contacto: ${absoluteUrl("/es/contacto/")}\n- English: ${absoluteUrl("/en/")}\n- The club: ${absoluteUrl("/en/club/")}\n- Calendar: ${absoluteUrl("/en/calendar/")}\n- Contact: ${absoluteUrl("/en/contact/")}\n- Sitemap: ${absoluteUrl("/sitemap.xml")}\n\n## Verified contact\n\n- Email: ${club.email}\n- Address: ${club.address.streetAddress}, ${club.address.addressDistrict}, ${club.address.postalCode} ${club.address.addressLocality}, ${club.county}, ${club.autonomousCommunity}\n\nCalendar data is sourced from iSquad and updated when the Catalan Handball Federation confirms changes.\n`);
+await writeOutput("llms.txt", `# Club Handbol Montbui\n\nOfficial website of Club Handbol Montbui, a handball club in Santa Margarida de Montbui, l'Anoia, near Igualada, Catalonia. This file is a complementary navigation aid and does not replace HTML pages, robots.txt or sitemap.xml.\n\n## Canonical pages\n\n- Català: ${absoluteUrl("/")}\n- El club: ${absoluteUrl("/club/")}\n- Calendari: ${absoluteUrl("/calendari/")}\n- Contacte: ${absoluteUrl("/contacte/")}\n- Patrocini social: ${absoluteUrl("/patrocinadors.html")}\n- Castellano: ${absoluteUrl("/es/")}\n- El club (ES): ${absoluteUrl("/es/club/")}\n- Calendario: ${absoluteUrl("/es/calendario/")}\n- Contacto: ${absoluteUrl("/es/contacto/")}\n- Patrocinio social: ${absoluteUrl("/patrocinadores.html")}\n- English: ${absoluteUrl("/en/")}\n- The club: ${absoluteUrl("/en/club/")}\n- Calendar: ${absoluteUrl("/en/calendar/")}\n- Contact: ${absoluteUrl("/en/contact/")}\n- Social sponsorship: ${absoluteUrl("/sponsors.html")}\n- Sitemap: ${absoluteUrl("/sitemap.xml")}\n- Club JSON: ${absoluteUrl("/dades/club.json")}\n- Calendar JSON: ${absoluteUrl("/dades/calendari.json")}\n\n## Verified contact\n\n- Email: ${club.email}\n- Address: ${club.address.streetAddress}, ${club.address.addressDistrict}, ${club.address.postalCode} ${club.address.addressLocality}, ${club.county}, ${club.autonomousCommunity}\n\nCalendar data is sourced from iSquad and updated when the Catalan Handball Federation confirms changes.\n`);
 await writeOutput("dades/club.json", `${JSON.stringify(club, null, 2)}\n`);
 await writeOutput("dades/calendari.json", `${JSON.stringify(schedule, null, 2)}\n`);
 

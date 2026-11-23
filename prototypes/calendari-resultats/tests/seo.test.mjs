@@ -20,6 +20,13 @@ const pages = [
   ["en/contact/index.html", "en", "https://chmontbui.es/en/contact/", "contact"],
 ];
 
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
+const sponsorshipPages = [
+  ["patrocinadors.html", "ca-ES", "https://chmontbui.es/patrocinadors.html"],
+  ["patrocinadores.html", "es-ES", "https://chmontbui.es/patrocinadores.html"],
+  ["sponsors.html", "en", "https://chmontbui.es/sponsors.html"],
+];
+
 function matches(html, expression) {
   return [...html.matchAll(expression)].map((match) => match[1]);
 }
@@ -32,6 +39,9 @@ test("localized pages expose crawlable, canonical and parseable HTML", async () 
     assert.match(html, new RegExp(`<body data-page="${page}">`));
     assert.match(html, new RegExp(`<link rel="canonical" href="${canonical.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`));
     assert.match(html, /<meta name="robots" content="index, follow, max-image-preview:large"/);
+    assert.match(html, /<meta property="og:site_name" content="Club Handbol Montbui"/);
+    assert.match(html, /<meta property="og:locale" content="(?:ca_ES|es_ES|en_US)"/);
+    assert.equal(matches(html, /<meta property="og:locale:alternate" content="([^"]+)"/g).length, 2);
     assert.equal(matches(html, /<h1\b[^>]*>([^<]+)/g).length, 1);
     assert.equal(matches(html, /<link rel="alternate" hreflang="(?:ca-ES|es-ES|en|x-default)" href="([^"]+)"/g).length, 4);
     assert.match(html, /Santa Margarida de Montbui/);
@@ -50,16 +60,48 @@ test("localized pages expose crawlable, canonical and parseable HTML", async () 
     assert.ok(graph["@graph"].some((item) => item["@type"] === "SportsOrganization"));
     assert.ok(graph["@graph"].some((item) => item["@id"] === `${canonical}#webpage`));
     assert.equal(graph["@graph"].some((item) => item["@type"] === "BreadcrumbList"), page !== "home");
+    if (page === "club") {
+      assert.ok(graph["@graph"].filter((item) => item["@type"] === "SportsTeam").length >= 4);
+    }
+    if (page === "calendar") {
+      const events = graph["@graph"].filter((item) => item["@type"] === "SportsEvent");
+      assert.ok(events.length > 0, `Missing SportsEvent JSON-LD in ${file}`);
+      for (const event of events) {
+        assert.match(event.startDate, /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:00[+-]\d{2}:\d{2}$/);
+        assert.ok(event.location?.name);
+        assert.ok(event.homeTeam?.name && event.awayTeam?.name);
+      }
+    }
   }
+  const enCalendar = await readFile(path.join(root, "en/calendar/index.html"), "utf8");
+  assert.match(enCalendar, /Matchday \d+/);
+  assert.match(enCalendar, /Season 2026\/2027/);
 });
 
 test("sitemap contains only generated canonical pages and reciprocal language alternatives", async () => {
   const sitemap = await readFile(path.join(root, "sitemap.xml"), "utf8");
   const locations = matches(sitemap, /<loc>([^<]+)<\/loc>/g);
-  assert.deepEqual(locations.sort(), pages.map(([, , canonical]) => canonical).sort());
-  assert.equal(matches(sitemap, /hreflang="x-default" href="([^"]+)"/g).length, pages.length);
+  const expected = [...pages, ...sponsorshipPages].map(([, , canonical]) => canonical).sort();
+  assert.deepEqual(locations.sort(), expected);
+  assert.equal(matches(sitemap, /hreflang="x-default" href="([^"]+)"/g).length, expected.length);
   assert.doesNotMatch(sitemap, /clubhandbolmontbui\.com/);
   assert.doesNotMatch(sitemap, /2025-11-30/);
+});
+
+test("sponsorship pages expose reciprocal hreflang, valid OG image, schema and canonical links", async () => {
+  for (const [file, locale, canonical] of sponsorshipPages) {
+    const html = await readFile(path.join(repoRoot, file), "utf8");
+    assert.match(html, new RegExp(`<html lang="${locale}">`));
+    assert.match(html, new RegExp(`<link rel="canonical" href="${canonical.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}">`));
+    assert.equal(matches(html, /<link rel="alternate" hreflang="(?:ca-ES|es-ES|en|x-default)" href="([^"]+)"/g).length, 4);
+    assert.match(html, /<meta property="og:image" content="https:\/\/chmontbui\.es\/assets\/grupo\.jpg"/);
+    assert.doesNotMatch(html, /og-image\.png/);
+    assert.doesNotMatch(html, /href="(?:index|es|en)\.html/);
+    const jsonLdBlocks = matches(html, /<script type="application\/ld\+json">([^<]+)<\/script>/g);
+    assert.equal(jsonLdBlocks.length, 1);
+    const graph = JSON.parse(jsonLdBlocks[0]);
+    assert.ok(graph["@graph"].some((item) => item["@type"] === "BreadcrumbList"));
+  }
 });
 
 test("robots allows search crawlers while excluding source and documentation paths", async () => {
@@ -71,11 +113,16 @@ test("robots allows search crawlers while excluding source and documentation pat
 });
 
 test("legacy language URLs are noindex redirects to canonical directories", async () => {
-  for (const [file, target] of [["ca.html", "/"], ["es.html", "/es/"], ["en.html", "/en/"]]) {
+  for (const [file, target, locale] of [["ca.html", "/", "ca-ES"], ["es.html", "/es/", "es-ES"], ["en.html", "/en/", "en"]]) {
     const html = await readFile(path.join(root, file), "utf8");
+    assert.match(html, new RegExp(`<html lang="${locale}">`));
     assert.match(html, /name="robots" content="noindex, follow"/);
     assert.match(html, new RegExp(`url=${target.replaceAll("/", "\\/")}`));
   }
+  const notFound = await readFile(path.join(root, "404.html"), "utf8");
+  assert.match(notFound, /href="\/"/);
+  assert.match(notFound, /href="\/es\/"/);
+  assert.match(notFound, /href="\/en\/"/);
 });
 
 test("machine-readable public resources are generated and valid", async () => {

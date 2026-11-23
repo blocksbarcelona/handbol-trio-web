@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chmontbui.es/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/"/>
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/es/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en/"/>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://chmontbui.es/club/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/club/"/>
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/es/club/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en/club/"/>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://chmontbui.es/contacte/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/contacte/"/>
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/es/contacto/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en/contact/"/>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://chmontbui.es/es/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/"/>
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/es/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en/"/>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://chmontbui.es/es/club/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/club/"/>
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/es/club/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en/club/"/>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://chmontbui.es/es/contacto/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/contacte/"/>
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/es/contacto/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en/contact/"/>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://chmontbui.es/en/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/"/>
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/es/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en/"/>
@@ -74,7 +74,7 @@
   </url>
   <url>
     <loc>https://chmontbui.es/en/club/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/club/"/>
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/es/club/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en/club/"/>
@@ -90,10 +90,34 @@
   </url>
   <url>
     <loc>https://chmontbui.es/en/contact/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/contacte/"/>
     <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/es/contacto/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://chmontbui.es/contacte/"/>
+  </url>
+  <url>
+    <loc>https://chmontbui.es/patrocinadors.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/patrocinadors.html"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/patrocinadores.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/sponsors.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chmontbui.es/patrocinadors.html"/>
+  </url>
+  <url>
+    <loc>https://chmontbui.es/patrocinadores.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/patrocinadors.html"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/patrocinadores.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/sponsors.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chmontbui.es/patrocinadors.html"/>
+  </url>
+  <url>
+    <loc>https://chmontbui.es/sponsors.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca-ES" href="https://chmontbui.es/patrocinadors.html"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://chmontbui.es/patrocinadores.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://chmontbui.es/sponsors.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://chmontbui.es/patrocinadors.html"/>
   </url>
 </urlset>

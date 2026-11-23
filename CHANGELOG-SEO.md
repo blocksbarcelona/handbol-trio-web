@@ -1,5 +1,14 @@
 # Registro de cambios SEO
 
+## 2026-11-23 — Cierre de mejoras técnicas SEO multilingüe y datos estructurados
+
+- Añadido schema `SportsEvent` en `/calendari/`, `/es/calendario/` y `/en/calendar/` para todos los partidos confirmados (`readyForPublication`), con zona horaria `Europe/Madrid`, sede (`Place` + `hasMap`) y equipos (`SportsTeam`).
+- Añadidas entidades `SportsTeam` vinculadas al club en `/club/`, `/es/club/` y `/en/club/`.
+- Corregido `og:locale` en inglés (`en_US`) y añadidos `og:site_name` y `og:locale:alternate` en las 12 páginas generadas.
+- Corregidos textos en inglés del HTML rastreable del calendario (`Matchday` y `Season`), atributo `lang` en redirecciones heredadas (`ca.html`, `es.html`, `en.html`) y página `404.html` trilingüe.
+- Corregidas las páginas de patrocini social (`patrocinadors.html`, `patrocinadores.html`, `sponsors.html`): `hreflang` recíproco, `og:image` absoluta válida, `og:url`, Twitter Card, JSON-LD (`WebPage` + `BreadcrumbList`), enlaces internos canónicos e inclusión en `sitemap.xml` y `llms.txt`.
+- Verificados códigos HTTP públicos en producción (`200` en las 15 páginas + `robots.txt`/`sitemap.xml`/`llms.txt` y `404` real).
+
 ## 2026-09-28 — Adaptación local al diseño publicado
 
 - Integración sobre 08bcb5c: conserva marcadores iSquad, resultados independientes ocultos, corrección del scroll, cinco equipos y horarios vigentes.
