@@ -1202,3 +1202,267 @@ footer {
   0% { transform: translateX(-100%); }
   100% { transform: translateX(100%); }
 }
+
+/* Unified site-header matching main app (pixel-identical across all pages) */
+header.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 58px;
+  width: 100%;
+  padding: 0 max(32px, calc((100% - 1220px) / 2));
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) auto minmax(110px, 1fr);
+  align-items: center;
+  gap: 32px;
+  background: #fff;
+  backdrop-filter: none;
+  border-bottom: 1px solid rgba(226, 230, 238, 0.9);
+  box-shadow: 0 2px 12px rgba(24, 38, 65, 0.035);
+}
+
+header.site-header .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+  color: #0e5ed0;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header.site-header .brand img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+header.site-header .brand strong {
+  color: #f22887;
+}
+
+header.site-header .main-nav {
+  align-self: stretch;
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+}
+
+header.site-header .main-nav a {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 0 18px;
+  color: #202532;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+header.site-header .main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 0;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background: #f22887;
+  transform: scaleX(0);
+  transition: transform 180ms ease;
+}
+
+header.site-header .main-nav a:hover::after,
+header.site-header .main-nav a.active::after {
+  transform: scaleX(1);
+}
+
+header.site-header .main-nav a.active {
+  color: #f22887;
+}
+
+header.site-header .mobile-nav {
+  display: none;
+  position: relative;
+}
+
+header.site-header .mobile-nav summary {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e0e5ee;
+  border-radius: 10px;
+  color: #0e5ed0;
+  background: #fff;
+  cursor: pointer;
+  list-style: none;
+}
+
+header.site-header .mobile-nav summary::-webkit-details-marker {
+  display: none;
+}
+
+header.site-header .mobile-nav nav {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: min(250px, calc(100vw - 28px));
+  padding: 8px;
+  display: grid;
+  border: 1px solid #e0e5ee;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 16px 38px rgba(24, 38, 65, 0.18);
+}
+
+header.site-header .mobile-nav nav a {
+  padding: 11px 12px;
+  border-radius: 8px;
+  color: #202532;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header.site-header .mobile-nav nav a:hover,
+header.site-header .mobile-nav nav a.active {
+  color: #f22887;
+  background: #fff1f7;
+}
+
+header.site-header .languages {
+  justify-self: end;
+  display: flex;
+  gap: 7px;
+}
+
+header.site-header .languages a {
+  padding: 0;
+  border: 0;
+  color: #7a8190;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+header.site-header .languages a.active {
+  color: #1d2330;
+  font-weight: 800;
+}
+
+@media (max-width: 1120px) {
+  header.site-header {
+    width: 100%;
+    padding-inline: 18px;
+    grid-template-columns: auto 1fr auto;
+    gap: 18px;
+  }
+
+  header.site-header .main-nav {
+    justify-content: center;
+  }
+
+  header.site-header .main-nav a {
+    padding: 0 10px;
+  }
+
+  header.site-header .main-nav a::after {
+    left: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 860px) {
+  header.site-header {
+    height: 66px;
+    grid-template-columns: 1fr auto auto;
+    gap: 9px;
+  }
+
+  header.site-header .brand img {
+    width: 42px;
+    height: 42px;
+  }
+
+  header.site-header .main-nav {
+    display: none;
+  }
+
+  header.site-header .mobile-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 580px) {
+  header.site-header {
+    padding-inline: 14px;
+    gap: 8px;
+  }
+
+  header.site-header .brand {
+    font-size: 15px;
+    gap: 8px;
+  }
+
+  header.site-header .brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  header.site-header .languages {
+    gap: 5px;
+  }
+
+  header.site-header .languages a {
+    font-size: 11px;
+  }
+}
+
+/* Compact sponsorship page sections */
+.sponsor-hero {
+  min-height: 0;
+  padding: 2.2rem 1rem;
+}
+
+.sponsor-hero-content {
+  padding: 0.75rem 1rem;
+}
+
+.sponsor-hero-title {
+  font-size: clamp(2.1rem, 4.2vw, 3.1rem);
+  margin-bottom: 0.75rem;
+}
+
+.sponsor-hero-subtitle {
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+section {
+  padding: 1.9rem 0;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 3vw, 2.3rem);
+  margin-bottom: 0.65rem;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  padding: 1.4rem 1.25rem;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+}
+
+footer {
+  padding: 2rem 0 1.25rem;
+}

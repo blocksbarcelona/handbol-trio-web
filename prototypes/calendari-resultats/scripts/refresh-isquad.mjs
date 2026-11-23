@@ -91,7 +91,7 @@ async function fetchClientToken(timeoutMs = 20_000) {
   return match[1];
 }
 
-async function fetchBetaTournament(tournamentId, tokenRef, attempts = 3, timeoutMs = 20_000) {
+async function fetchBetaApi(tipo, tournamentId, tokenRef, attempts = 3, timeoutMs = 20_000) {
   let lastError;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
@@ -106,22 +106,80 @@ async function fetchBetaTournament(tournamentId, tokenRef, attempts = 3, timeout
           "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
           "x-client-token": tokenRef.value
         },
-        body: new URLSearchParams({ tipo: "torneo", id: String(tournamentId) }),
+        body: new URLSearchParams({ tipo, id: String(tournamentId) }),
         signal: AbortSignal.timeout(timeoutMs)
       });
       if (response.status === 403) tokenRef.value = null;
       if (!response.ok) throw new Error(`HTTP ${response.status} ${response.statusText}`);
-      const data = await response.json();
-      if (!data || !Array.isArray(data.partidos) || data.partidos.length === 0) {
-        throw new Error(`Empty partidos list for tournament ${tournamentId}`);
-      }
-      return { data, fetchedAt: new Date().toISOString() };
+      return { data: await response.json(), fetchedAt: new Date().toISOString() };
     } catch (error) {
       lastError = error;
       if (attempt < attempts) await delay(400 * 2 ** (attempt - 1));
     }
   }
   throw lastError;
+}
+
+async function fetchBetaTournament(tournamentId, tokenRef, attempts = 3, timeoutMs = 20_000) {
+  const result = await fetchBetaApi("torneo", tournamentId, tokenRef, attempts, timeoutMs);
+  if (!result.data || !Array.isArray(result.data.partidos) || result.data.partidos.length === 0) {
+    throw new Error(`Empty partidos list for tournament ${tournamentId}`);
+  }
+  return result;
+}
+
+async function fetchBetaStandings(tournamentId, tokenRef, attempts = 3, timeoutMs = 20_000) {
+  try {
+    const result = await fetchBetaApi("clasificacion", tournamentId, tokenRef, attempts, timeoutMs);
+    if (!result.data || !Array.isArray(result.data.filas)) return null;
+    return result.data;
+  } catch {
+    return null;
+  }
+}
+
+function buildTeamNameMap(partidos) {
+  const names = new Map();
+  for (const item of partidos ?? []) {
+    if (item?.l?.id != null && item?.l?.n) names.set(String(item.l.id), cleanText(item.l.n));
+    if (item?.v?.id != null && item?.v?.n) names.set(String(item.v.id), cleanText(item.v.n));
+  }
+  return names;
+}
+
+function parseStandings(standingsData, teamNames, team) {
+  if (!standingsData?.filas?.length) return null;
+  const rows = standingsData.filas
+    .map(row => {
+      const id = String(row.id_equipo);
+      const streak = Array.isArray(standingsData.racha?.[id])
+        ? standingsData.racha[id].slice(-5).map(entry => entry.resultado)
+        : [];
+      return {
+        position: Number(row.posicion),
+        teamId: id,
+        teamName: teamNames.get(id) ?? `Equip ${id}`,
+        isClub: id === team.teamId,
+        points: Number(row.puntos ?? 0),
+        played: Number(row.jugados ?? 0),
+        won: Number(row.ganados ?? 0),
+        drawn: Number(row.empatados ?? 0),
+        lost: Number(row.perdidos ?? 0),
+        goalsFor: Number(row.goles_a_favor ?? 0),
+        goalsAgainst: Number(row.goles_en_contra ?? 0),
+        goalDiff: Number(row.diferencia_goles ?? 0),
+        form: streak
+      };
+    })
+    .sort((a, b) => a.position - b.position);
+
+  return {
+    teamId: team.id,
+    label: team.label,
+    competition: team.competition,
+    sourceUrl: team.sourcePageUrl,
+    rows
+  };
 }
 
 function deriveTeamConfigs(existing) {
@@ -234,6 +292,10 @@ function fingerprint(payload) {
   return JSON.stringify({
     status: payload.status,
     summary: payload.summary,
+    standings: (payload.standings ?? []).map(group => ({
+      teamId: group.teamId,
+      rows: (group.rows ?? []).map(r => [r.position, r.teamId, r.points, r.played, r.won, r.drawn, r.lost, r.goalDiff])
+    })),
     matches: (payload.matches ?? []).map(m => ({
       key: m.key,
       team: m.configuredTeam?.id,
@@ -257,11 +319,16 @@ async function main() {
   const tokenRef = { value: null };
   const sourceStatus = [];
   const allMatches = [];
+  const standings = [];
 
   for (const team of teams) {
     const tournamentId = team.competition?.tournamentId ?? new URL(team.calendarUrl).searchParams.get("id");
     const { data, fetchedAt } = await fetchBetaTournament(tournamentId, tokenRef);
     const parsed = parseTeamMatches(data, team);
+    const standingsRaw = await fetchBetaStandings(tournamentId, tokenRef);
+    const parsedStandings = parseStandings(standingsRaw, buildTeamNameMap(data.partidos), team);
+    if (parsedStandings) standings.push(parsedStandings);
+
     sourceStatus.push({
       teamId: team.id,
       competitionTitle: parsed.competitionTitle,
@@ -291,6 +358,7 @@ async function main() {
       pendingConfirmation: allMatches.filter(m => !m.readyForPublication).length
     },
     sourceStatus,
+    standings,
     matches: allMatches
   };
 

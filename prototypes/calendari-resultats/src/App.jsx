@@ -98,6 +98,17 @@ const copy = {
     resultsSubtitle: "Consulta els resultats de tots els equips del club.",
     noResults: "Encara no hi ha resultats disponibles",
     noResultsDescription: "Els resultats apareixeran aquí quan comenci la temporada.",
+    standingsTitle: "Classificació",
+    standingsSubtitle: "Taula oficial actualitzada des d’iSquad.",
+    standingsPosition: "Pos.",
+    standingsTeam: "Equip",
+    standingsPoints: "Pts",
+    standingsPlayed: "PJ",
+    standingsWon: "PG",
+    standingsDrawn: "PE",
+    standingsLost: "PP",
+    standingsDiff: "DG",
+    standingsForm: "Ratxa",
     seasonLabel: "Temporada",
     recruitmentEyebrow: "TEMPORADA 2026/27",
     recruitmentTitle: "Uneix-te a la Temporada 2026-2027!",
@@ -214,6 +225,17 @@ const copy = {
     resultsSubtitle: "Consulta los resultados de todos los equipos del club.",
     noResults: "Todavía no hay resultados disponibles",
     noResultsDescription: "Los resultados aparecerán aquí cuando empiece la temporada.",
+    standingsTitle: "Clasificación",
+    standingsSubtitle: "Tabla oficial actualizada desde iSquad.",
+    standingsPosition: "Pos.",
+    standingsTeam: "Equipo",
+    standingsPoints: "Pts",
+    standingsPlayed: "PJ",
+    standingsWon: "PG",
+    standingsDrawn: "PE",
+    standingsLost: "PP",
+    standingsDiff: "DG",
+    standingsForm: "Racha",
     seasonLabel: "Temporada",
     recruitmentEyebrow: "TEMPORADA 2026/27",
     recruitmentTitle: "¡Únete a la Temporada 2026-2027!",
@@ -330,6 +352,17 @@ const copy = {
     resultsSubtitle: "Check results for all club teams.",
     noResults: "No results are available yet",
     noResultsDescription: "Results will appear here once the season begins.",
+    standingsTitle: "Standings",
+    standingsSubtitle: "Official league table updated from iSquad.",
+    standingsPosition: "Pos.",
+    standingsTeam: "Team",
+    standingsPoints: "Pts",
+    standingsPlayed: "P",
+    standingsWon: "W",
+    standingsDrawn: "D",
+    standingsLost: "L",
+    standingsDiff: "GD",
+    standingsForm: "Form",
     seasonLabel: "Season",
     recruitmentEyebrow: "2026/27 SEASON",
     recruitmentTitle: "Join us for the 2026-2027 Season!",
@@ -391,13 +424,22 @@ const copy = {
 const SHOW_RESULTS_SECTION = false;
 
 const teamMeta = {
-  "senior-masculi-tercera-b": {
-    tone: "blue",
-    labels: { ca: "Sènior masculí", es: "Sénior masculino", en: "Men’s senior" },
+  "cadet-femeni-segona-a": {
+    tone: "violet",
+    labels: { ca: "Cadet femení", es: "Cadete femenino", en: "Girls’ cadet" },
     competition: {
-      ca: "Tercera Catalana Sènior Masculina · Grup B",
-      es: "Tercera Catalana Sénior Masculina · Grupo B",
-      en: "Catalan Senior Men’s Third Division · Group B",
+      ca: "Segona Catalana Cadet Femenina · Grup A",
+      es: "Segunda Catalana Cadete Femenina · Grupo A",
+      en: "Catalan Cadet Girls’ Second Division · Group A",
+    },
+  },
+  "juvenil-femeni-segona-unic": {
+    tone: "coral",
+    labels: { ca: "Juvenil femení", es: "Juvenil femenino", en: "Women’s youth" },
+    competition: {
+      ca: "Segona Catalana Juvenil Femenina · Grup Únic",
+      es: "Segunda Catalana Juvenil Femenina · Grupo Único",
+      en: "Catalan Youth Women’s Second Division · Single Group",
     },
   },
   "senior-femeni-primera-a": {
@@ -409,22 +451,13 @@ const teamMeta = {
       en: "Catalan Senior Women’s First Division · Group A",
     },
   },
-  "juvenil-femeni-segona-unic": {
-    tone: "violet",
-    labels: { ca: "Juvenil femení", es: "Juvenil femenino", en: "Women’s youth" },
+  "senior-masculi-tercera-b": {
+    tone: "blue",
+    labels: { ca: "Sènior masculí", es: "Sénior masculino", en: "Men’s senior" },
     competition: {
-      ca: "Segona Catalana Juvenil Femenina · Grup Únic",
-      es: "Segunda Catalana Juvenil Femenina · Grupo Único",
-      en: "Catalan Youth Women’s Second Division · Single Group",
-    },
-  },
-  "cadet-femeni-segona-a": {
-    tone: "coral",
-    labels: { ca: "Cadet femení", es: "Cadete femenino", en: "Girls’ cadet" },
-    competition: {
-      ca: "Segona Catalana Cadet Femenina · Grup A",
-      es: "Segunda Catalana Cadete Femenina · Grupo A",
-      en: "Catalan Cadet Girls’ Second Division · Group A",
+      ca: "Tercera Catalana Sènior Masculina · Grup B",
+      es: "Tercera Catalana Sénior Masculina · Grupo B",
+      en: "Catalan Senior Men’s Third Division · Group B",
     },
   },
 };
@@ -441,8 +474,8 @@ const trainingTeamIds = [
   "alevi",
   "cadet-femeni-segona-a",
   "juvenil-femeni-segona-unic",
-  "senior-masculi-tercera-b",
   "senior-femeni-primera-a",
+  "senior-masculi-tercera-b",
 ];
 const teamIndex = Object.fromEntries(teamIds.map((teamId, index) => [teamId, index]));
 
@@ -525,7 +558,7 @@ function formatPeriodDates(period, language) {
     return formatDate(period.dates[0], language);
   }
   const first = formatDate(period.dates[0], language, { day: "numeric", month: "short", year: undefined });
-  const last = formatDate(period.dates.at(-1), language, { day: "numeric", month: "short" });
+  const last = formatDate(period.dates.at(-1), language, { day: "numeric", month: "short", year: undefined });
   return `${first} – ${last} ${asDate(period.dates.at(-1)).getFullYear()}`;
 }
 
@@ -625,17 +658,17 @@ function MatchCard({ teamId, match, language }) {
 
   if (!match) {
     return (
-      <article className={`match-card no-match ${team.tone}`}>
-        <div className={`team-marker ${team.tone}`}>
-          <TShirt size={32} weight="fill" />
-          <span>{team.labels[language]}</span>
-        </div>
+      <article className={`match-card compact no-match ${team.tone}`}>
         <div className="match-card-body">
-          <p className="competition">{team.competition[language]}</p>
-          <h2>{t.noMatch}</h2>
-          <div className="empty-match">
-            <CalendarBlank size={20} aria-hidden="true" />
-            <span>{t.noMatchDescription}</span>
+          <div className="card-compact-top">
+            <span className={`card-team-pill ${team.tone}`}>
+              <TShirt size={14} weight="fill" />
+              {team.labels[language]}
+            </span>
+          </div>
+          <div className="empty-match compact-empty">
+            <CalendarBlank size={16} aria-hidden="true" />
+            <span>{t.noMatch}</span>
           </div>
         </div>
       </article>
@@ -646,63 +679,58 @@ function MatchCard({ teamId, match, language }) {
   const hasScore = Number.isInteger(match.score?.home) && Number.isInteger(match.score?.away);
 
   return (
-    <article className={`match-card ${team.tone}`}>
-      <div className={`team-marker ${team.tone}`}>
-        <TShirt size={34} weight="fill" />
-        <span>{team.labels[language]}</span>
-      </div>
-
+    <article className={`match-card compact ${team.tone}`}>
       <div className="match-card-body">
-        <div className="card-heading-row">
-          <div>
-            <p className="competition">{team.competition[language]}</p>
-            <h2>{t.jornada} {match.round.number}</h2>
+        <div className="card-compact-top">
+          <div className="card-compact-identity">
+            <span className={`card-team-pill ${team.tone}`}>
+              <TShirt size={14} weight="fill" />
+              {team.labels[language]}
+            </span>
+            <span className="card-round-tag" title={team.competition[language]}>
+              J{match.round.number}
+            </span>
           </div>
           <span className={`side-badge ${isHome ? "home" : "away"}`}>
-            {isHome ? <HouseLine size={15} weight="bold" /> : <ArrowRight size={15} weight="bold" />}
+            {isHome ? <HouseLine size={13} weight="bold" /> : <ArrowRight size={13} weight="bold" />}
             {isHome ? t.home : t.away}
           </span>
         </div>
 
-        <div className={hasScore ? "match-score-layout" : ""}>
-        {hasScore && (
-          <div className="match-score" aria-label={`${match.home.name} ${match.score.home}, ${match.away.name} ${match.score.away}`}>
-            <span className={isHome ? "club-name" : ""}>{match.home.name}</span>
-            <strong>{match.score.home} – {match.score.away}</strong>
-            <span className={!isHome ? "club-name" : ""}>{match.away.name}</span>
-          </div>
-        )}
-        <dl className={`match-meta real-data ${hasScore ? "score-details" : ""}`}>
-          {!hasScore && <div>
-            <dt><UsersThree size={20} weight="fill" /><span>{t.opponent}</span></dt>
-            <dd>{match.opponent.name}</dd>
-          </div>}
-          <div>
-            <dt><CalendarBlank size={20} /><span>{t.date}</span></dt>
-            <dd>{formatDate(match.date, language)}</dd>
-          </div>
-          <div>
-            <dt><Clock size={20} /><span>{t.time}</span></dt>
-            <dd>{match.time ?? t.timePending}</dd>
-          </div>
-          <div>
-            <dt><MapPin size={20} weight="fill" /><span>{t.venue}</span></dt>
-            <dd>
-              <a href={match.venue.mapsUrl} target="_blank" rel="noreferrer" title={t.openMaps}>
-                {match.venue.name}
-                <ArrowSquareOut size={14} weight="bold" />
-              </a>
-            </dd>
-          </div>
-        </dl>
+        <div
+          className={`card-matchup ${hasScore ? "has-score" : ""}`}
+          aria-label={hasScore ? `${match.home.name} ${match.score.home}, ${match.away.name} ${match.score.away}` : `${match.home.name} vs ${match.away.name}`}
+        >
+          <span className={isHome ? "club-name" : ""}>{match.home.name}</span>
+          {hasScore
+            ? <strong className="score-pill">{match.score.home} – {match.score.away}</strong>
+            : <span className="vs-pill">vs</span>}
+          <span className={!isHome ? "club-name" : ""}>{match.away.name}</span>
         </div>
 
-        <div className="pending-note" role="status">
-          <Info size={18} weight="fill" />
-          <span>{hasScore ? t.scorePublished : match.readyForPublication ? t.scheduleConfirmed : t.detailsPending}</span>
-          <a href={match.source.pageUrl} target="_blank" rel="noreferrer">
-            {t.source}
-            <ArrowSquareOut size={13} />
+        <div className="card-compact-meta">
+          <span className="meta-chip">
+            <CalendarBlank size={14} />
+            {formatDate(match.date, language, { day: "numeric", month: "short", year: undefined })}
+          </span>
+          <span className={`meta-chip ${match.time ? "" : "pending"}`}>
+            <Clock size={14} />
+            {match.time ?? t.timePending}
+          </span>
+          <a className="meta-venue" href={match.venue.mapsUrl} target="_blank" rel="noreferrer" title={t.openMaps}>
+            <MapPin size={14} weight="fill" />
+            <span>{match.venue.name}</span>
+          </a>
+          <a
+            className="meta-source"
+            href={match.source.pageUrl}
+            target="_blank"
+            rel="noreferrer"
+            title={hasScore ? t.scorePublished : match.readyForPublication ? t.scheduleConfirmed : t.detailsPending}
+            aria-label={t.source}
+          >
+            iSquad
+            <ArrowSquareOut size={12} />
           </a>
         </div>
       </div>
@@ -761,6 +789,125 @@ function CompleteCalendar({ selectedTeam, language }) {
             </article>
           );
         })}
+      </div>
+    </section>
+  );
+}
+
+const formLetterByLang = {
+  ca: { G: "G", E: "E", P: "P" },
+  es: { G: "G", E: "E", P: "P" },
+  en: { G: "W", E: "D", P: "L" },
+};
+
+function StandingsSection({ selectedTeam, language }) {
+  const t = copy[language];
+  const standingsList = useMemo(
+    () => [...(scheduleData.standings ?? [])].sort((a, b) => (teamIndex[a.teamId] ?? 99) - (teamIndex[b.teamId] ?? 99)),
+    [],
+  );
+  const [activeTeam, setActiveTeam] = useState(standingsList[0]?.teamId ?? teamIds[0]);
+
+  useEffect(() => {
+    if (selectedTeam !== "all" && standingsList.some((g) => g.teamId === selectedTeam)) {
+      setActiveTeam(selectedTeam);
+    }
+  }, [selectedTeam]);
+
+  if (standingsList.length === 0) return null;
+
+  const currentGroup = standingsList.find((g) => g.teamId === activeTeam) ?? standingsList[0];
+  const team = teamMeta[currentGroup.teamId];
+  const clubRow = currentGroup.rows.find((row) => row.isClub);
+
+  return (
+    <section className="standings-section" id="classificacio" aria-labelledby="standings-title">
+      <div className="standings-header">
+        <div className="section-title">
+          <div className="section-icon"><Medal size={24} weight="duotone" /></div>
+          <div>
+            <h2 id="standings-title">{t.standingsTitle}</h2>
+            <p>{t.standingsSubtitle}</p>
+          </div>
+        </div>
+
+        {clubRow && (
+          <div className={`standings-club-pill ${team.tone}`}>
+            <strong>#{clubRow.position}</strong>
+            <span>{clubRow.points} {t.standingsPoints} · {clubRow.played} {t.standingsPlayed}</span>
+          </div>
+        )}
+      </div>
+
+      <div className="standings-tabs" role="tablist" aria-label={t.standingsTitle}>
+        {standingsList.map((group) => {
+          const meta = teamMeta[group.teamId];
+          const isActive = group.teamId === currentGroup.teamId;
+          return (
+            <button
+              key={group.teamId}
+              type="button"
+              role="tab"
+              aria-selected={isActive}
+              className={`standings-tab ${meta.tone} ${isActive ? "active" : ""}`}
+              onClick={() => setActiveTeam(group.teamId)}
+            >
+              <TShirt size={16} weight="fill" />
+              {meta.labels[language]}
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="standings-competition-bar">
+        <span>{team.competition[language]}</span>
+        <a href={currentGroup.sourceUrl} target="_blank" rel="noreferrer">
+          {t.source}
+          <ArrowSquareOut size={13} />
+        </a>
+      </div>
+
+      <div className="standings-table-wrap">
+        <table className="standings-table">
+          <thead>
+            <tr>
+              <th scope="col" className="col-pos">{t.standingsPosition}</th>
+              <th scope="col" className="col-team">{t.standingsTeam}</th>
+              <th scope="col" className="col-pts">{t.standingsPoints}</th>
+              <th scope="col">{t.standingsPlayed}</th>
+              <th scope="col">{t.standingsWon}</th>
+              <th scope="col">{t.standingsDrawn}</th>
+              <th scope="col">{t.standingsLost}</th>
+              <th scope="col">{t.standingsDiff}</th>
+              <th scope="col" className="col-form">{t.standingsForm}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {currentGroup.rows.map((row) => (
+              <tr key={row.teamId} className={row.isClub ? `club-row ${team.tone}` : ""}>
+                <td className="col-pos"><span>{row.position}</span></td>
+                <td className="col-team"><strong>{row.teamName}</strong></td>
+                <td className="col-pts"><strong>{row.points}</strong></td>
+                <td>{row.played}</td>
+                <td>{row.won}</td>
+                <td>{row.drawn}</td>
+                <td>{row.lost}</td>
+                <td className={row.goalDiff > 0 ? "diff-pos" : row.goalDiff < 0 ? "diff-neg" : ""}>
+                  {row.goalDiff > 0 ? `+${row.goalDiff}` : row.goalDiff}
+                </td>
+                <td className="col-form">
+                  <div className="form-dots" aria-label={row.form.map((res) => formLetterByLang[language][res] ?? res).join(" ")}>
+                    {row.form.map((res, idx) => (
+                      <span key={idx} className={`form-dot ${res === "G" ? "win" : res === "E" ? "draw" : "loss"}`}>
+                        {formLetterByLang[language][res] ?? res}
+                      </span>
+                    ))}
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </section>
   );
@@ -1057,8 +1204,7 @@ function ContactPage({ language }) {
             <HouseLine size={28} weight="duotone" aria-hidden="true" />
             <h2>{t.howToArrive}</h2>
             <p>{t.directionsText}</p>
-            <a className="text-link" href={`https://www.google.com/maps/dir/Igualada/${mapsDestination}`} target="_blank" rel="noreferrer">{t.fromIgualada}<ArrowSquareOut size={16} aria-hidden="true" /></a>
-            <a className="text-link" href={`https://www.google.com/maps/dir/Vilanova+del+Camí/${mapsDestination}`} target="_blank" rel="noreferrer">{t.fromVilanova}<ArrowSquareOut size={16} aria-hidden="true" /></a>
+            <a className="text-link" href={`https://www.google.com/maps/?q=${mapsDestination}`} target="_blank" rel="noreferrer">{t.openMaps}<ArrowSquareOut size={16} aria-hidden="true" /></a>
           </article>
         </div>
         <a className="home-cta" href={route.calendarPath}><CalendarBlank size={20} weight="bold" />{t.viewCalendar}</a>
@@ -1080,10 +1226,9 @@ function Footer({ language }) {
           <p>{t.contactPerson} · <a href={`tel:${club.phoneE164}`}>{club.phoneDisplay}</a></p>
           <a href={`mailto:${club.email}`}>{club.email}</a>
           <a className="footer-directions" href="https://www.google.com/maps/?q=41.5719504,1.6030128" target="_blank" rel="noreferrer">
-            {t.directions}
+            {t.openMaps}
             <ArrowSquareOut size={14} />
           </a>
-          <p className="footer-directions-copy">{t.directionsText}</p>
         </div>
         <div>
           <h2>{t.follow}</h2>
@@ -1204,11 +1349,13 @@ export function App() {
             <p className="home-hero-season">{t.heroSeason}</p>
             <p className="home-hero-kicker">{t.heroKicker}</p>
             <p className="home-hero-description">{t.heroDescription}</p>
-            <a className="home-cta" href="#nueva-temporada"><UsersThree size={20} weight="bold" />{t.join}</a>
-            <div className="home-stats" aria-label="Club statistics">
-              <div><strong>60+</strong><span>{t.players}</span></div>
-              <div><strong>20</strong><span>{t.history}</span></div>
-              <div><strong><Trophy size={25} weight="duotone" />100+</strong><span>{t.victories}</span></div>
+            <div className="home-hero-actions">
+              <a className="home-cta" href="#nueva-temporada"><UsersThree size={18} weight="bold" />{t.join}</a>
+              <div className="home-stats" aria-label="Club statistics">
+                <div><strong>60+</strong><span>{t.players}</span></div>
+                <div><strong>20</strong><span>{t.history}</span></div>
+                <div><strong><Trophy size={18} weight="duotone" />100+</strong><span>{t.victories}</span></div>
+              </div>
             </div>
           </div>
         </section>
@@ -1270,6 +1417,7 @@ export function App() {
           </section>
 
           {showCalendar && <CompleteCalendar selectedTeam={selectedTeam} language={language} />}
+          <StandingsSection selectedTeam={selectedTeam} language={language} />
           {SHOW_RESULTS_SECTION && <ResultsSection language={language} />}
           <PersonSimpleThrow className="court-motif" size={420} weight="thin" aria-hidden="true" />
         </div>}

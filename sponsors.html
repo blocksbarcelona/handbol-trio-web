@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css?v=20261123b">
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="Club Handbol Montbui" />
@@ -48,56 +48,40 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="container flex items-center justify-between" style="height: 100%;">
-            <!-- Logo -->
-            <a href="/en/" class="flex items-center gap-4">
-                <img src="/assets/logo.png" alt="Club Handbol Montbui Logo" style="height: 48px; width: auto;">
-                <span class="text-gradient" style="font-weight: 700; font-size: 1.25rem;">Club Handbol Montbui</span>
-            </a>
+    <header class="site-header">
+        <a class="brand" href="/en/" aria-label="Club Handbol Montbui">
+            <img src="/assets/logo.png" alt="" width="44" height="44" />
+            <span>Club Handbol <strong>Montbui</strong></span>
+        </a>
 
-            <!-- Desktop Nav -->
-            <nav class="hidden md:flex items-center gap-8">
-                <a href="/en/" class="nav-link">Home</a>
-                <a href="/en/club/" class="nav-link">The club</a>
-                <a href="/en/calendar/" class="nav-link">Calendar</a>
-                <a href="/en/#social-hub" class="nav-link">News</a>
-                <a href="/sponsors.html" class="nav-link" aria-current="page">Sponsorship</a>
-                <a href="/en/contact/" class="nav-link">Contact</a>
+        <nav class="main-nav" aria-label="Home">
+            <a href="/en/">Home</a>
+            <a href="/en/club/">The club</a>
+            <a href="/en/calendar/">Calendar</a>
+            <a href="/en/#social-hub">News</a>
+            <a class="active" href="/sponsors.html" aria-current="page">Sponsorship</a>
+            <a href="/en/contact/">Contact</a>
+        </nav>
+
+        <details class="mobile-nav">
+            <summary aria-label="Open main navigation" title="Open main navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12"/><line x1="4" x2="20" y1="6"/><line x1="4" x2="20" y1="18"/></svg>
+            </summary>
+            <nav aria-label="Open main navigation">
+                <a href="/en/">Home</a>
+                <a href="/en/club/">The club</a>
+                <a href="/en/calendar/">Calendar</a>
+                <a href="/en/#social-hub">News</a>
+                <a class="active" href="/sponsors.html" aria-current="page">Sponsorship</a>
+                <a href="/en/contact/">Contact</a>
             </nav>
+        </details>
 
-            <!-- Language & Mobile Menu -->
-            <div class="flex items-center gap-4">
-                <!-- Language Selector -->
-                <div class="flex items-center gap-2" style="font-size: 0.875rem;">
-                    <a href="/patrocinadores.html" style="color: var(--muted-foreground);">ES</a>
-                    <span style="color: var(--border);">|</span>
-                    <a href="/patrocinadors.html" style="color: var(--muted-foreground);">CA</a>
-                    <span style="color: var(--border);">|</span>
-                    <a href="/sponsors.html" style="font-weight: 700;" aria-current="page">EN</a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="mobile-menu-btn md:hidden" aria-label="Menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="4" x2="20" y1="12" />
-                        <line x1="4" x2="20" y1="6" />
-                        <line x1="4" x2="20" y1="18" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="mobile-menu">
-            <a href="/en/" class="nav-link">Home</a>
-            <a href="/en/club/" class="nav-link">The club</a>
-            <a href="/en/calendar/" class="nav-link">Calendar</a>
-            <a href="/en/#social-hub" class="nav-link">News</a>
-            <a href="/sponsors.html" class="nav-link">Sponsorship</a>
-            <a href="/en/contact/" class="nav-link">Contact</a>
-        </div>
+        <nav class="languages" aria-label="Language">
+            <a href="/patrocinadores.html" hreflang="es-ES" lang="es">ES</a>
+            <a href="/patrocinadors.html" hreflang="ca-ES" lang="ca">CA</a>
+            <a class="active" href="/sponsors.html" hreflang="en" lang="en" aria-current="page">EN</a>
+        </nav>
     </header>
 
     <main>
