@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-25T18:56:58.755Z",
+  "generatedAt": "2026-11-26T03:21:21.981Z",
   "timezone": "Europe/Madrid",
   "clubName": "Club Handbol Montbui",
   "status": "pending_confirmation",
@@ -14,28 +14,28 @@
     {
       "teamId": "senior-masculi-tercera-b",
       "competitionTitle": "TERCERA CATALANA SÈNIOR MASCULINA - PRIMERA FASE - Grup B",
-      "fetchedAt": "2026-11-25T18:56:56.000Z",
+      "fetchedAt": "2026-11-26T03:21:19.648Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038564&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3077&id_competicion=211809",
       "matchesFound": 18
     },
     {
       "teamId": "senior-femeni-primera-a",
       "competitionTitle": "PRIMERA CATALANA SÈNIOR FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-11-25T18:56:56.813Z",
+      "fetchedAt": "2026-11-26T03:21:20.324Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038568&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3076&id_competicion=211803",
       "matchesFound": 30
     },
     {
       "teamId": "juvenil-femeni-segona-unic",
       "competitionTitle": "SEGONA CATALANA JUVENIL FEMENINA - FASE UNICA - Grup Únic",
-      "fetchedAt": "2026-11-25T18:56:57.555Z",
+      "fetchedAt": "2026-11-26T03:21:20.948Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038691&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3078&id_competicion=211814",
       "matchesFound": 12
     },
     {
       "teamId": "cadet-femeni-segona-a",
       "competitionTitle": "SEGONA CATALANA CADET FEMENINA - PRIMERA FASE - Grup A",
-      "fetchedAt": "2026-11-25T18:56:58.324Z",
+      "fetchedAt": "2026-11-26T03:21:21.595Z",
       "calendarUrl": "https://resultadosbalonmano.isquad.es/calendario.php?seleccion=0&id=1038697&id_ambito=0&id_territorial=17&id_superficie=1&iframe=0&id_categoria=3080&id_competicion=211817",
       "matchesFound": 16
     }
@@ -393,13 +393,13 @@
           "teamId": "222407",
           "teamName": "HANDBOL CLARET - GRACIA",
           "isClub": false,
-          "points": 10,
-          "played": 8,
+          "points": 11,
+          "played": 9,
           "won": 5,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 3,
-          "goalsFor": 231,
-          "goalsAgainst": 214,
+          "goalsFor": 256,
+          "goalsAgainst": 239,
           "goalDiff": 17,
           "form": [
             "G",
@@ -432,6 +432,27 @@
         },
         {
           "position": 8,
+          "teamId": "201610",
+          "teamName": "C.HRAPID CORNELLA",
+          "isClub": false,
+          "points": 9,
+          "played": 8,
+          "won": 4,
+          "drawn": 1,
+          "lost": 3,
+          "goalsFor": 210,
+          "goalsAgainst": 194,
+          "goalDiff": 16,
+          "form": [
+            "G",
+            "G",
+            "P",
+            "G",
+            "P"
+          ]
+        },
+        {
+          "position": 9,
           "teamId": "225867",
           "teamName": "CH LA SALLE MONTCADA B",
           "isClub": false,
@@ -449,27 +470,6 @@
             "G",
             "E",
             "G"
-          ]
-        },
-        {
-          "position": 9,
-          "teamId": "201610",
-          "teamName": "C.HRAPID CORNELLA",
-          "isClub": false,
-          "points": 8,
-          "played": 7,
-          "won": 4,
-          "drawn": 0,
-          "lost": 3,
-          "goalsFor": 185,
-          "goalsAgainst": 169,
-          "goalDiff": 16,
-          "form": [
-            "G",
-            "G",
-            "P",
-            "G",
-            "P"
           ]
         },
         {
