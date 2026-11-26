@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
   pages: write
   id-token: write
 
@@ -68,6 +69,16 @@ jobs:
           git commit -m "chore(calendar): publish automated iSquad refresh ${DATE}"
           git push origin main
 
+      - name: Configure Pages
+        if: steps.fetch.outputs.changed == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        if: steps.fetch.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
   deploy:
     needs: refresh
     if: needs.refresh.outputs.changed == 'true'
@@ -76,18 +87,20 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout updated main
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload site
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: .
+      - name: Wait for artifact metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in 1 2 3 4 5 6; do
+            count=$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?name=github-pages" --jq '.total_count // 0')
+            if [ "${count}" -gt 0 ]; then
+              echo "Artifact github-pages is ready (attempt ${attempt})."
+              exit 0
+            fi
+            echo "Waiting for artifact metadata (attempt ${attempt})..."
+            sleep 5
+          done
+          echo "Proceeding to deploy-pages after wait."
 
       - name: Deploy to GitHub Pages
         id: deployment
