@@ -91,7 +91,7 @@ async function fetchClientToken(timeoutMs = 20_000) {
   return match[1];
 }
 
-async function fetchBetaApi(tipo, tournamentId, tokenRef, attempts = 3, timeoutMs = 20_000) {
+async function fetchBetaApi(tipo, tournamentId, tokenRef, attempts = 5, timeoutMs = 20_000) {
   let lastError;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     try {
@@ -114,13 +114,13 @@ async function fetchBetaApi(tipo, tournamentId, tokenRef, attempts = 3, timeoutM
       return { data: await response.json(), fetchedAt: new Date().toISOString() };
     } catch (error) {
       lastError = error;
-      if (attempt < attempts) await delay(400 * 2 ** (attempt - 1));
+      if (attempt < attempts) await delay(2_000 * 2 ** (attempt - 1));
     }
   }
   throw lastError;
 }
 
-async function fetchBetaTournament(tournamentId, tokenRef, attempts = 3, timeoutMs = 20_000) {
+async function fetchBetaTournament(tournamentId, tokenRef, attempts = 5, timeoutMs = 20_000) {
   const result = await fetchBetaApi("torneo", tournamentId, tokenRef, attempts, timeoutMs);
   if (!result.data || !Array.isArray(result.data.partidos) || result.data.partidos.length === 0) {
     throw new Error(`Empty partidos list for tournament ${tournamentId}`);
